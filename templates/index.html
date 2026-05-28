@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+
+{% block title %}{{ current_date | korean_date }} — 대학 기사 아카이브{% endblock %}
+
+{# ── Sub-nav: 52px · frosted parchment · date navigation + fetch CTA ── #}
+{% block subnav %}
+<div class="s-nav" role="navigation" aria-label="날짜 내비게이션">
+  <div class="s-nav__inner">
+
+    <div class="s-nav__date-group">
+      {# Previous day arrow #}
+      {% if prev_date %}
+      <a href="/?date={{ prev_date }}" class="s-nav__arrow" aria-label="이전 날">&#8592;</a>
+      {% else %}
+      <span class="s-nav__arrow s-nav__arrow--off" aria-hidden="true">&#8592;</span>
+      {% endif %}
+
+      {# Clickable date label — opens native date picker #}
+      <label class="date-pick-wrap" aria-label="날짜 선택">
+        <span class="s-nav__label">{{ current_date | korean_date }}</span>
+        <input type="date" value="{{ current_date }}" max="{{ today }}"
+               onchange="goToDate(this.value)" aria-label="날짜 선택">
+      </label>
+
+      {# Next day arrow (hidden when today) #}
+      {% if next_date %}
+      <a href="/?date={{ next_date }}" class="s-nav__arrow" aria-label="다음 날">&#8594;</a>
+      {% else %}
+      <span class="s-nav__arrow s-nav__arrow--off" aria-hidden="true">&#8594;</span>
+      {% endif %}
+
+      {# Calendar badge — second tap target for date picker #}
+      <label class="date-pick-wrap" aria-label="달력으로 날짜 선택">
+        <span class="date-pick-badge">&#128197; 날짜 선택</span>
+        <input type="date" value="{{ current_date }}" max="{{ today }}"
+               onchange="goToDate(this.value)" aria-label="달력 날짜 선택">
+      </label>
+    </div>
+
+    <div class="s-nav__right">
+      <span id="fetch-status" class="fetch-status" role="status" aria-live="polite"></span>
+      <button class="btn-pill btn-pill--sm" onclick="fetchNow(this)" aria-label="지금 기사 수집">
+        지금 수집하기
+      </button>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+
+{# ── Hero Tile: dark tile (#272729) — keyword, count, date ── #}
+<section class="hero-tile" aria-label="오늘의 키워드">
+  <div class="hero-tile__inner">
+    <p class="hero-tile__eyebrow">오늘의 키워드</p>
+    <h1 class="hero-tile__headline">대학</h1>
+    <p class="hero-tile__tagline">{{ article_count }}건의 기사</p>
+    <p class="hero-tile__sub">{{ current_date | korean_date }} 기준</p>
+  </div>
+</section>
+
+{# ── Content Tile: parchment — filter chips + article cards ── #}
+<section class="content-tile">
+  <div class="content-tile__inner">
+
+    {# Section header: date title + recent date chips #}
+    <div class="section-header">
+      <div>
+        <h2 class="section-header__title">{{ current_date | korean_date }}</h2>
+        <p class="section-header__subtitle">
+          {{ article_count }}건
+          {% if selected_source %}&nbsp;— {{ selected_source }}{% endif %}
+        </p>
+      </div>
+
+      {# Recent dates — shown desktop only (hidden ≤834px via CSS) #}
+      {% if available_dates %}
+      <div class="date-chips" role="navigation" aria-label="최근 수집일">
+        {% for d in available_dates[:8] %}
+        <a href="/?date={{ d }}"
+           class="date-chip{% if d == current_date %} date-chip--active{% endif %}"
+           aria-current="{% if d == current_date %}page{% else %}false{% endif %}">
+          {{ d }}
+        </a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+
+    {# Source filter pills #}
+    {% if sources %}
+    <div class="filter-row" role="group" aria-label="언론사 필터">
+      <a href="/?date={{ current_date }}"
+         class="filter-chip{% if not selected_source %} filter-chip--active{% endif %}"
+         aria-current="{% if not selected_source %}true{% else %}false{% endif %}">
+        전체
+        <span class="filter-chip__count">{{ article_count }}</span>
+      </a>
+      {% for src in sources %}
+      <a href="/?date={{ current_date }}&source={{ src | urlencode }}"
+         class="filter-chip{% if selected_source == src %} filter-chip--active{% endif %}"
+         aria-current="{% if selected_source == src %}true{% else %}false{% endif %}">
+        {{ src }}
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {# Article list #}
+    {% if articles %}
+    <div class="article-grid" role="list" aria-label="기사 목록">
+      {% for article in articles %}
+      <article class="article-card" role="listitem">
+        <div class="article-card__inner">
+          <div class="article-card__content">
+            <a href="{{ article.link }}" target="_blank" rel="noopener noreferrer"
+               class="article-card__title">
+              {{ article.title }}
+            </a>
+            {% if article.description %}
+            <p class="article-card__desc">{{ article.description }}</p>
+            {% endif %}
+            <div class="article-card__meta">
+              <span class="badge-source">{{ article.source }}</span>
+              <span class="article-date">{{ article.published_date }}</span>
+            </div>
+          </div>
+          <a href="{{ article.link }}" target="_blank" rel="noopener noreferrer"
+             class="article-card__ext-btn" aria-label="{{ article.title }} 읽기">
+            &#8599;
+          </a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+
+    {% else %}
+    {# Empty state #}
+    <div class="empty-state">
+      <div class="empty-state__icon" aria-hidden="true">○</div>
+      <h3 class="empty-state__title">기사가 없습니다</h3>
+      <p class="empty-state__desc">
+        {{ current_date | korean_date }}에 수집된 기사가 없습니다.<br>
+        아래 버튼으로 지금 수집해보세요.
+      </p>
+      <button class="btn-pill" onclick="fetchNow(this)">
+        지금 수집하기
+      </button>
+    </div>
+    {% endif %}
+
+  </div>
+</section>
+
+{% endblock %}
+
+
+{% block scripts %}
+<script>
+function goToDate(val) {
+  if (val) window.location.href = '/?date=' + val;
+}
+</script>
+{% endblock %}

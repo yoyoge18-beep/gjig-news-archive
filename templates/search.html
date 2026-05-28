@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block title %}{% if keyword %}{{ keyword }} 검색 — {% endif %}대학 기사 아카이브{% endblock %}
+
+{% block content %}
+
+{# ── Search Hero Tile: dark tile with pill search input ── #}
+<section class="search-tile">
+  <div class="search-tile__inner">
+    <h1 class="search-tile__title">검색</h1>
+    <form class="search-form" action="/search" method="get" role="search">
+      <input class="search-input" type="search" name="q"
+             placeholder="기사 제목 또는 내용 검색…"
+             value="{{ keyword }}"
+             autofocus
+             aria-label="기사 검색">
+      <button class="btn-pill" type="submit" aria-label="검색 실행">
+        검색
+      </button>
+    </form>
+  </div>
+</section>
+
+{# ── Results Tile: parchment ── #}
+<section class="content-tile">
+  <div class="content-tile__inner">
+
+    {% if keyword %}
+    <div class="section-header">
+      <div>
+        <h2 class="section-header__title">"{{ keyword }}"</h2>
+        <p class="section-header__subtitle">
+          {% if articles %}{{ articles | length }}건의 결과{% else %}결과 없음{% endif %}
+        </p>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if articles %}
+    <div class="article-grid" role="list" aria-label="검색 결과">
+      {% for article in articles %}
+      <article class="article-card" role="listitem">
+        <div class="article-card__inner">
+          <div class="article-card__content">
+            <a href="{{ article.link }}" target="_blank" rel="noopener noreferrer"
+               class="article-card__title">
+              {{ article.title }}
+            </a>
+            {% if article.description %}
+            <p class="article-card__desc">{{ article.description }}</p>
+            {% endif %}
+            <div class="article-card__meta">
+              <span class="badge-source">{{ article.source }}</span>
+              <a href="/?date={{ article.published_date }}"
+                 class="article-date">{{ article.published_date | korean_date }}</a>
+            </div>
+          </div>
+          <a href="{{ article.link }}" target="_blank" rel="noopener noreferrer"
+             class="article-card__ext-btn" aria-label="{{ article.title }} 읽기">
+            &#8599;
+          </a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+
+    {% elif keyword %}
+    <div class="empty-state">
+      <div class="empty-state__icon" aria-hidden="true">&#8981;</div>
+      <h3 class="empty-state__title">결과가 없습니다</h3>
+      <p class="empty-state__desc">
+        "<strong>{{ keyword }}</strong>"에 대한 기사를 찾을 수 없습니다.<br>
+        다른 검색어를 시도해보세요.
+      </p>
+      <a href="/" class="btn-pill btn-pill--ghost">날짜별 보기로 돌아가기</a>
+    </div>
+
+    {% else %}
+    <div class="empty-state">
+      <div class="empty-state__icon" aria-hidden="true">&#8981;</div>
+      <h3 class="empty-state__title">검색어를 입력하세요</h3>
+      <p class="empty-state__desc">기사 제목이나 내용에 포함된 단어로 검색할 수 있습니다.</p>
+    </div>
+    {% endif %}
+
+  </div>
+</section>
+
+{% endblock %}

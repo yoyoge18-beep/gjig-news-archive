@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}대학 기사 아카이브{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+
+<!-- ── Global Nav: 44px · pure black · sticky ── -->
+<nav class="g-nav" role="navigation" aria-label="전역 내비게이션">
+  <div class="g-nav__inner">
+    <a href="/" class="g-nav__brand">대학 기사 아카이브</a>
+    <div class="g-nav__right">
+      <span class="g-nav__count">총 <strong>{{ total_count }}</strong>개</span>
+      <a href="/search" class="g-nav__icon-btn" title="검색" aria-label="검색">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+          <path d="M10 6.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0zm-.687 3.02a4.5 4.5 0 1 1 .707-.707l2.834 2.833a.5.5 0 0 1-.708.708L9.313 9.52z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+{% block subnav %}{% endblock %}
+
+<main>{% block content %}{% endblock %}</main>
+
+<!-- ── Footer: parchment · fine-print ── -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <span class="site-footer__text">© 대학 기사 아카이브</span>
+    <span class="site-footer__text">총 <strong>{{ total_count }}</strong>개 기사 보관</span>
+    <span class="site-footer__text">매일 오전 8시 자동 수집</span>
+  </div>
+</footer>
+
+<script>
+function fetchNow(btn) {
+  var label = btn ? btn.textContent : null;
+  if (btn) { btn.disabled = true; btn.textContent = '수집 중…'; }
+  var statusEl = document.getElementById('fetch-status');
+  fetch('/api/fetch', { method: 'POST' })
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      if (statusEl) {
+        statusEl.textContent = data.message;
+        statusEl.className = 'fetch-status ' + (data.success ? 'fetch-status--ok' : 'fetch-status--err');
+      }
+      if (data.success) setTimeout(function() { location.reload(); }, 1400);
+    })
+    .catch(function() {
+      if (statusEl) {
+        statusEl.textContent = '오류가 발생했습니다.';
+        statusEl.className = 'fetch-status fetch-status--err';
+      }
+    })
+    .finally(function() {
+      if (btn) { btn.disabled = false; btn.textContent = label || '지금 수집하기'; }
+    });
+}
+</script>
+{% block scripts %}{% endblock %}
+</body>
+</html>
