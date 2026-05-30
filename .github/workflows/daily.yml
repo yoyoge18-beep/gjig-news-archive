@@ -26,10 +26,22 @@ jobs:
         run: pip install feedparser requests
 
       - name: 뉴스 수집
-        run: python3 fetcher.py
+        id: fetch
+        run: |
+          OUTPUT=$(python3 fetcher.py 2>&1)
+          echo "$OUTPUT"
+          echo "result<<EOF" >> $GITHUB_OUTPUT
+          echo "$OUTPUT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: 정적 사이트 빌드
-        run: python3 build.py
+        id: build
+        run: |
+          OUTPUT=$(python3 build.py 2>&1)
+          echo "$OUTPUT"
+          echo "result<<EOF" >> $GITHUB_OUTPUT
+          echo "$OUTPUT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: news.db 커밋 (변경 시)
         run: |
@@ -46,3 +58,36 @@ jobs:
           publish_dir: ./dist
           publish_branch: gh-pages
           commit_message: "배포: ${{ github.run_id }}"
+
+      - name: 결과 이메일 발송
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.GMAIL_USERNAME }}
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}
+          to: yoyoge18@gmail.com
+          from: 대학 기사 아카이브 <${{ secrets.GMAIL_USERNAME }}>
+          subject: "[기사아카이브] ${{ github.run_id }} 수집 완료 — $(date '+%Y-%m-%d' -d '+9 hours')"
+          convert_markdown: true
+          body: |
+            ## 대학 기사 아카이브 — 오늘의 수집 결과
+
+            **실행 일시:** ${{ github.event.repository.updated_at }}
+            **사이트:** https://yoyoge18-beep.github.io/gjig-news-archive/
+
+            ---
+
+            ### 뉴스 수집 결과
+            ```
+            ${{ steps.fetch.outputs.result }}
+            ```
+
+            ### 빌드 결과
+            ```
+            ${{ steps.build.outputs.result }}
+            ```
+
+            ---
+            [Actions 로그 보기](https://github.com/yoyoge18-beep/gjig-news-archive/actions/runs/${{ github.run_id }})
