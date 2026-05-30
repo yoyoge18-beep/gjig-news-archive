@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>검색 — 대학 기사 아카이브</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="./static/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="g-nav" role="navigation" aria-label="전역 내비게이션">
+  <div class="g-nav__inner">
+    <a href="./index.html" class="g-nav__brand">대학 기사 아카이브</a>
+    <div class="g-nav__right">
+      <span class="g-nav__count">총 <strong>631</strong>개</span>
+      <a href="./search.html" class="g-nav__icon-btn" title="검색" aria-label="검색">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+          <path d="M10 6.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0zm-.687 3.02a4.5 4.5 0 1 1 .707-.707l2.834 2.833a.5.5 0 0 1-.708.708L9.313 9.52z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="search-tile">
+    <div class="search-tile__inner">
+      <h1 class="search-tile__title">검색</h1>
+      <div class="search-form" role="search">
+        <input class="search-input" type="search" id="q"
+               placeholder="기사 제목 또는 내용 검색…"
+               autofocus aria-label="기사 검색">
+        <button class="btn-pill" type="button"
+                onclick="doSearch()" aria-label="검색 실행">검색</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-tile">
+    <div class="content-tile__inner" id="results-wrap">
+      <div class="empty-state">
+        <div class="empty-state__icon" aria-hidden="true">&#8981;</div>
+        <h3 class="empty-state__title">검색어를 입력하세요</h3>
+        <p class="empty-state__desc">기사 제목이나 내용에 포함된 단어로 검색할 수 있습니다.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <span class="site-footer__text">© 대학 기사 아카이브</span>
+    <span class="site-footer__text">총 <strong>631</strong>개 기사 보관</span>
+  </div>
+</footer>
+
+<script>
+var DATA = null;
+fetch('./articles.json')
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    DATA = d;
+    var q = new URLSearchParams(location.search).get('q');
+    if (q) { document.getElementById('q').value = q; doSearch(); }
+  });
+
+document.getElementById('q').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') doSearch();
+});
+
+function esc(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function korDate(d) {
+  var p = d.split('-');
+  return p[0] + '년 ' + parseInt(p[1]) + '월 ' + parseInt(p[2]) + '일';
+}
+
+function doSearch() {
+  var kw = document.getElementById('q').value.trim();
+  var wrap = document.getElementById('results-wrap');
+  if (!kw || !DATA) {
+    wrap.innerHTML = '<div class="empty-state"><div class="empty-state__icon">&#8981;</div>'
+      + '<h3 class="empty-state__title">검색어를 입력하세요</h3>'
+      + '<p class="empty-state__desc">기사 제목이나 내용에 포함된 단어로 검색할 수 있습니다.</p></div>';
+    return;
+  }
+  var lk = kw.toLowerCase();
+  var found = DATA.filter(function(a) {
+    return (a.title || '').toLowerCase().includes(lk)
+        || (a.description || '').toLowerCase().includes(lk);
+  }).slice(0, 50);
+
+  var html = '<div class="section-header"><div>'
+    + '<h2 class="section-header__title">"' + esc(kw) + '"</h2>'
+    + '<p class="section-header__subtitle">'
+    + (found.length ? found.length + '건의 결과' : '결과 없음')
+    + '</p></div></div>';
+
+  if (!found.length) {
+    html += '<div class="empty-state"><div class="empty-state__icon">&#8981;</div>'
+      + '<h3 class="empty-state__title">결과가 없습니다</h3>'
+      + '<p class="empty-state__desc">"' + esc(kw) + '"에 대한 기사를 찾을 수 없습니다.</p>'
+      + '<a href="./index.html" class="btn-pill btn-pill--ghost">날짜별 보기로 돌아가기</a></div>';
+    wrap.innerHTML = html;
+    return;
+  }
+
+  html += '<div class="article-grid" role="list">';
+  found.forEach(function(a) {
+    html += '<article class="article-card" role="listitem"><div class="article-card__inner">'
+      + '<div class="article-card__content">'
+      + '<a href="' + esc(a.link) + '" target="_blank" rel="noopener noreferrer" class="article-card__title">'
+      + esc(a.title) + '</a>';
+    if (a.description) {
+      html += '<p class="article-card__desc">' + esc(a.description) + '</p>';
+    }
+    html += '<div class="article-card__meta">'
+      + '<span class="badge-source">' + esc(a.source) + '</span>'
+      + '<a href="./' + esc(a.published_date) + '.html" class="article-date">'
+      + korDate(a.published_date) + '</a></div></div>'
+      + '<a href="' + esc(a.link) + '" target="_blank" rel="noopener noreferrer"'
+      + ' class="article-card__ext-btn">&#8599;</a></div></article>';
+  });
+  html += '</div>';
+  wrap.innerHTML = html;
+}
+</script>
+</body>
+</html>
