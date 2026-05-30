@@ -1,0 +1,48 @@
+name: 매일 뉴스 수집 및 배포
+
+on:
+  schedule:
+    - cron: '0 23 * * *'  # 매일 오전 8시 KST (UTC 23:00)
+  workflow_dispatch:       # 수동 실행 버튼
+
+jobs:
+  collect-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install feedparser requests
+
+      - name: 뉴스 수집
+        run: python3 fetcher.py
+
+      - name: 정적 사이트 빌드
+        run: python3 build.py
+
+      - name: news.db 커밋 (변경 시)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add news.db
+          git diff --staged --quiet || git commit -m "자동수집: $(date '+%Y-%m-%d %H:%M KST' -d '+9 hours')"
+          git push origin main
+
+      - name: GitHub Pages 배포
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          commit_message: "배포: ${{ github.run_id }}"
