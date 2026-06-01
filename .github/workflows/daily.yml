@@ -60,6 +60,7 @@ jobs:
           commit_message: "배포: ${{ github.run_id }}"
 
       - name: 결과 이메일 발송
+        if: false
         env:
           GMAIL_USERNAME: ${{ secrets.GMAIL_USERNAME }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
