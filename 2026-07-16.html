@@ -15,7 +15,7 @@
   <div class="g-nav__inner">
     <a href="./index.html" class="g-nav__brand">대학 기사 아카이브</a>
     <div class="g-nav__right">
-      <span class="g-nav__count">총 <strong>4793</strong>개</span>
+      <span class="g-nav__count">총 <strong>4853</strong>개</span>
       <a href="./search.html" class="g-nav__icon-btn" title="검색" aria-label="검색">
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
           <path d="M10 6.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0zm-.687 3.02a4.5 4.5 0 1 1 .707-.707l2.834 2.833a.5.5 0 0 1-.708.708L9.313 9.52z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"/>
@@ -33,7 +33,7 @@
         <span class="s-nav__label">2026년 7월 16일</span>
         <input type="date" value="2026-07-16" onchange="goToDate(this.value)" aria-label="날짜 선택">
       </label>
-      <span class="s-nav__arrow s-nav__arrow--off" aria-hidden="true">&#8594;</span>
+      <a href="./2026-07-17.html" class="s-nav__arrow" aria-label="다음 날">&#8594;</a>
       <label class="date-pick-wrap" aria-label="달력으로 날짜 선택">
         <span class="date-pick-badge">&#128197; 날짜 선택</span>
         <input type="date" value="2026-07-16" onchange="goToDate(this.value)" aria-label="달력 날짜 선택">
@@ -47,7 +47,7 @@
     <div class="hero-tile__inner">
       <p class="hero-tile__eyebrow">키워드</p>
       <h1 class="hero-tile__headline">대학</h1>
-      <p class="hero-tile__tagline" id="hero-count">92건의 기사</p>
+      <p class="hero-tile__tagline" id="hero-count">99건의 기사</p>
       <p class="hero-tile__sub">2026년 7월 16일 기준</p>
     </div>
   </section>
@@ -57,14 +57,112 @@
       <div class="section-header">
         <div>
           <h2 class="section-header__title">2026년 7월 16일</h2>
-          <p class="section-header__subtitle" id="sub-count">92건</p>
+          <p class="section-header__subtitle" id="sub-count">99건</p>
         </div>
         <div class="date-chips" role="navigation" aria-label="최근 수집일">
-          <a href="./2026-07-16.html" class="date-chip date-chip--active">2026-07-16</a><a href="./2026-07-15.html" class="date-chip">2026-07-15</a><a href="./2026-07-14.html" class="date-chip">2026-07-14</a><a href="./2026-07-13.html" class="date-chip">2026-07-13</a><a href="./2026-07-12.html" class="date-chip">2026-07-12</a><a href="./2026-07-11.html" class="date-chip">2026-07-11</a><a href="./2026-07-10.html" class="date-chip">2026-07-10</a><a href="./2026-07-09.html" class="date-chip">2026-07-09</a>
+          <a href="./2026-07-17.html" class="date-chip">2026-07-17</a><a href="./2026-07-16.html" class="date-chip date-chip--active">2026-07-16</a><a href="./2026-07-15.html" class="date-chip">2026-07-15</a><a href="./2026-07-14.html" class="date-chip">2026-07-14</a><a href="./2026-07-13.html" class="date-chip">2026-07-13</a><a href="./2026-07-12.html" class="date-chip">2026-07-12</a><a href="./2026-07-11.html" class="date-chip">2026-07-11</a><a href="./2026-07-10.html" class="date-chip">2026-07-10</a>
         </div>
       </div>
-      <div class="filter-row" role="group" aria-label="언론사 필터"><button type="button" class="filter-chip filter-chip--active" data-src="" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전체 <span class="filter-chip__count">92</span></button><button type="button" class="filter-chip" data-src="BBS불교방송" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">BBS불교방송</button><button type="button" class="filter-chip" data-src="LG헬로비전" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">LG헬로비전</button><button type="button" class="filter-chip" data-src="MTN 머니투데이방송" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">MTN 머니투데이방송</button><button type="button" class="filter-chip" data-src="RadioKorea" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">RadioKorea</button><button type="button" class="filter-chip" data-src="gmitoday.com" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">gmitoday.com</button><button type="button" class="filter-chip" data-src="hidomin.com" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">hidomin.com</button><button type="button" class="filter-chip" data-src="kyongbuk.co.kr" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">kyongbuk.co.kr</button><button type="button" class="filter-chip" data-src="starnewskorea.com" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">starnewskorea.com</button><button type="button" class="filter-chip" data-src="v.daum.net" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">v.daum.net</button><button type="button" class="filter-chip" data-src="경기시사투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경기시사투데이</button><button type="button" class="filter-chip" data-src="경남대학교 대표" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경남대학교 대표</button><button type="button" class="filter-chip" data-src="경인경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경인경제</button><button type="button" class="filter-chip" data-src="경향신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경향신문</button><button type="button" class="filter-chip" data-src="교수신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">교수신문</button><button type="button" class="filter-chip" data-src="교육플러스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">교육플러스</button><button type="button" class="filter-chip" data-src="국제신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">국제신문</button><button type="button" class="filter-chip" data-src="농민신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">농민신문</button><button type="button" class="filter-chip" data-src="뉴스1" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴스1</button><button type="button" class="filter-chip" data-src="뉴스스토리" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴스스토리</button><button type="button" class="filter-chip" data-src="뉴시스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴시스</button><button type="button" class="filter-chip" data-src="대학지성 In&amp;Out" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">대학지성 In&amp;Out</button><button type="button" class="filter-chip" data-src="대한경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">대한경제</button><button type="button" class="filter-chip" data-src="더 타임즈 진도" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">더 타임즈 진도</button><button type="button" class="filter-chip" data-src="더코리아" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">더코리아</button><button type="button" class="filter-chip" data-src="데일리메디" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">데일리메디</button><button type="button" class="filter-chip" data-src="매일경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">매일경제</button><button type="button" class="filter-chip" data-src="머니투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">머니투데이</button><button type="button" class="filter-chip" data-src="메디컬투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">메디컬투데이</button><button type="button" class="filter-chip" data-src="베리타스알파" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">베리타스알파</button><button type="button" class="filter-chip" data-src="서남투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">서남투데이</button><button type="button" class="filter-chip" data-src="서울경제TV" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">서울경제TV</button><button type="button" class="filter-chip" data-src="서울신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">서울신문</button><button type="button" class="filter-chip" data-src="신동아" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">신동아</button><button type="button" class="filter-chip" data-src="아산데스크" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">아산데스크</button><button type="button" class="filter-chip" data-src="아시아경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">아시아경제</button><button type="button" class="filter-chip" data-src="엠뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">엠뉴스</button><button type="button" class="filter-chip" data-src="연합뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스</button><button type="button" class="filter-chip" data-src="연합뉴스(사회)" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스(사회)</button><button type="button" class="filter-chip" data-src="오토투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">오토투데이</button><button type="button" class="filter-chip" data-src="이로운넷" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">이로운넷</button><button type="button" class="filter-chip" data-src="전자신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전자신문</button><button type="button" class="filter-chip" data-src="제주의소리" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">제주의소리</button><button type="button" class="filter-chip" data-src="조선일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">조선일보</button><button type="button" class="filter-chip" data-src="중도일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">중도일보</button><button type="button" class="filter-chip" data-src="충청뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">충청뉴스</button><button type="button" class="filter-chip" data-src="투데이경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">투데이경제</button><button type="button" class="filter-chip" data-src="팍스메디컬뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">팍스메디컬뉴스</button><button type="button" class="filter-chip" data-src="프레시안" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">프레시안</button><button type="button" class="filter-chip" data-src="한국대학신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한국대학신문</button><button type="button" class="filter-chip" data-src="헤드라인제주" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">헤드라인제주</button></div>
-      <div class="article-grid" role="list" aria-label="기사 목록" id="article-grid"><article class="article-card" role="listitem" data-source="연합뉴스">
+      <div class="filter-row" role="group" aria-label="언론사 필터"><button type="button" class="filter-chip filter-chip--active" data-src="" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전체 <span class="filter-chip__count">99</span></button><button type="button" class="filter-chip" data-src="BBS불교방송" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">BBS불교방송</button><button type="button" class="filter-chip" data-src="LG헬로비전" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">LG헬로비전</button><button type="button" class="filter-chip" data-src="MTN 머니투데이방송" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">MTN 머니투데이방송</button><button type="button" class="filter-chip" data-src="RadioKorea" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">RadioKorea</button><button type="button" class="filter-chip" data-src="gmitoday.com" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">gmitoday.com</button><button type="button" class="filter-chip" data-src="hidomin.com" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">hidomin.com</button><button type="button" class="filter-chip" data-src="kyongbuk.co.kr" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">kyongbuk.co.kr</button><button type="button" class="filter-chip" data-src="starnewskorea.com" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">starnewskorea.com</button><button type="button" class="filter-chip" data-src="v.daum.net" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">v.daum.net</button><button type="button" class="filter-chip" data-src="경기시사투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경기시사투데이</button><button type="button" class="filter-chip" data-src="경남대학교 대표" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경남대학교 대표</button><button type="button" class="filter-chip" data-src="경인경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경인경제</button><button type="button" class="filter-chip" data-src="경향신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경향신문</button><button type="button" class="filter-chip" data-src="교수신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">교수신문</button><button type="button" class="filter-chip" data-src="교육플러스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">교육플러스</button><button type="button" class="filter-chip" data-src="국제신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">국제신문</button><button type="button" class="filter-chip" data-src="농민신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">농민신문</button><button type="button" class="filter-chip" data-src="뉴스1" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴스1</button><button type="button" class="filter-chip" data-src="뉴스스토리" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴스스토리</button><button type="button" class="filter-chip" data-src="뉴시스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴시스</button><button type="button" class="filter-chip" data-src="대학지성 In&amp;Out" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">대학지성 In&amp;Out</button><button type="button" class="filter-chip" data-src="대한경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">대한경제</button><button type="button" class="filter-chip" data-src="더 타임즈 진도" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">더 타임즈 진도</button><button type="button" class="filter-chip" data-src="더코리아" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">더코리아</button><button type="button" class="filter-chip" data-src="데일리메디" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">데일리메디</button><button type="button" class="filter-chip" data-src="매일경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">매일경제</button><button type="button" class="filter-chip" data-src="머니투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">머니투데이</button><button type="button" class="filter-chip" data-src="메디컬투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">메디컬투데이</button><button type="button" class="filter-chip" data-src="베리타스알파" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">베리타스알파</button><button type="button" class="filter-chip" data-src="서남투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">서남투데이</button><button type="button" class="filter-chip" data-src="서울경제TV" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">서울경제TV</button><button type="button" class="filter-chip" data-src="서울신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">서울신문</button><button type="button" class="filter-chip" data-src="신동아" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">신동아</button><button type="button" class="filter-chip" data-src="아산데스크" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">아산데스크</button><button type="button" class="filter-chip" data-src="아시아경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">아시아경제</button><button type="button" class="filter-chip" data-src="엠뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">엠뉴스</button><button type="button" class="filter-chip" data-src="연합뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스</button><button type="button" class="filter-chip" data-src="연합뉴스(사회)" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스(사회)</button><button type="button" class="filter-chip" data-src="오토투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">오토투데이</button><button type="button" class="filter-chip" data-src="이로운넷" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">이로운넷</button><button type="button" class="filter-chip" data-src="전자신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전자신문</button><button type="button" class="filter-chip" data-src="제주의소리" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">제주의소리</button><button type="button" class="filter-chip" data-src="조선일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">조선일보</button><button type="button" class="filter-chip" data-src="중도일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">중도일보</button><button type="button" class="filter-chip" data-src="충청뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">충청뉴스</button><button type="button" class="filter-chip" data-src="투데이경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">투데이경제</button><button type="button" class="filter-chip" data-src="팍스메디컬뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">팍스메디컬뉴스</button><button type="button" class="filter-chip" data-src="프레시안" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">프레시안</button><button type="button" class="filter-chip" data-src="한국대학신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한국대학신문</button><button type="button" class="filter-chip" data-src="헤드라인제주" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">헤드라인제주</button></div>
+      <div class="article-grid" role="list" aria-label="기사 목록" id="article-grid"><article class="article-card" role="listitem" data-source="뉴스1">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE1abkNPYzdIS0ZsZ2UzbENhbXJkSEZZX1lNNkdNSjExVGlsYjFRRGc2S05pemZONENhUVpaMWY2Q3NrY2ZCWDVWZm5tb25NVE51M1FuTjdhWXpUYmprUllyTFRB?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">&quot;동거·낙태 경험 있는 대학 친구, 내 친오빠와 결혼 계획…어떻게 막죠?&quot; - 뉴스1</a>
+      <p class="article-card__desc">&quot;동거·낙태 경험 있는 대학 친구, 내 친오빠와 결혼 계획…어떻게 막죠?&quot;  뉴스1</p>
+      <div class="article-card__meta">
+        <span class="badge-source">뉴스1</span>
+        <span class="article-date">2026-07-16</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE1abkNPYzdIS0ZsZ2UzbENhbXJkSEZZX1lNNkdNSjExVGlsYjFRRGc2S05pemZONENhUVpaMWY2Q3NrY2ZCWDVWZm5tb25NVE51M1FuTjdhWXpUYmprUllyTFRB?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="&quot;동거·낙태 경험 있는 대학 친구, 내 친오빠와 결혼 계획…어떻게 막죠?&quot; - 뉴스1 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="v.daum.net">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE90VmdzVjRQMG5WQ0Y4RHZfRm1KRXdBam5ZSmRTcUc4R1pTWXFVMk1td3hDYXJYaG5pc0IwR1hiYVU5RTJBVDFKU2xWMzN3ZE0?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">“AI는 못해” 20대에 연봉 1억 버는 기술직…대학도 포기, 美청년들 몰린다는데 - v.daum.net</a>
+      <p class="article-card__desc">“AI는 못해” 20대에 연봉 1억 버는 기술직…대학도 포기, 美청년들 몰린다는데  v.daum.net</p>
+      <div class="article-card__meta">
+        <span class="badge-source">v.daum.net</span>
+        <span class="article-date">2026-07-16</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE90VmdzVjRQMG5WQ0Y4RHZfRm1KRXdBam5ZSmRTcUc4R1pTWXFVMk1td3hDYXJYaG5pc0IwR1hiYVU5RTJBVDFKU2xWMzN3ZE0?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="“AI는 못해” 20대에 연봉 1억 버는 기술직…대학도 포기, 美청년들 몰린다는데 - v.daum.net 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBIdXl2YTFpM2JTQ0JacWEycDI2Z1FJRjVXVWZ0YmJncnAzbm9UR2Q2T1VGM0tROTAwYzRtRzJNUVlFc0Z3VmRjVm5XMGFwVlFMRnl0akgzbjk1bkQ2RXRwctIBYEFVX3lxTFBIdXl2YTFpM2JTQ0JacWEycDI2Z1FJRjVXVWZ0YmJncnAzbm9UR2Q2T1VGM0tROTAwYzRtRzJNUVlFc0Z3VmRjVm5XMGFwVlFMRnl0akgzbjk1bkQ2RXRwcg?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">한국폴리텍Ⅲ대학, 대학평가서 최고등급…취업률 등 실적 우수 - 연합뉴스</a>
+      <p class="article-card__desc">한국폴리텍Ⅲ대학, 대학평가서 최고등급…취업률 등 실적 우수  연합뉴스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스</span>
+        <span class="article-date">2026-07-16</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBIdXl2YTFpM2JTQ0JacWEycDI2Z1FJRjVXVWZ0YmJncnAzbm9UR2Q2T1VGM0tROTAwYzRtRzJNUVlFc0Z3VmRjVm5XMGFwVlFMRnl0akgzbjk1bkQ2RXRwctIBYEFVX3lxTFBIdXl2YTFpM2JTQ0JacWEycDI2Z1FJRjVXVWZ0YmJncnAzbm9UR2Q2T1VGM0tROTAwYzRtRzJNUVlFc0Z3VmRjVm5XMGFwVlFMRnl0akgzbjk1bkQ2RXRwcg?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="한국폴리텍Ⅲ대학, 대학평가서 최고등급…취업률 등 실적 우수 - 연합뉴스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE05X0tJbWdNUGdubVBkUTlHdzRndUZZV0c1dXZ0bTU3SHlJMXVmRDJjWGZkRjYyRkdZTVI0eHJrUGVXTm5Rd3pyWUtaWFlLZ1RJdG1BakdGRkZHcjcxOGx1TtIBYEFVX3lxTE05X0tJbWdNUGdubVBkUTlHdzRndUZZV0c1dXZ0bTU3SHlJMXVmRDJjWGZkRjYyRkdZTVI0eHJrUGVXTm5Rd3pyWUtaWFlLZ1RJdG1BakdGRkZHcjcxOGx1Tg?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">GIST, 대학 공동활용 과학기술 AI 연구 기반 시설 구축 - 연합뉴스</a>
+      <p class="article-card__desc">GIST, 대학 공동활용 과학기술 AI 연구 기반 시설 구축  연합뉴스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스</span>
+        <span class="article-date">2026-07-16</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE05X0tJbWdNUGdubVBkUTlHdzRndUZZV0c1dXZ0bTU3SHlJMXVmRDJjWGZkRjYyRkdZTVI0eHJrUGVXTm5Rd3pyWUtaWFlLZ1RJdG1BakdGRkZHcjcxOGx1TtIBYEFVX3lxTE05X0tJbWdNUGdubVBkUTlHdzRndUZZV0c1dXZ0bTU3SHlJMXVmRDJjWGZkRjYyRkdZTVI0eHJrUGVXTm5Rd3pyWUtaWFlLZ1RJdG1BakdGRkZHcjcxOGx1Tg?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="GIST, 대학 공동활용 과학기술 AI 연구 기반 시설 구축 - 연합뉴스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="v.daum.net">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE84MmVpeGdxV1ZEMFdvTjNZRUN1M1ZNQk9XV2lFZXFJV1FLN0EteV9UMlYzX2lLMzJRd0lfeE5LRGJkV1BRaHpmR0x4MkVveTQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">은퇴한 아빠는 일하는데...대학 졸업한 딸은 무직 백수 - v.daum.net</a>
+      <p class="article-card__desc">은퇴한 아빠는 일하는데...대학 졸업한 딸은 무직 백수  v.daum.net</p>
+      <div class="article-card__meta">
+        <span class="badge-source">v.daum.net</span>
+        <span class="article-date">2026-07-16</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE84MmVpeGdxV1ZEMFdvTjNZRUN1M1ZNQk9XV2lFZXFJV1FLN0EteV9UMlYzX2lLMzJRd0lfeE5LRGJkV1BRaHpmR0x4MkVveTQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="은퇴한 아빠는 일하는데...대학 졸업한 딸은 무직 백수 - v.daum.net 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9NeTUxeEI3QXJxZF9xU2ZtTUx1d2NYcWZWRUZ5MEF3U2ExNVpsRjVqeng3ZlJ0T3lzRnVldEc4NVptU2RSamNpbm5SODF0MTJqQTVSc2lHVXo4RlhoRG81S1N6cmY4dw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">건국대 대학일자리플러스사업단, ‘스마트건설기술교육’ 운영 - 한국대학신문</a>
+      <p class="article-card__desc">건국대 대학일자리플러스사업단, ‘스마트건설기술교육’ 운영  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-07-16</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9NeTUxeEI3QXJxZF9xU2ZtTUx1d2NYcWZWRUZ5MEF3U2ExNVpsRjVqeng3ZlJ0T3lzRnVldEc4NVptU2RSamNpbm5SODF0MTJqQTVSc2lHVXo4RlhoRG81S1N6cmY4dw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="건국대 대학일자리플러스사업단, ‘스마트건설기술교육’ 운영 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="머니투데이">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE0za25DV0pyUVdhUzdmNGJPZmdFRDhjZldTU3d2LURSSjdWcDJTMmtXamJDUzJ2Z2VQQUo5clc5RDRSaTEyeWxnRk1YUmRCZHJ2OGxvaFF5Y19wWXBwOTYyeG5CUldRMmN60gFuQVVfeXFMT0F6T25PTGtJRjFKRFlrZ0RQWHFNOWdpZWhyaHBUaVN5aE9naFY0RkxSZnd3UlRrby1pWFBiTU1UbmhQX09YdjhnVHh1SnVNREk5QXVFX2NxY1JEYmZwQW5Ic3NpSEpyc3hkRFE2d1E?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">타임폴리오자산운용, 12개 대학·16개 동아리에 장학금 지급 - 머니투데이 - 머니투데이</a>
+      <p class="article-card__desc">타임폴리오자산운용, 12개 대학·16개 동아리에 장학금 지급 - 머니투데이  머니투데이</p>
+      <div class="article-card__meta">
+        <span class="badge-source">머니투데이</span>
+        <span class="article-date">2026-07-16</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE0za25DV0pyUVdhUzdmNGJPZmdFRDhjZldTU3d2LURSSjdWcDJTMmtXamJDUzJ2Z2VQQUo5clc5RDRSaTEyeWxnRk1YUmRCZHJ2OGxvaFF5Y19wWXBwOTYyeG5CUldRMmN60gFuQVVfeXFMT0F6T25PTGtJRjFKRFlrZ0RQWHFNOWdpZWhyaHBUaVN5aE9naFY0RkxSZnd3UlRrby1pWFBiTU1UbmhQX09YdjhnVHh1SnVNREk5QXVFX2NxY1JEYmZwQW5Ic3NpSEpyc3hkRFE2d1E?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="타임폴리오자산운용, 12개 대학·16개 동아리에 장학금 지급 - 머니투데이 - 머니투데이 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스">
   <div class="article-card__inner">
     <div class="article-card__content">
       <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTFBhYnZJSmdiME40cWI3WWpGeXRmV3BHeDNzbE9wRlh3TkpVbzhidWlPUElyNGRpT1IyQ0prSlVidjBOUFpVV25hY1l1VWZud0J0aWlWVlQtdXp1NVXSAWBBVV95cUxOa0JXdG9VMTNncEJvX1BIY1N2Q25LRHB0ZEtpV2paUE5kaEluTFB3X3ZCUVJiQS1ONTN5VGQzbGxNeE9iQ1phZEtrdFg5bjZnVHJkdzc0OXhKNzRYNzRTYWg?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대학원생 인건비 유용 대학 교수…法 &quot;대학교에 1억여원 반환해야&quot; - 연합뉴스</a>
@@ -1359,7 +1457,7 @@
 <footer class="site-footer">
   <div class="site-footer__inner">
     <span class="site-footer__text">© 대학 기사 아카이브</span>
-    <span class="site-footer__text">총 <strong>4793</strong>개 기사 보관</span>
+    <span class="site-footer__text">총 <strong>4853</strong>개 기사 보관</span>
   </div>
 </footer>
 
