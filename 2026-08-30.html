@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026년 8월 30일 — 대학 기사 아카이브</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="./static/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="g-nav" role="navigation" aria-label="전역 내비게이션">
+  <div class="g-nav__inner">
+    <a href="./index.html" class="g-nav__brand">대학 기사 아카이브</a>
+    <div class="g-nav__right">
+      <span class="g-nav__count">총 <strong>8590</strong>개</span>
+      <a href="./search.html" class="g-nav__icon-btn" title="검색" aria-label="검색">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+          <path d="M10 6.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0zm-.687 3.02a4.5 4.5 0 1 1 .707-.707l2.834 2.833a.5.5 0 0 1-.708.708L9.313 9.52z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="s-nav" role="navigation" aria-label="날짜 내비게이션">
+  <div class="s-nav__inner">
+    <div class="s-nav__date-group">
+      <a href="./2026-08-29.html" class="s-nav__arrow" aria-label="이전 날">&#8592;</a>
+      <label class="date-pick-wrap" aria-label="날짜 선택">
+        <span class="s-nav__label">2026년 8월 30일</span>
+        <input type="date" value="2026-08-30" onchange="goToDate(this.value)" aria-label="날짜 선택">
+      </label>
+      <span class="s-nav__arrow s-nav__arrow--off" aria-hidden="true">&#8594;</span>
+      <label class="date-pick-wrap" aria-label="달력으로 날짜 선택">
+        <span class="date-pick-badge">&#128197; 날짜 선택</span>
+        <input type="date" value="2026-08-30" onchange="goToDate(this.value)" aria-label="달력 날짜 선택">
+      </label>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="hero-tile" aria-label="키워드">
+    <div class="hero-tile__inner">
+      <p class="hero-tile__eyebrow">키워드</p>
+      <h1 class="hero-tile__headline">대학</h1>
+      <p class="hero-tile__tagline" id="hero-count">24건의 기사</p>
+      <p class="hero-tile__sub">2026년 8월 30일 기준</p>
+    </div>
+  </section>
+
+  <section class="content-tile">
+    <div class="content-tile__inner">
+      <div class="section-header">
+        <div>
+          <h2 class="section-header__title">2026년 8월 30일</h2>
+          <p class="section-header__subtitle" id="sub-count">24건</p>
+        </div>
+        <div class="date-chips" role="navigation" aria-label="최근 수집일">
+          <a href="./2026-08-30.html" class="date-chip date-chip--active">2026-08-30</a><a href="./2026-08-29.html" class="date-chip">2026-08-29</a><a href="./2026-08-28.html" class="date-chip">2026-08-28</a><a href="./2026-08-27.html" class="date-chip">2026-08-27</a><a href="./2026-08-26.html" class="date-chip">2026-08-26</a><a href="./2026-08-25.html" class="date-chip">2026-08-25</a><a href="./2026-08-24.html" class="date-chip">2026-08-24</a><a href="./2026-08-23.html" class="date-chip">2026-08-23</a>
+        </div>
+      </div>
+      <div class="filter-row" role="group" aria-label="언론사 필터"><button type="button" class="filter-chip filter-chip--active" data-src="" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전체 <span class="filter-chip__count">24</span></button><button type="button" class="filter-chip" data-src="Vietnam.vn" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">Vietnam.vn</button><button type="button" class="filter-chip" data-src="v.daum.net" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">v.daum.net</button><button type="button" class="filter-chip" data-src="네이트" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">네이트</button><button type="button" class="filter-chip" data-src="노컷뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">노컷뉴스</button><button type="button" class="filter-chip" data-src="뉴스1" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴스1</button><button type="button" class="filter-chip" data-src="뉴스핌" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴스핌</button><button type="button" class="filter-chip" data-src="더퍼블릭" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">더퍼블릭</button><button type="button" class="filter-chip" data-src="메트로신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">메트로신문</button><button type="button" class="filter-chip" data-src="아시아투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">아시아투데이</button><button type="button" class="filter-chip" data-src="연합뉴스(사회)" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스(사회)</button><button type="button" class="filter-chip" data-src="이투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">이투데이</button><button type="button" class="filter-chip" data-src="파이낸셜뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">파이낸셜뉴스</button><button type="button" class="filter-chip" data-src="한국대학신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한국대학신문</button></div>
+      <div class="article-grid" role="list" aria-label="기사 목록" id="article-grid"><article class="article-card" role="listitem" data-source="v.daum.net">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE9PbU1nWE00aHpyLTdpSjRVNGN5b0M4UGUyeFJzcXN5YmpTSDE1M28zbW9NV21ySXpqcFZySTM2ZUo3UnhTbEw0SHJuZkZ5SE0?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대학 총장 140명 제주 집결…'AX 시대 생존·혁신' 해법 모색(종합) - v.daum.net</a>
+      <p class="article-card__desc">대학 총장 140명 제주 집결…'AX 시대 생존·혁신' 해법 모색(종합)  v.daum.netAX시대 고등교육은?…전국 140개 대학 총장 머리 맞댔다  뉴시스대교협 회장 &quot;등록금, 대학 자율에 맡겨야…마음대로 못 올려&quot;  연합뉴스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">v.daum.net</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE9PbU1nWE00aHpyLTdpSjRVNGN5b0M4UGUyeFJzcXN5YmpTSDE1M28zbW9NV21ySXpqcFZySTM2ZUo3UnhTbEw0SHJuZkZ5SE0?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대학 총장 140명 제주 집결…'AX 시대 생존·혁신' 해법 모색(종합) - v.daum.net 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="파이낸셜뉴스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBfVjd4dkZHejVfVzgtV2dLZWtsMVFnUURJUnk0NmZVQUZuY21hLU04MkVoZFRWQnNmODBWRFd6NXVhR19FQ0hyUlVwTTh3OVdPVE9kdXpIeDhZZw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">&quot;대학 위기는 재정 아닌 구조… AI 시대 맞춰 교육·연구 다시 설계해야&quot; - 파이낸셜뉴스</a>
+      <p class="article-card__desc">&quot;대학 위기는 재정 아닌 구조… AI 시대 맞춰 교육·연구 다시 설계해야&quot;  파이낸셜뉴스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">파이낸셜뉴스</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBfVjd4dkZHejVfVzgtV2dLZWtsMVFnUURJUnk0NmZVQUZuY21hLU04MkVoZFRWQnNmODBWRFd6NXVhR19FQ0hyUlVwTTh3OVdPVE9kdXpIeDhZZw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="&quot;대학 위기는 재정 아닌 구조… AI 시대 맞춰 교육·연구 다시 설계해야&quot; - 파이낸셜뉴스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9GVjJwa0RkdG1PSVFidWd2Tk42aEpCaVRXVHMtVE4xa1BDSWpUamFLcGU3THhXdUplVDNpbFdVMGFxcnJBcDU1cV8zV1NkZHp2ZWdZeWR2OE0ta2tTXzA1VVJ6VzRfUQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">전국 140개 대학 총장들 한자리에… 교육부, 고등교육 정책 방향 공개 - 한국대학신문</a>
+      <p class="article-card__desc">전국 140개 대학 총장들 한자리에… 교육부, 고등교육 정책 방향 공개  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9GVjJwa0RkdG1PSVFidWd2Tk42aEpCaVRXVHMtVE4xa1BDSWpUamFLcGU3THhXdUplVDNpbFdVMGFxcnJBcDU1cV8zV1NkZHp2ZWdZeWR2OE0ta2tTXzA1VVJ6VzRfUQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="전국 140개 대학 총장들 한자리에… 교육부, 고등교육 정책 방향 공개 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="아시아투데이">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBOYkRXQ1V3aGJhRkc1eGdaV3J4Yjk4eWpJbTdkV3MyQ0FPUWxfZkxuNjNmSGtxdXFEVGdOYmRRbFRKeWpYX0syN3hmeWNHY2dLNG81c2JWVllkYkQ5dFU2NE5fWWJSZ3RvQmc2em1n?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">“대학도 AX 시대 대응해야”…재정 문제 잇단 질의 - 아시아투데이</a>
+      <p class="article-card__desc">“대학도 AX 시대 대응해야”…재정 문제 잇단 질의  아시아투데이</p>
+      <div class="article-card__meta">
+        <span class="badge-source">아시아투데이</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBOYkRXQ1V3aGJhRkc1eGdaV3J4Yjk4eWpJbTdkV3MyQ0FPUWxfZkxuNjNmSGtxdXFEVGdOYmRRbFRKeWpYX0syN3hmeWNHY2dLNG81c2JWVllkYkQ5dFU2NE5fWWJSZ3RvQmc2em1n?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="“대학도 AX 시대 대응해야”…재정 문제 잇단 질의 - 아시아투데이 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="뉴스핌">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE9hU0RLODBPTjFXMzhNOVFKTGZWV3lBemY2T0pycUNhNGlLNHhtYmtVLU9DSmk1UUdJWURIRHRRdFJEUGdzRHgyc0g5NUtPQmR2T2ttcVlSUjRsWmZS?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대교협 &quot;등록금 자율에 맡기고 대학 믿어달라&quot;…고등교육 재정 확충도 촉구 - 뉴스핌</a>
+      <p class="article-card__desc">대교협 &quot;등록금 자율에 맡기고 대학 믿어달라&quot;…고등교육 재정 확충도 촉구  뉴스핌</p>
+      <div class="article-card__meta">
+        <span class="badge-source">뉴스핌</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE9hU0RLODBPTjFXMzhNOVFKTGZWV3lBemY2T0pycUNhNGlLNHhtYmtVLU9DSmk1UUdJWURIRHRRdFJEUGdzRHgyc0g5NUtPQmR2T2ttcVlSUjRsWmZS?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대교협 &quot;등록금 자율에 맡기고 대학 믿어달라&quot;…고등교육 재정 확충도 촉구 - 뉴스핌 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="메트로신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOdUdKYW4yczd2TE02MklBR2ZrNEREdHMzMzdnWGtKRzVZNDVHMU5nMlFPOUlGajB2d04ySFVKTFZXdjFZSkhFUWlsTEUzbkMzZ1dMU21DLV9rSldETy1iXw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">경남정보대, ‘B-CON 크로스 미디어’ 교육 대학 선정 - 메트로신문</a>
+      <p class="article-card__desc">경남정보대, ‘B-CON 크로스 미디어’ 교육 대학 선정  메트로신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">메트로신문</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOdUdKYW4yczd2TE02MklBR2ZrNEREdHMzMzdnWGtKRzVZNDVHMU5nMlFPOUlGajB2d04ySFVKTFZXdjFZSkhFUWlsTEUzbkMzZ1dMU21DLV9rSldETy1iXw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="경남정보대, ‘B-CON 크로스 미디어’ 교육 대학 선정 - 메트로신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="이투데이">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE1aTkd3cjFBZmMtWVFOTGl2VEl3VUhEeVBtWk1ZNjdJZTd1R1lJamY3ODliM1lXaFlmS3pnMm5iM2Z1Q0syOENFRm1mTW9lbUlOM2hOVA?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">&quot;첨단교육 해야 하는데 시설은 노후화&quot;⋯대학 총장들, 미래대응기금 활용 촉구 - 이투데이</a>
+      <p class="article-card__desc">&quot;첨단교육 해야 하는데 시설은 노후화&quot;⋯대학 총장들, 미래대응기금 활용 촉구  이투데이</p>
+      <div class="article-card__meta">
+        <span class="badge-source">이투데이</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE1aTkd3cjFBZmMtWVFOTGl2VEl3VUhEeVBtWk1ZNjdJZTd1R1lJamY3ODliM1lXaFlmS3pnMm5iM2Z1Q0syOENFRm1mTW9lbUlOM2hOVA?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="&quot;첨단교육 해야 하는데 시설은 노후화&quot;⋯대학 총장들, 미래대응기금 활용 촉구 - 이투데이 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="아시아투데이">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE53Y2Rza21JSVlXZjNQUThtczVSd3lIUGNoQ0k4RjVwcTlZQmkzWkEtWk14R2ZoVG5KOVAtTzN6bS1sNk40ZGY1NWI5cVQzMzFnUDBhRFBFUVhOQmFiOVo5aWkzakM0SWoySVRnT1Nn?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">국립경국대학교 공공수요인재대학, 2027학년도 수시모집 - 아시아투데이</a>
+      <p class="article-card__desc">국립경국대학교 공공수요인재대학, 2027학년도 수시모집  아시아투데이</p>
+      <div class="article-card__meta">
+        <span class="badge-source">아시아투데이</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE53Y2Rza21JSVlXZjNQUThtczVSd3lIUGNoQ0k4RjVwcTlZQmkzWkEtWk14R2ZoVG5KOVAtTzN6bS1sNk40ZGY1NWI5cVQzMzFnUDBhRFBFUVhOQmFiOVo5aWkzakM0SWoySVRnT1Nn?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="국립경국대학교 공공수요인재대학, 2027학년도 수시모집 - 아시아투데이 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBoSnZWYXp0aVlmLUlDclFTM2hGcHNBMER4azJoX3dXOGFrSGhlNlZTbFdvQndSeUdnaWNJNEdFX2N0QW1sbkFIWmdjdlVTaTNKSEtrZVFicEhUdlZ0bENxZmpGdzZFZw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">총장들 한목소리 “미래대응기금, 고등교육에도 충분히 투자해야… 시설·장비 시급” - 한국대학신문</a>
+      <p class="article-card__desc">총장들 한목소리 “미래대응기금, 고등교육에도 충분히 투자해야… 시설·장비 시급”  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBoSnZWYXp0aVlmLUlDclFTM2hGcHNBMER4azJoX3dXOGFrSGhlNlZTbFdvQndSeUdnaWNJNEdFX2N0QW1sbkFIWmdjdlVTaTNKSEtrZVFicEhUdlZ0bENxZmpGdzZFZw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="총장들 한목소리 “미래대응기금, 고등교육에도 충분히 투자해야… 시설·장비 시급” - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="뉴스1">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1OQm5ZUGtraUx3MVdjMkR1a0xibzNScDFtcTFpRDIzdEhZa1ZjeDF3dVBLeGFJLXc5LUY2MzRsREpnYUM2OUJpVG9JQjlIVEUxNEt1NXJYOFFWZ9IBX0FVX3lxTE5KTnFycUZ5YjJ5SXMtQWpJZjFkMTdvZ09CMXRQeERETjB1R0ZyRlFNZ3pEQUpScjJEQWg4YUtjMzRPUHhzWkJCMkhBdGJpbDZOYXBkZnJiU2o3SEZLc1pZ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대학 총장들 &quot;AI 전환, 대학 돈만으론 안 돼…정부가 인프라 투자해야&quot; - 뉴스1</a>
+      <p class="article-card__desc">대학 총장들 &quot;AI 전환, 대학 돈만으론 안 돼…정부가 인프라 투자해야&quot;  뉴스1</p>
+      <div class="article-card__meta">
+        <span class="badge-source">뉴스1</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1OQm5ZUGtraUx3MVdjMkR1a0xibzNScDFtcTFpRDIzdEhZa1ZjeDF3dVBLeGFJLXc5LUY2MzRsREpnYUM2OUJpVG9JQjlIVEUxNEt1NXJYOFFWZ9IBX0FVX3lxTE5KTnFycUZ5YjJ5SXMtQWpJZjFkMTdvZ09CMXRQeERETjB1R0ZyRlFNZ3pEQUpScjJEQWg4YUtjMzRPUHhzWkJCMkhBdGJpbDZOYXBkZnJiU2o3SEZLc1pZ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대학 총장들 &quot;AI 전환, 대학 돈만으론 안 돼…정부가 인프라 투자해야&quot; - 뉴스1 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="이투데이">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE5RMzhPcnpXZFdCcGwwVldEcmV3dFlMWWJ1LXVXSWhETGhoR0xDZkJJSWxwTTZReC1PZlo3MkdUZC1ZQ1NwWXpsbE1YaDZQb000WExUbw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">“AI 시대 대학 다시 설계해야”⋯140개 대학 총장 모여 해법 논의 - 이투데이</a>
+      <p class="article-card__desc">“AI 시대 대학 다시 설계해야”⋯140개 대학 총장 모여 해법 논의  이투데이</p>
+      <div class="article-card__meta">
+        <span class="badge-source">이투데이</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE5RMzhPcnpXZFdCcGwwVldEcmV3dFlMWWJ1LXVXSWhETGhoR0xDZkJJSWxwTTZReC1PZlo3MkdUZC1ZQ1NwWXpsbE1YaDZQb000WExUbw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="“AI 시대 대학 다시 설계해야”⋯140개 대학 총장 모여 해법 논의 - 이투데이 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="뉴스1">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1YdDJnT3NWUGc3MUxudWZZaC1KMWE2cHlfUHJId2h4ZExHR2tMc1Rjckg0RWdBaE93cmdNekxzMnZMd0tRU1VrWVdtX0hWOVVuVE01V3preHl3Z9IBX0FVX3lxTE1jYWFlUXFmWnFJcHJhZkxrdU9sbWxqRW11Yi1maDFLcDhUaWRXNGx2MjN6U2M3XzB3akVEVW5fYmRnMWdsaVVvVVRPb0R2eWowVjBtQmpzQTBQWG94YXV3?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대학 총장 140명 제주 집결…'AX 시대 생존·혁신' 해법 모색(종합) - 뉴스1</a>
+      <p class="article-card__desc">대학 총장 140명 제주 집결…'AX 시대 생존·혁신' 해법 모색(종합)  뉴스1</p>
+      <div class="article-card__meta">
+        <span class="badge-source">뉴스1</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1YdDJnT3NWUGc3MUxudWZZaC1KMWE2cHlfUHJId2h4ZExHR2tMc1Rjckg0RWdBaE93cmdNekxzMnZMd0tRU1VrWVdtX0hWOVVuVE01V3preHl3Z9IBX0FVX3lxTE1jYWFlUXFmWnFJcHJhZkxrdU9sbWxqRW11Yi1maDFLcDhUaWRXNGx2MjN6U2M3XzB3akVEVW5fYmRnMWdsaVVvVVRPb0R2eWowVjBtQmpzQTBQWG94YXV3?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대학 총장 140명 제주 집결…'AX 시대 생존·혁신' 해법 모색(종합) - 뉴스1 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="이투데이">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9Ud29SY3F1SDBpaWZjV2QyaWoxckJJQkp1djZxQld1TEZidnVnVjJBSUJSSmdWaTZNY2hNaWpIOFZRdjJRYTRPZjU5dzE4UTh6cm1DNg?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대학 총장들 “고등교육 투자 늘려야”⋯정부에 지원 확대 건의 - 이투데이</a>
+      <p class="article-card__desc">대학 총장들 “고등교육 투자 늘려야”⋯정부에 지원 확대 건의  이투데이</p>
+      <div class="article-card__meta">
+        <span class="badge-source">이투데이</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9Ud29SY3F1SDBpaWZjV2QyaWoxckJJQkp1djZxQld1TEZidnVnVjJBSUJSSmdWaTZNY2hNaWpIOFZRdjJRYTRPZjU5dzE4UTh6cm1DNg?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대학 총장들 “고등교육 투자 늘려야”⋯정부에 지원 확대 건의 - 이투데이 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="노컷뉴스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFBTVG4tbS1HV3EwUVN3VFVtRXBSTXhCdDBaYW1YdG1KZm9MSzcyQU44WGI2RHZwY0VWT0ZENlRQYmYteU8tc2lzWGpUa2V2QXpLSXc?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">'인공지능 전환시대, 대학 교육은'…대교협 하계세미나 - 노컷뉴스</a>
+      <p class="article-card__desc">'인공지능 전환시대, 대학 교육은'…대교협 하계세미나  노컷뉴스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">노컷뉴스</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFBTVG4tbS1HV3EwUVN3VFVtRXBSTXhCdDBaYW1YdG1KZm9MSzcyQU44WGI2RHZwY0VWT0ZENlRQYmYteU8tc2lzWGpUa2V2QXpLSXc?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="'인공지능 전환시대, 대학 교육은'…대교협 하계세미나 - 노컷뉴스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="파이낸셜뉴스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1lajA1clE4Wl9BY3JSMTJSYVBKNTdPMVZFMDJlUnh0WUtiejlpMF9OdlBRQ3hVbG1EY2Z2NTlLa0VFanRQWldzSVU2ZTJKc3pUTEhReVl3OG9oUQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">&quot;2040년 대학생 8만명 부족&quot; 정부, 한계대학 옥석 가린다 - 파이낸셜뉴스</a>
+      <p class="article-card__desc">&quot;2040년 대학생 8만명 부족&quot; 정부, 한계대학 옥석 가린다  파이낸셜뉴스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">파이낸셜뉴스</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1lajA1clE4Wl9BY3JSMTJSYVBKNTdPMVZFMDJlUnh0WUtiejlpMF9OdlBRQ3hVbG1EY2Z2NTlLa0VFanRQWldzSVU2ZTJKc3pUTEhReVl3OG9oUQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="&quot;2040년 대학생 8만명 부족&quot; 정부, 한계대학 옥석 가린다 - 파이낸셜뉴스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE94VEVTd3hIaF9Wd3ZGdUtQek9mN1Fma1BPa0tHQnZraVc1dDNLMFZpdXl3S3BJeElvZ1cwTWtCZVlVSktaYUlIUkFIZXZVWEM3bVBlZ3NnV21YWXdkUnlVUUpOa0QwUQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">최은옥 차관 “‘국립대 전액 장학금’ 갈라치기 아냐… 사립대 지원 늘리겠다” - 한국대학신문</a>
+      <p class="article-card__desc">최은옥 차관 “‘국립대 전액 장학금’ 갈라치기 아냐… 사립대 지원 늘리겠다”  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE94VEVTd3hIaF9Wd3ZGdUtQek9mN1Fma1BPa0tHQnZraVc1dDNLMFZpdXl3S3BJeElvZ1cwTWtCZVlVSktaYUlIUkFIZXZVWEM3bVBlZ3NnV21YWXdkUnlVUUpOa0QwUQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="최은옥 차관 “‘국립대 전액 장학금’ 갈라치기 아냐… 사립대 지원 늘리겠다” - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="네이트">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5RNy1MX3h5R3plN01jOFdHV01RYWdNd1d6ZFJWcHNRUmFEaktNak9MNy1VbVdfZVdEcUhqUmpWYk8tTjlzZHdGM2I2QzJweDNRMExN?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대학총장 140명 한자리에…&quot;AX시대 대학 교육·연구·운영 전면 재설계&quot; - 네이트</a>
+      <p class="article-card__desc">대학총장 140명 한자리에…&quot;AX시대 대학 교육·연구·운영 전면 재설계&quot;  네이트</p>
+      <div class="article-card__meta">
+        <span class="badge-source">네이트</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5RNy1MX3h5R3plN01jOFdHV01RYWdNd1d6ZFJWcHNRUmFEaktNak9MNy1VbVdfZVdEcUhqUmpWYk8tTjlzZHdGM2I2QzJweDNRMExN?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대학총장 140명 한자리에…&quot;AX시대 대학 교육·연구·운영 전면 재설계&quot; - 네이트 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="네이트">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9QOUxZX3VQNTV2RVdpQjM4Nnd4T3hab2g0QllqSEZXS1JNcU1zTDNHREdfSDNXdVZDMVJLNlZ6NjRlaEJSU2JMdzV4d18ybXQ0dHM0?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">교육부, '자율혁신대학' 도입 검토…사립대 규제 풀고 집중지원 - 네이트</a>
+      <p class="article-card__desc">교육부, '자율혁신대학' 도입 검토…사립대 규제 풀고 집중지원  네이트</p>
+      <div class="article-card__meta">
+        <span class="badge-source">네이트</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9QOUxZX3VQNTV2RVdpQjM4Nnd4T3hab2g0QllqSEZXS1JNcU1zTDNHREdfSDNXdVZDMVJLNlZ6NjRlaEJSU2JMdzV4d18ybXQ0dHM0?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="교육부, '자율혁신대학' 도입 검토…사립대 규제 풀고 집중지원 - 네이트 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="더퍼블릭">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE85aUlRR0FxMzg1aF9kUHdPYmVUTXVMZXFsemhQTDRpUUV0dGw2VGV1YnhLWExQWFFUbXRROVJtSTZaSlVLTHJENWphQ3FWeFdVMExzeFpZakJ3YnMxdnJpWmZUdGJmcGl6UjVV0gFvQVVfeXFMT3ZoWHZwUzg5LUZselUtYnExdzdyRHFqVjdrUHdqODhha3ZkNDFKa0wyeUJjN21EV1p0NHJSajk1bFZCaVpQZkNrOWtCNHFGSl9wTldyckZia2JtMHJubVFidi1kUmlwREFyZjJDbVlF?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">충북 4개 대학 손잡았다… 인재양성·통합돌봄 공동 추진 - 더퍼블릭</a>
+      <p class="article-card__desc">충북 4개 대학 손잡았다… 인재양성·통합돌봄 공동 추진  더퍼블릭</p>
+      <div class="article-card__meta">
+        <span class="badge-source">더퍼블릭</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE85aUlRR0FxMzg1aF9kUHdPYmVUTXVMZXFsemhQTDRpUUV0dGw2VGV1YnhLWExQWFFUbXRROVJtSTZaSlVLTHJENWphQ3FWeFdVMExzeFpZakJ3YnMxdnJpWmZUdGJmcGl6UjVV0gFvQVVfeXFMT3ZoWHZwUzg5LUZselUtYnExdzdyRHFqVjdrUHdqODhha3ZkNDFKa0wyeUJjN21EV1p0NHJSajk1bFZCaVpQZkNrOWtCNHFGSl9wTldyckZia2JtMHJubVFidi1kUmlwREFyZjJDbVlF?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="충북 4개 대학 손잡았다… 인재양성·통합돌봄 공동 추진 - 더퍼블릭 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="네이트">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTFBLazUtU04yeGhGdHZhMjBPZnRHNl9GWGlRTEJSQWhWTGJkMDBtWk40Sjc4ZkswaEtmTWdibTFSSHVsbkpycTJYRDh5OEF5SzJIRERr?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대교협 회장 &quot;등록금, 대학 자율에 맡겨야…마음대로 못 올려&quot; - 네이트</a>
+      <p class="article-card__desc">대교협 회장 &quot;등록금, 대학 자율에 맡겨야…마음대로 못 올려&quot;  네이트</p>
+      <div class="article-card__meta">
+        <span class="badge-source">네이트</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTFBLazUtU04yeGhGdHZhMjBPZnRHNl9GWGlRTEJSQWhWTGJkMDBtWk40Sjc4ZkswaEtmTWdibTFSSHVsbkpycTJYRDh5OEF5SzJIRERr?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대교협 회장 &quot;등록금, 대학 자율에 맡겨야…마음대로 못 올려&quot; - 네이트 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="Vietnam.vn">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQVjU1Zy1HbF9pMWNDOWwxZFo5VVFHdk5YT1BRcXNwRWtscG5KOUtwb3ljWTNzT0o0OF95eExXU25OTHFiYjFFSG56TzBfUWlHNF9teHhTNnQxT3A5alV5ZkVyZzc0alFwV0VPQTNnbjJ4S0QySkZBbC1YZ2l0TzhHOTFLaGIzeFZJN3JraUtqZl9ya3FQU21YRlRqTHZzY3pRNV84?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">9학년 교사들은 어떻게 하면 학생들이 대학에 진학할 가능성에 영향을 미칠 수 있을까요? - Vietnam.vn</a>
+      <p class="article-card__desc">9학년 교사들은 어떻게 하면 학생들이 대학에 진학할 가능성에 영향을 미칠 수 있을까요?  Vietnam.vn</p>
+      <div class="article-card__meta">
+        <span class="badge-source">Vietnam.vn</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQVjU1Zy1HbF9pMWNDOWwxZFo5VVFHdk5YT1BRcXNwRWtscG5KOUtwb3ljWTNzT0o0OF95eExXU25OTHFiYjFFSG56TzBfUWlHNF9teHhTNnQxT3A5alV5ZkVyZzc0alFwV0VPQTNnbjJ4S0QySkZBbC1YZ2l0TzhHOTFLaGIzeFZJN3JraUtqZl9ya3FQU21YRlRqTHZzY3pRNV84?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="9학년 교사들은 어떻게 하면 학생들이 대학에 진학할 가능성에 영향을 미칠 수 있을까요? - Vietnam.vn 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스(사회)">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://www.yna.co.kr/view/AKR20260828153600017" target="_blank" rel="noopener noreferrer" class="article-card__title">KT, 서울대·KAIST와 AI 공동연구 성과 공유</a>
+      <p class="article-card__desc">(서울=연합뉴스) 오지은 기자 = KT[030200]가 KT우면연구센터에서 서울대학교, 한국과학기술원(KAIST) 연구진과 함께  산학 공동연구...</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스(사회)</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://www.yna.co.kr/view/AKR20260828153600017" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="KT, 서울대·KAIST와 AI 공동연구 성과 공유 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스(사회)">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://www.yna.co.kr/view/AKR20260829032800530" target="_blank" rel="noopener noreferrer" class="article-card__title">대교협 회장 &quot;등록금, 대학 자율에 맡겨야…마음대로 못 올려&quot;</a>
+      <p class="article-card__desc">(제주=연합뉴스) 노재현 기자 = 한국대학교육협의회(대교협)는 대학 등록금 책정을 각 대학의 자율에 맡겨야 한다는 입장을 재차 밝혔다.</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스(사회)</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://www.yna.co.kr/view/AKR20260829032800530" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대교협 회장 &quot;등록금, 대학 자율에 맡겨야…마음대로 못 올려&quot; 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스(사회)">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://www.yna.co.kr/view/AKR20260829033500530" target="_blank" rel="noopener noreferrer" class="article-card__title">교육부, '자율혁신대학' 도입 검토…사립대 규제 풀고 집중지원</a>
+      <p class="article-card__desc">(제주=연합뉴스) 노재현 기자 = 교육부가 세계적 경쟁력을 갖춘 사립대 육성을 목표로 선별적 지원 방안을 살펴보고 있다.</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스(사회)</span>
+        <span class="article-date">2026-08-30</span>
+      </div>
+    </div>
+    <a href="https://www.yna.co.kr/view/AKR20260829033500530" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="교육부, '자율혁신대학' 도입 검토…사립대 규제 풀고 집중지원 읽기">&#8599;</a>
+  </div>
+</article></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <span class="site-footer__text">© 대학 기사 아카이브</span>
+    <span class="site-footer__text">총 <strong>8590</strong>개 기사 보관</span>
+  </div>
+</footer>
+
+<script>
+function goToDate(val) {
+  if (val) window.location.href = './' + val + '.html';
+}
+function filterBy(btn) {
+  var src = btn.dataset.src;
+  var cards = document.querySelectorAll('.article-card');
+  var count = 0;
+  cards.forEach(function(c) {
+    var show = !src || c.dataset.source === src;
+    c.style.display = show ? '' : 'none';
+    if (show) count++;
+  });
+  document.querySelectorAll('.filter-chip').forEach(function(c) {
+    c.classList.remove('filter-chip--active');
+  });
+  btn.classList.add('filter-chip--active');
+  document.getElementById('sub-count').textContent = count + '건';
+  document.getElementById('hero-count').textContent = count + '건의 기사';
+}
+</script>
+</body>
+</html>
