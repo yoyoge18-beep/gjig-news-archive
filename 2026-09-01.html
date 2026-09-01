@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026년 9월 1일 — 대학 기사 아카이브</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="./static/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="g-nav" role="navigation" aria-label="전역 내비게이션">
+  <div class="g-nav__inner">
+    <a href="./index.html" class="g-nav__brand">대학 기사 아카이브</a>
+    <div class="g-nav__right">
+      <span class="g-nav__count">총 <strong>8788</strong>개</span>
+      <a href="./search.html" class="g-nav__icon-btn" title="검색" aria-label="검색">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+          <path d="M10 6.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0zm-.687 3.02a4.5 4.5 0 1 1 .707-.707l2.834 2.833a.5.5 0 0 1-.708.708L9.313 9.52z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="s-nav" role="navigation" aria-label="날짜 내비게이션">
+  <div class="s-nav__inner">
+    <div class="s-nav__date-group">
+      <a href="./2026-08-31.html" class="s-nav__arrow" aria-label="이전 날">&#8592;</a>
+      <label class="date-pick-wrap" aria-label="날짜 선택">
+        <span class="s-nav__label">2026년 9월 1일</span>
+        <input type="date" value="2026-09-01" onchange="goToDate(this.value)" aria-label="날짜 선택">
+      </label>
+      <span class="s-nav__arrow s-nav__arrow--off" aria-hidden="true">&#8594;</span>
+      <label class="date-pick-wrap" aria-label="달력으로 날짜 선택">
+        <span class="date-pick-badge">&#128197; 날짜 선택</span>
+        <input type="date" value="2026-09-01" onchange="goToDate(this.value)" aria-label="달력 날짜 선택">
+      </label>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="hero-tile" aria-label="키워드">
+    <div class="hero-tile__inner">
+      <p class="hero-tile__eyebrow">키워드</p>
+      <h1 class="hero-tile__headline">대학</h1>
+      <p class="hero-tile__tagline" id="hero-count">55건의 기사</p>
+      <p class="hero-tile__sub">2026년 9월 1일 기준</p>
+    </div>
+  </section>
+
+  <section class="content-tile">
+    <div class="content-tile__inner">
+      <div class="section-header">
+        <div>
+          <h2 class="section-header__title">2026년 9월 1일</h2>
+          <p class="section-header__subtitle" id="sub-count">55건</p>
+        </div>
+        <div class="date-chips" role="navigation" aria-label="최근 수집일">
+          <a href="./2026-09-01.html" class="date-chip date-chip--active">2026-09-01</a><a href="./2026-08-31.html" class="date-chip">2026-08-31</a><a href="./2026-08-30.html" class="date-chip">2026-08-30</a><a href="./2026-08-29.html" class="date-chip">2026-08-29</a><a href="./2026-08-28.html" class="date-chip">2026-08-28</a><a href="./2026-08-27.html" class="date-chip">2026-08-27</a><a href="./2026-08-26.html" class="date-chip">2026-08-26</a><a href="./2026-08-25.html" class="date-chip">2026-08-25</a>
+        </div>
+      </div>
+      <div class="filter-row" role="group" aria-label="언론사 필터"><button type="button" class="filter-chip filter-chip--active" data-src="" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전체 <span class="filter-chip__count">55</span></button><button type="button" class="filter-chip" data-src="BRIC" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">BRIC</button><button type="button" class="filter-chip" data-src="Chosunbiz" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">Chosunbiz</button><button type="button" class="filter-chip" data-src="KBC광주방송" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">KBC광주방송</button><button type="button" class="filter-chip" data-src="cine21.com" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">cine21.com</button><button type="button" class="filter-chip" data-src="koreaeaglenews.com" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">koreaeaglenews.com</button><button type="button" class="filter-chip" data-src="news.nate.com" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">news.nate.com</button><button type="button" class="filter-chip" data-src="radiokorea.com" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">radiokorea.com</button><button type="button" class="filter-chip" data-src="shinailbo.co.kr" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">shinailbo.co.kr</button><button type="button" class="filter-chip" data-src="ujnews.co.kr" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">ujnews.co.kr</button><button type="button" class="filter-chip" data-src="v.daum.net" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">v.daum.net</button><button type="button" class="filter-chip" data-src="wikitree.co.kr" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">wikitree.co.kr</button><button type="button" class="filter-chip" data-src="yna.co.kr" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">yna.co.kr</button><button type="button" class="filter-chip" data-src="강원도민일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">강원도민일보</button><button type="button" class="filter-chip" data-src="경기시사투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경기시사투데이</button><button type="button" class="filter-chip" data-src="교수신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">교수신문</button><button type="button" class="filter-chip" data-src="국제신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">국제신문</button><button type="button" class="filter-chip" data-src="농수축산신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">농수축산신문</button><button type="button" class="filter-chip" data-src="머니투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">머니투데이</button><button type="button" class="filter-chip" data-src="서산포스트" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">서산포스트</button><button type="button" class="filter-chip" data-src="서울경제TV" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">서울경제TV</button><button type="button" class="filter-chip" data-src="시사저널" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">시사저널</button><button type="button" class="filter-chip" data-src="연합뉴스(사회)" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스(사회)</button><button type="button" class="filter-chip" data-src="연합뉴스TV" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스TV</button><button type="button" class="filter-chip" data-src="의학신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">의학신문</button><button type="button" class="filter-chip" data-src="전남타임스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전남타임스</button><button type="button" class="filter-chip" data-src="전자신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전자신문</button><button type="button" class="filter-chip" data-src="조선일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">조선일보</button><button type="button" class="filter-chip" data-src="중부일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">중부일보</button><button type="button" class="filter-chip" data-src="프레시안" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">프레시안</button><button type="button" class="filter-chip" data-src="한국경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한국경제</button><button type="button" class="filter-chip" data-src="한국대학신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한국대학신문</button><button type="button" class="filter-chip" data-src="헤럴드경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">헤럴드경제</button></div>
+      <div class="article-grid" role="list" aria-label="기사 목록" id="article-grid"><article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE5DSXJlNjBzdUNsU1I5Q2c3OTZ1QzdYbnEteTBkR1pKc3hFalVFbzVGRmdFNlNtQW1vQjFXSkJma0xMbFF3ZUZndEtKRDB3VkRvejQ4WkFkMjZMYWVtUERDVGZ4T0UzUQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[인사] 고려대 - 한국대학신문</a>
+      <p class="article-card__desc">[인사] 고려대  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE5DSXJlNjBzdUNsU1I5Q2c3OTZ1QzdYbnEteTBkR1pKc3hFalVFbzVGRmdFNlNtQW1vQjFXSkJma0xMbFF3ZUZndEtKRDB3VkRvejQ4WkFkMjZMYWVtUERDVGZ4T0UzUQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[인사] 고려대 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xT3gydVJQTnVDTkhpVzUyMzRmZWUyekRFOF9ockJFS2NkY2kzZVdjZXVwdm1aSTlZM2h6dFl5R0YzOG95aHlNSUY1MDlJSjRFUE4tTHNNc0hWRHk0V3dERWozNjBrQQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[인사] 우석대 - 한국대학신문</a>
+      <p class="article-card__desc">[인사] 우석대  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xT3gydVJQTnVDTkhpVzUyMzRmZWUyekRFOF9ockJFS2NkY2kzZVdjZXVwdm1aSTlZM2h6dFl5R0YzOG95aHlNSUY1MDlJSjRFUE4tTHNNc0hWRHk0V3dERWozNjBrQQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[인사] 우석대 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="news.nate.com">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5IWnNBc1dOTnhrOEt2UDBLcllCVzllcGY1UUdrNVI0cGVmYTdwdHpRWllKSHBVeUhTTk0wckdFaTlWQy16TktwQk81cko5R0xrcThn?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[속보] '유학생 살해·유기' 중국인 대학 강사는 정창성…경찰, 신상 공개 - news.nate.com</a>
+      <p class="article-card__desc">[속보] '유학생 살해·유기' 중국인 대학 강사는 정창성…경찰, 신상 공개  news.nate.com</p>
+      <div class="article-card__meta">
+        <span class="badge-source">news.nate.com</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5IWnNBc1dOTnhrOEt2UDBLcllCVzllcGY1UUdrNVI0cGVmYTdwdHpRWllKSHBVeUhTTk0wckdFaTlWQy16TktwQk81cko5R0xrcThn?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[속보] '유학생 살해·유기' 중국인 대학 강사는 정창성…경찰, 신상 공개 - news.nate.com 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="cine21.com">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xWW9UTkpBYlpoNE1BaThiYU5TQTR3TTRINWlsbjRjWXhpZ1lQNnpBbHNmcmJpdFJmc1lkY3RoNXdBMmoxbWlhejJGTFhFYzZnMXIxQ2VR?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[수시모집 대학탐방] 해외 파견 프로그램 적극 운영이 큰 강점 - 한국영상대학교 영화영상학과 - cine21.com</a>
+      <p class="article-card__desc">[수시모집 대학탐방] 해외 파견 프로그램 적극 운영이 큰 강점 - 한국영상대학교 영화영상학과  cine21.com</p>
+      <div class="article-card__meta">
+        <span class="badge-source">cine21.com</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xWW9UTkpBYlpoNE1BaThiYU5TQTR3TTRINWlsbjRjWXhpZ1lQNnpBbHNmcmJpdFJmc1lkY3RoNXdBMmoxbWlhejJGTFhFYzZnMXIxQ2VR?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[수시모집 대학탐방] 해외 파견 프로그램 적극 운영이 큰 강점 - 한국영상대학교 영화영상학과 - cine21.com 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="머니투데이">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE56Tkt5ai1zWW5tbi01Rl9PZzVRQ0Q4dllZSDBIQ205SWlOb3JUQl80YVdZU1pBTFV0amVkRHJYMDBWZEw3UDBnM0U3bWRrUXZVeFhMYUdFanBmZjVBSnBOcHNodHVSSHN0ZzRBU9IBckFVX3lxTE9keUNtVFB5ekhvdjJaYWZHRi1oYkd1M2hNSkExc25kZWY2LUFoY0lVMWFid1FfWFJLTXJKNENCSXBESzdENUxQOG95WnhTdTEySE9TcWpIbFJlVG11dU02LUdxcTRPYk1YZlVKbjlOXzZtQQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">무림, 서울대 등 8개 대학과 국내 최초 '제지공학 전공서' 출간 - 머니투데이 - 머니투데이</a>
+      <p class="article-card__desc">무림, 서울대 등 8개 대학과 국내 최초 '제지공학 전공서' 출간 - 머니투데이  머니투데이</p>
+      <div class="article-card__meta">
+        <span class="badge-source">머니투데이</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE56Tkt5ai1zWW5tbi01Rl9PZzVRQ0Q4dllZSDBIQ205SWlOb3JUQl80YVdZU1pBTFV0amVkRHJYMDBWZEw3UDBnM0U3bWRrUXZVeFhMYUdFanBmZjVBSnBOcHNodHVSSHN0ZzRBU9IBckFVX3lxTE9keUNtVFB5ekhvdjJaYWZHRi1oYkd1M2hNSkExc25kZWY2LUFoY0lVMWFid1FfWFJLTXJKNENCSXBESzdENUxQOG95WnhTdTEySE9TcWpIbFJlVG11dU02LUdxcTRPYk1YZlVKbjlOXzZtQQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="무림, 서울대 등 8개 대학과 국내 최초 '제지공학 전공서' 출간 - 머니투데이 - 머니투데이 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="ujnews.co.kr">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE5IZEhhQlp1bjNfUnpyQkxIdnVhRllFcDZBTmhkdDdxRXpHQTQwR1pfclFtWWhiY2VER05HMjV5QjhYN3UtTnY1azJ2Z0Y4Mm93RGRHck5FMEdSa3VXXzNyQ01URWdaSTUta3dsMTd3?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">울산폴리텍대학, 중장년 재취업 돕는 신재생에너지 용접인력 양성 - ujnews.co.kr</a>
+      <p class="article-card__desc">울산폴리텍대학, 중장년 재취업 돕는 신재생에너지 용접인력 양성  ujnews.co.kr</p>
+      <div class="article-card__meta">
+        <span class="badge-source">ujnews.co.kr</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE5IZEhhQlp1bjNfUnpyQkxIdnVhRllFcDZBTmhkdDdxRXpHQTQwR1pfclFtWWhiY2VER05HMjV5QjhYN3UtTnY1azJ2Z0Y4Mm93RGRHck5FMEdSa3VXXzNyQ01URWdaSTUta3dsMTd3?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="울산폴리텍대학, 중장년 재취업 돕는 신재생에너지 용접인력 양성 - ujnews.co.kr 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="yna.co.kr">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE85WFF4MUtGbk5qTGVDcGxFNnNoWjg1S0NaY3dJQjJOSUFjWklkdkdYSTRjVzVzd1lVVUVDbHZkTVUzZm50YkoweWlwZVVHTlJfY25vVTJrUjRLRVnSAWBBVV95cUxQcFFtb1lpaGJ6SUxQVml2ZUU4MG1BZVFzX09PbjNfX0Q5Ny04Wkw1R3FHRlBiVlM3aWpWc1NDQkdPOVBQNmVOWEx0VUpkVDZRQm1palMzMmFwS3E1M2hLRjc?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">中유학생 살해한 중국인 대학강사는 31세 정창성 - yna.co.kr</a>
+      <p class="article-card__desc">中유학생 살해한 중국인 대학강사는 31세 정창성  yna.co.kr</p>
+      <div class="article-card__meta">
+        <span class="badge-source">yna.co.kr</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE85WFF4MUtGbk5qTGVDcGxFNnNoWjg1S0NaY3dJQjJOSUFjWklkdkdYSTRjVzVzd1lVVUVDbHZkTVUzZm50YkoweWlwZVVHTlJfY25vVTJrUjRLRVnSAWBBVV95cUxQcFFtb1lpaGJ6SUxQVml2ZUU4MG1BZVFzX09PbjNfX0Q5Ny04Wkw1R3FHRlBiVlM3aWpWc1NDQkdPOVBQNmVOWEx0VUpkVDZRQm1palMzMmFwS3E1M2hLRjc?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="中유학생 살해한 중국인 대학강사는 31세 정창성 - yna.co.kr 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스TV">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5ieWhGMkZMTnU4U240cUFNVlF4OU4yWHlBY3VzWDJyamFrdGM4MGVBVFlrd0djQ2dfNWQxY2RGR1JDTzZNM3ZlWmJ5cTR0MTlkaTZTeHNGX0lfS3pFUDlFNjdwaWdyRWc?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[속보] ’유학생 살해’ 중국인 대학강사 정창성 신상 공개 - 연합뉴스TV</a>
+      <p class="article-card__desc">[속보] ’유학생 살해’ 중국인 대학강사 정창성 신상 공개  연합뉴스TV</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스TV</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5ieWhGMkZMTnU4U240cUFNVlF4OU4yWHlBY3VzWDJyamFrdGM4MGVBVFlrd0djQ2dfNWQxY2RGR1JDTzZNM3ZlWmJ5cTR0MTlkaTZTeHNGX0lfS3pFUDlFNjdwaWdyRWc?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[속보] ’유학생 살해’ 중국인 대학강사 정창성 신상 공개 - 연합뉴스TV 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="BRIC">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNWVpsZ2kzRG9MYmkxc2o2MUs3S2VzNmc5MDJMU0lWTVd1RVdUSUhfSlpSc3o4OVdqV19JMUxKUURrRDhkVU9uaDdmc3dvZG9hMmZPRnZJNFNUd3ZMMjJ1QVU0UDEzR2ppMnRtS2ZlNC1aVUctd2FRVEFJb3NfZTdoTQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">「대학 AI 활용 윤리 가이드라인」 안내 - BRIC</a>
+      <p class="article-card__desc">「대학 AI 활용 윤리 가이드라인」 안내  BRIC</p>
+      <div class="article-card__meta">
+        <span class="badge-source">BRIC</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNWVpsZ2kzRG9MYmkxc2o2MUs3S2VzNmc5MDJMU0lWTVd1RVdUSUhfSlpSc3o4OVdqV19JMUxKUURrRDhkVU9uaDdmc3dvZG9hMmZPRnZJNFNUd3ZMMjJ1QVU0UDEzR2ppMnRtS2ZlNC1aVUctd2FRVEFJb3NfZTdoTQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="「대학 AI 활용 윤리 가이드라인」 안내 - BRIC 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="의학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1sUFJkcHFraXJRMHJLQVRLajd0cEpmREFrUVJGVFhQbXNpUFpJWDJlbi00YTVYOXowTlN6QnJWdXVpUGhKXzRVdVFJMkp0d1V2Y01xZURtV01xQnRrbUpYdU9lTmlrODFEMVE?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">원주의과대학 이정우 교수, 국제 근감소증 전문가 그룹 GLIS 멤버 선정 - 의학신문</a>
+      <p class="article-card__desc">원주의과대학 이정우 교수, 국제 근감소증 전문가 그룹 GLIS 멤버 선정  의학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">의학신문</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1sUFJkcHFraXJRMHJLQVRLajd0cEpmREFrUVJGVFhQbXNpUFpJWDJlbi00YTVYOXowTlN6QnJWdXVpUGhKXzRVdVFJMkp0d1V2Y01xZURtV01xQnRrbUpYdU9lTmlrODFEMVE?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="원주의과대학 이정우 교수, 국제 근감소증 전문가 그룹 GLIS 멤버 선정 - 의학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE44aEhOZTFDWmplQXMyVE1WNWlYTkgyaVhvYXdRVmNvVV93SkxQMVNqczZtOUVCRktVYjZNWkJfN3VDdnRTcUswY01PUmVXT3Y5bERHU2dtN1FNbGNoYV8wWjJRbGtKQQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">삼육대, ‘수도권 청년-부울경 기업’ 잇는 취업박람회 개최 - 한국대학신문</a>
+      <p class="article-card__desc">삼육대, ‘수도권 청년-부울경 기업’ 잇는 취업박람회 개최  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE44aEhOZTFDWmplQXMyVE1WNWlYTkgyaVhvYXdRVmNvVV93SkxQMVNqczZtOUVCRktVYjZNWkJfN3VDdnRTcUswY01PUmVXT3Y5bERHU2dtN1FNbGNoYV8wWjJRbGtKQQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="삼육대, ‘수도권 청년-부울경 기업’ 잇는 취업박람회 개최 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="서울경제TV">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTFBEWVNJUzVyMnNfTGJwYlZtWGFYWENQU3ZQQzNpUHpiUFdYNU1taGphRlBLSGt5cW5QazFQd19vZnlIU2ZoODhMX2lELVdjOW9UTDJBeExYNHVWN0NLcFNOeWV0bHc?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">영남대 GUA사업단, AI 교육 혁신으로 경북권 대학 동반성장 이끈다 - 서울경제TV</a>
+      <p class="article-card__desc">영남대 GUA사업단, AI 교육 혁신으로 경북권 대학 동반성장 이끈다  서울경제TV</p>
+      <div class="article-card__meta">
+        <span class="badge-source">서울경제TV</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTFBEWVNJUzVyMnNfTGJwYlZtWGFYWENQU3ZQQzNpUHpiUFdYNU1taGphRlBLSGt5cW5QazFQd19vZnlIU2ZoODhMX2lELVdjOW9UTDJBeExYNHVWN0NLcFNOeWV0bHc?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="영남대 GUA사업단, AI 교육 혁신으로 경북권 대학 동반성장 이끈다 - 서울경제TV 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="v.daum.net">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE9idWlSYzJXTnVQU2M1NjQ5YjMxWUZVY09YYk5HclloTThXMGZvZzE0UmtZbWpOb1FpVUtSdFRrUDdmQTBJV3dyN1RkNDFPT3c?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">완전범죄 꿈꾼 '中유학생 살해' 대학강사 정창성 신상 공개 - v.daum.net</a>
+      <p class="article-card__desc">완전범죄 꿈꾼 '中유학생 살해' 대학강사 정창성 신상 공개  v.daum.net</p>
+      <div class="article-card__meta">
+        <span class="badge-source">v.daum.net</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE9idWlSYzJXTnVQU2M1NjQ5YjMxWUZVY09YYk5HclloTThXMGZvZzE0UmtZbWpOb1FpVUtSdFRrUDdmQTBJV3dyN1RkNDFPT3c?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="완전범죄 꿈꾼 '中유학생 살해' 대학강사 정창성 신상 공개 - v.daum.net 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="KBC광주방송">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5fdHRaRjJqRmptbjNlSHFzVlJOWE9WWF9TVkNTQ2NsT2ZTTUtOTUlJbllBeEVZdEQ4OTREUmFnWHBfLTJ4UzNYWF9Ja3NmdkJidHRZelBQc0ExMEQtZk9wbQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">중국인 유학생 살해·시신 훼손...31세 대학 강사 정창성 신상 공개 - KBC광주방송</a>
+      <p class="article-card__desc">중국인 유학생 살해·시신 훼손...31세 대학 강사 정창성 신상 공개  KBC광주방송</p>
+      <div class="article-card__meta">
+        <span class="badge-source">KBC광주방송</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5fdHRaRjJqRmptbjNlSHFzVlJOWE9WWF9TVkNTQ2NsT2ZTTUtOTUlJbllBeEVZdEQ4OTREUmFnWHBfLTJ4UzNYWF9Ja3NmdkJidHRZelBQc0ExMEQtZk9wbQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="중국인 유학생 살해·시신 훼손...31세 대학 강사 정창성 신상 공개 - KBC광주방송 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="국제신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOTHdIU1dKdG9zTm9LRThNWTdhd2ppN0x2Wk1RSGFiZXhtbmJMS2MzQnh1VUdJTk1aWURhR1ZlbWU5U0xwNkhyYjFlS09RZy1lMWlJaGd1aElNUy1QdDdiQjNlUHp2THVuT1U1U2JJeGd5MWtkRDVjUVg3UGJHeU1KMVpIS2JqNXNrMzA4?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">中 유학생 살해한 중국인 대학강사 신상공개…31세 정창성 - 국제신문</a>
+      <p class="article-card__desc">中 유학생 살해한 중국인 대학강사 신상공개…31세 정창성  국제신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">국제신문</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOTHdIU1dKdG9zTm9LRThNWTdhd2ppN0x2Wk1RSGFiZXhtbmJMS2MzQnh1VUdJTk1aWURhR1ZlbWU5U0xwNkhyYjFlS09RZy1lMWlJaGd1aElNUy1QdDdiQjNlUHp2THVuT1U1U2JJeGd5MWtkRDVjUVg3UGJHeU1KMVpIS2JqNXNrMzA4?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="中 유학생 살해한 중국인 대학강사 신상공개…31세 정창성 - 국제신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="Chosunbiz">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxQUlEzdlFjbjdWdWJZQ19sTXFPMEplcWJVUUh2d2FwYnhfMzVTWElUMFNRQnk5YXhVZFdiRndZanU4M2d2ZFltQjAtTENQbzRkVVNzVWduUGpjZmtLVXVOOGlfdlZuUGxlaFhmbW5ZUVJBWGI1VUh6aGN6YzQwM2hxTU05QnZZbUE5TEHSAZ4BQVVfeXFMTURkNTRtcTVZS2xSWTctMTlaR3BIZkVna2pDMk5KUTc3bm9TUFR1Yy11Yk9JTWpybTM1ZXJwczJUakNtQmNETTBhN3l3bXV6NTQ3MHVuWkx5enZfcm9EaUxNRl9qd0dqOXdzMTdOVEw5eXptaE1jRmNMQ2dCamNhcTZycjdrdmVwLXdzUk9CZ3NjbWI0Ync2cWtlYmtVQ2c?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">‘유학생 살해’ 중국인 대학강사는 31세 정창성 - 조선비즈 - Chosunbiz</a>
+      <p class="article-card__desc">‘유학생 살해’ 중국인 대학강사는 31세 정창성 - 조선비즈  Chosunbiz</p>
+      <div class="article-card__meta">
+        <span class="badge-source">Chosunbiz</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxQUlEzdlFjbjdWdWJZQ19sTXFPMEplcWJVUUh2d2FwYnhfMzVTWElUMFNRQnk5YXhVZFdiRndZanU4M2d2ZFltQjAtTENQbzRkVVNzVWduUGpjZmtLVXVOOGlfdlZuUGxlaFhmbW5ZUVJBWGI1VUh6aGN6YzQwM2hxTU05QnZZbUE5TEHSAZ4BQVVfeXFMTURkNTRtcTVZS2xSWTctMTlaR3BIZkVna2pDMk5KUTc3bm9TUFR1Yy11Yk9JTWpybTM1ZXJwczJUakNtQmNETTBhN3l3bXV6NTQ3MHVuWkx5enZfcm9EaUxNRl9qd0dqOXdzMTdOVEw5eXptaE1jRmNMQ2dCamNhcTZycjdrdmVwLXdzUk9CZ3NjbWI0Ync2cWtlYmtVQ2c?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="‘유학생 살해’ 중국인 대학강사는 31세 정창성 - 조선비즈 - Chosunbiz 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="전자신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE1zbUI2SWpBeVBlVlI3eDIxMlhpQTBLNndpYjh6YTd4YVpsNkkxeUU5YlpwblRtTGVpbXFkQVZkREphaTJEeW10dmdjVFdBdw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">계명대, 차세대 생성형 AI 플랫폼 전면 도입… “대학 교육 DX 본격화” - 전자신문</a>
+      <p class="article-card__desc">계명대, 차세대 생성형 AI 플랫폼 전면 도입… “대학 교육 DX 본격화”  전자신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">전자신문</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE1zbUI2SWpBeVBlVlI3eDIxMlhpQTBLNndpYjh6YTd4YVpsNkkxeUU5YlpwblRtTGVpbXFkQVZkREphaTJEeW10dmdjVFdBdw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="계명대, 차세대 생성형 AI 플랫폼 전면 도입… “대학 교육 DX 본격화” - 전자신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스TV">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1EeDJMSXo0aEkwT2dTcjk4dDBPTGpmYUZmNnZMTkkxZmltY0c3U1NUdWhiRFZIMTZoUWZJMjhyYTVVa2JpRkFRMUZKbXhEdm5lRnhtd0NUSVpzMFZUTWdwMGQxSFFVR1E?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">’中유학생 살해’ 중국인 대학강사 31살 정창성 신상 공개 - 연합뉴스TV</a>
+      <p class="article-card__desc">’中유학생 살해’ 중국인 대학강사 31살 정창성 신상 공개  연합뉴스TV</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스TV</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1EeDJMSXo0aEkwT2dTcjk4dDBPTGpmYUZmNnZMTkkxZmltY0c3U1NUdWhiRFZIMTZoUWZJMjhyYTVVa2JpRkFRMUZKbXhEdm5lRnhtd0NUSVpzMFZUTWdwMGQxSFFVR1E?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="’中유학생 살해’ 중국인 대학강사 31살 정창성 신상 공개 - 연합뉴스TV 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="cine21.com">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1IMHRfTVY0MUp4b01hSGNZV0tkNGlQRHVKZlkzRXVBMk1QUzZYUzdxMzktcVNyenJZeVNWMnNLR2kzVnlRMFNmMDJiQUFqOGpPLXJBN2JB?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[인터뷰] 제작부터 마케팅까지 경험한다 - 이유정 한국영상대학교 영화영상학과 23학번 재학생 - cine21.com</a>
+      <p class="article-card__desc">[인터뷰] 제작부터 마케팅까지 경험한다 - 이유정 한국영상대학교 영화영상학과 23학번 재학생  cine21.com</p>
+      <div class="article-card__meta">
+        <span class="badge-source">cine21.com</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1IMHRfTVY0MUp4b01hSGNZV0tkNGlQRHVKZlkzRXVBMk1QUzZYUzdxMzktcVNyenJZeVNWMnNLR2kzVnlRMFNmMDJiQUFqOGpPLXJBN2JB?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[인터뷰] 제작부터 마케팅까지 경험한다 - 이유정 한국영상대학교 영화영상학과 23학번 재학생 - cine21.com 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="서울경제TV">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE1GN3gtLXJYbWcwcFVrRzBPVVM0RWNOd3RIZ3pCUnhxVzBBeElRZVE1RnF6ODhDeXdYZ3RJWFNNc3d2ZTdzZlVKeWJSOXpQZUs2OWN0NzBwdU9iVllCZTFjN091MFg?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대구대 등 지역 3개 대학, ‘2026 SNS 마케팅지도사 자격과정 캠프’ 공동 개최 - 서울경제TV</a>
+      <p class="article-card__desc">대구대 등 지역 3개 대학, ‘2026 SNS 마케팅지도사 자격과정 캠프’ 공동 개최  서울경제TV</p>
+      <div class="article-card__meta">
+        <span class="badge-source">서울경제TV</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE1GN3gtLXJYbWcwcFVrRzBPVVM0RWNOd3RIZ3pCUnhxVzBBeElRZVE1RnF6ODhDeXdYZ3RJWFNNc3d2ZTdzZlVKeWJSOXpQZUs2OWN0NzBwdU9iVllCZTFjN091MFg?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대구대 등 지역 3개 대학, ‘2026 SNS 마케팅지도사 자격과정 캠프’ 공동 개최 - 서울경제TV 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="cine21.com">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1odktQR25XdDJzZm52OUJWWWZQNkl3Tmk5OUVYQnl3bFcyYWFzeWN0YnVHbVAta2tCS2d3RU1hX0FUbXAyQ2NERGlNWThFaW0yZ3VzZVpB?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[수시모집 대학탐방] 문화예술 전반의 최고 전문가를 키운다 - 정화예술대학교 융합예술학부 - cine21.com</a>
+      <p class="article-card__desc">[수시모집 대학탐방] 문화예술 전반의 최고 전문가를 키운다 - 정화예술대학교 융합예술학부  cine21.com</p>
+      <div class="article-card__meta">
+        <span class="badge-source">cine21.com</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1odktQR25XdDJzZm52OUJWWWZQNkl3Tmk5OUVYQnl3bFcyYWFzeWN0YnVHbVAta2tCS2d3RU1hX0FUbXAyQ2NERGlNWThFaW0yZ3VzZVpB?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[수시모집 대학탐방] 문화예술 전반의 최고 전문가를 키운다 - 정화예술대학교 융합예술학부 - cine21.com 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE4xY1dzZWxyUnViQXF2eXo4OEtSUGRWUjVNNHl1cUx2QXo0dUlJWlZjUkRsOU1uc1JicW1UZ3RWeG0tdnBMNGdLLTNwdHcyNUEtQV9wbW1ycUNjQzJrcHY0UmtMa2IyUQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[인사] 부산대 - 한국대학신문</a>
+      <p class="article-card__desc">[인사] 부산대  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE4xY1dzZWxyUnViQXF2eXo4OEtSUGRWUjVNNHl1cUx2QXo0dUlJWlZjUkRsOU1uc1JicW1UZ3RWeG0tdnBMNGdLLTNwdHcyNUEtQV9wbW1ycUNjQzJrcHY0UmtMa2IyUQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[인사] 부산대 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE5yWlZ4c3Jtb1JST0lWSnVSUEdUamFCSUJLN2JGZ0JuMmVyV2E5YjVKUHV1YlVMQk1paXpzaDAySl9hck1TXzV0MW1WT3hSZkU1YlhQWjUtM0NfblFVdkl1elZXU3h2UQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[인사] 이화여대 - 한국대학신문</a>
+      <p class="article-card__desc">[인사] 이화여대  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE5yWlZ4c3Jtb1JST0lWSnVSUEdUamFCSUJLN2JGZ0JuMmVyV2E5YjVKUHV1YlVMQk1paXpzaDAySl9hck1TXzV0MW1WT3hSZkU1YlhQWjUtM0NfblFVdkl1elZXU3h2UQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[인사] 이화여대 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9WSnFraVdJN050eE9WQkRCV3hacE9BVHl3enZKTlFYOXFiSGN4UktXbGdKazByVTYtRWtXVFhKclN4d3c0TW5MbWlHLVlDVmdBVElsRmhZZi1zbG1NRU1GbnlnZEtPZw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[인사] 건국대 - 한국대학신문</a>
+      <p class="article-card__desc">[인사] 건국대  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9WSnFraVdJN050eE9WQkRCV3hacE9BVHl3enZKTlFYOXFiSGN4UktXbGdKazByVTYtRWtXVFhKclN4d3c0TW5MbWlHLVlDVmdBVElsRmhZZi1zbG1NRU1GbnlnZEtPZw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[인사] 건국대 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE5nZlV4QlZST2J5TmtJNXpycjBCTjA5aXJGOE9NdnFwdFlSNUg1VVhkc3VKMGVXeWtYMDNrOWRKMXhkMjlzVFIyYU5TQ1dWWmU2UVFCaFhqWW83YWh3WTItSmExWTc0dw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[인사] 호서대 - 한국대학신문</a>
+      <p class="article-card__desc">[인사] 호서대  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE5nZlV4QlZST2J5TmtJNXpycjBCTjA5aXJGOE9NdnFwdFlSNUg1VVhkc3VKMGVXeWtYMDNrOWRKMXhkMjlzVFIyYU5TQ1dWWmU2UVFCaFhqWW83YWh3WTItSmExWTc0dw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[인사] 호서대 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국경제">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE12UTFxSnVNX2FWTnpWOUlyLU55YlRvejhGVmRJZ1NFRUZFaVZUWlFWb3NXd0hzTzFEbFMxTmxJUXhrV2dqOFZTMXZGSEJ5dUR4Znd1d3dwVU01UQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">中유학생 살해한 중국인 대학강사 신상공개…31세 정창성 - 한국경제</a>
+      <p class="article-card__desc">中유학생 살해한 중국인 대학강사 신상공개…31세 정창성  한국경제</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국경제</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE12UTFxSnVNX2FWTnpWOUlyLU55YlRvejhGVmRJZ1NFRUZFaVZUWlFWb3NXd0hzTzFEbFMxTmxJUXhrV2dqOFZTMXZGSEJ5dUR4Znd1d3dwVU01UQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="中유학생 살해한 중국인 대학강사 신상공개…31세 정창성 - 한국경제 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="시사저널">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE5wTl9xMnRYNG5QWWxGNzVJc3JIbGxqM1hnZ2VYU1dia2tSUVRVM29RclpZcE5KZzFLUVZvTlVDaFMybER2cmR4Zzdtc0ZEZlc3N2FMcXRaZmFEQ2xDNTZ1amRtMDVWUjFFR0t2TVR2WdIBc0FVX3lxTE9BU0hDa0hBNEZJVldBaG8xZ1d5aTJ3eTZNY19KWmMxTW4wcjRjYjVFV21SeTVNSWdoMG1PcjlRZHJDbUFIMW1sVGtVRTJhSGFYeFgtUFd5NHF1SU4zVTItTDBEdkY2TmFBWWMzaDhRdG5pZGc?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[속보] ‘20대 중국인 女유학생 살해’ 대학강사 신상 공개…31세 정창성 - 시사저널</a>
+      <p class="article-card__desc">[속보] ‘20대 중국인 女유학생 살해’ 대학강사 신상 공개…31세 정창성  시사저널</p>
+      <div class="article-card__meta">
+        <span class="badge-source">시사저널</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE5wTl9xMnRYNG5QWWxGNzVJc3JIbGxqM1hnZ2VYU1dia2tSUVRVM29RclpZcE5KZzFLUVZvTlVDaFMybER2cmR4Zzdtc0ZEZlc3N2FMcXRaZmFEQ2xDNTZ1amRtMDVWUjFFR0t2TVR2WdIBc0FVX3lxTE9BU0hDa0hBNEZJVldBaG8xZ1d5aTJ3eTZNY19KWmMxTW4wcjRjYjVFV21SeTVNSWdoMG1PcjlRZHJDbUFIMW1sVGtVRTJhSGFYeFgtUFd5NHF1SU4zVTItTDBEdkY2TmFBWWMzaDhRdG5pZGc?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[속보] ‘20대 중국인 女유학생 살해’ 대학강사 신상 공개…31세 정창성 - 시사저널 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="농수축산신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE1MV2RnMkFxalB3eTh0M3dSaUk4VnRYQzVmc0ZSR012TDVlYkNWQ1lIcUZMa0JrWmRsOVJpOFp2aW5QUGNXbkNQeTA4bmZRM1pfYXAtbUhsaGtrNGlsZnNYSnZLclZnM2ZfZ0xIWA?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">월출산농협, 여성대학 종강식 개최 - 농수축산신문</a>
+      <p class="article-card__desc">월출산농협, 여성대학 종강식 개최  농수축산신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">농수축산신문</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE1MV2RnMkFxalB3eTh0M3dSaUk4VnRYQzVmc0ZSR012TDVlYkNWQ1lIcUZMa0JrWmRsOVJpOFp2aW5QUGNXbkNQeTA4bmZRM1pfYXAtbUhsaGtrNGlsZnNYSnZLclZnM2ZfZ0xIWA?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="월출산농협, 여성대학 종강식 개최 - 농수축산신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="교수신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1LeFk4WnI5ZzZaV3dnaDFYaVhjdVJhT190OHZpbEtUaWRYWWU5TWtSNWlCOWZrNTczYkF4dHdvN24wUDBtYUdTcm00bHNFU1czOFlvbG1oM0IyTENmQ3J5VFJKTmRJVEk?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">지역대학, 배후지의 굴레 벗어나 ‘독자적 주체’로 거듭나야 - 교수신문</a>
+      <p class="article-card__desc">지역대학, 배후지의 굴레 벗어나 ‘독자적 주체’로 거듭나야  교수신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">교수신문</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1LeFk4WnI5ZzZaV3dnaDFYaVhjdVJhT190OHZpbEtUaWRYWWU5TWtSNWlCOWZrNTczYkF4dHdvN24wUDBtYUdTcm00bHNFU1czOFlvbG1oM0IyTENmQ3J5VFJKTmRJVEk?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="지역대학, 배후지의 굴레 벗어나 ‘독자적 주체’로 거듭나야 - 교수신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBMVWI1ZjM1R0l4R0tjNnFkZllqRjQ2bjNYR0tGLUJrSmp6cVE2OXdpa0lkZWw5ZGVpTWFiQXU2T3RJTXUyWGhCSXdVSEpJbGJ6c3Q4M1lBai1CQ0ZlZFdPNWxUU25Ldw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">한국기술교육대-천안시, 생성형 AI로 ‘공공행정 혁신’ 이끈다 - 한국대학신문</a>
+      <p class="article-card__desc">한국기술교육대-천안시, 생성형 AI로 ‘공공행정 혁신’ 이끈다  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBMVWI1ZjM1R0l4R0tjNnFkZllqRjQ2bjNYR0tGLUJrSmp6cVE2OXdpa0lkZWw5ZGVpTWFiQXU2T3RJTXUyWGhCSXdVSEpJbGJ6c3Q4M1lBai1CQ0ZlZFdPNWxUU25Ldw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="한국기술교육대-천안시, 생성형 AI로 ‘공공행정 혁신’ 이끈다 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="강원도민일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1SbkFCb0Y2S1AxR2hWOW8tZGZabi1WbGczTjQ0cmNOSUpEaHFWd3RFNDhRTGphOHJqcXYtdm5DcV80dlloWGg3b3FTbFIxRGFYREhUblVmRWtheHNpU0ZONEdic1NyRjA?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[속보] 수강생 살해 중국인 대학강사 31세 정창성 신상 공개 - 강원도민일보</a>
+      <p class="article-card__desc">[속보] 수강생 살해 중국인 대학강사 31세 정창성 신상 공개  강원도민일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">강원도민일보</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1SbkFCb0Y2S1AxR2hWOW8tZGZabi1WbGczTjQ0cmNOSUpEaHFWd3RFNDhRTGphOHJqcXYtdm5DcV80dlloWGg3b3FTbFIxRGFYREhUblVmRWtheHNpU0ZONEdic1NyRjA?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[속보] 수강생 살해 중국인 대학강사 31세 정창성 신상 공개 - 강원도민일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="cine21.com">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1tcHBjbEZUZUNUTko5U0poalUyVUFVWFVTdENreXRnMXBQR0lXZXdyTEpMNS1neFpoZXNzamF3MzhmS3kzQXFfVTZyUFFpLVRlMndNLWdB?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[인터뷰] 시야가 넓어지는 전문적 커리큘럼 - 한수민 정화예술대학교 융합예술학부 연기전공 25학번 재학생 - cine21.com</a>
+      <p class="article-card__desc">[인터뷰] 시야가 넓어지는 전문적 커리큘럼 - 한수민 정화예술대학교 융합예술학부 연기전공 25학번 재학생  cine21.com</p>
+      <div class="article-card__meta">
+        <span class="badge-source">cine21.com</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1tcHBjbEZUZUNUTko5U0poalUyVUFVWFVTdENreXRnMXBQR0lXZXdyTEpMNS1neFpoZXNzamF3MzhmS3kzQXFfVTZyUFFpLVRlMndNLWdB?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[인터뷰] 시야가 넓어지는 전문적 커리큘럼 - 한수민 정화예술대학교 융합예술학부 연기전공 25학번 재학생 - cine21.com 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="cine21.com">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1YS0dPYWVqbzh6a1VzbnhVY0s2V3hRalhYXzQ4NlhOSUdqRlpXNjQ2cUU5MTdlZ1VKaTNhTUNwSnVnRk9IWm5WdzB5dEZFSHhTOUVWZ21R?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[인터뷰] 공동 작업에 적합한 수업 방식에 집중 - 이원영 한국영상대학교 영화영상학과 교수 - cine21.com</a>
+      <p class="article-card__desc">[인터뷰] 공동 작업에 적합한 수업 방식에 집중 - 이원영 한국영상대학교 영화영상학과 교수  cine21.com</p>
+      <div class="article-card__meta">
+        <span class="badge-source">cine21.com</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1YS0dPYWVqbzh6a1VzbnhVY0s2V3hRalhYXzQ4NlhOSUdqRlpXNjQ2cUU5MTdlZ1VKaTNhTUNwSnVnRk9IWm5WdzB5dEZFSHhTOUVWZ21R?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[인터뷰] 공동 작업에 적합한 수업 방식에 집중 - 이원영 한국영상대학교 영화영상학과 교수 - cine21.com 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="shinailbo.co.kr">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5zOTZCY3VpdV93ZWVmcmZ1OFZIR2RsNWx6TmxTUjdQeHBBMXJLVV9rVVhoT3daSW1lckc1Tm9kLUUwSXh6cXF6UXNmWXBvNl9nVnpWR3AySm9wWmZzNVlGc1R5Q2Z0MnNWRU5HdXdkVzc?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">김남국 의원, 대학 기숙사·국공립 어린이집 확충 촉구 - shinailbo.co.kr</a>
+      <p class="article-card__desc">김남국 의원, 대학 기숙사·국공립 어린이집 확충 촉구  shinailbo.co.kr</p>
+      <div class="article-card__meta">
+        <span class="badge-source">shinailbo.co.kr</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5zOTZCY3VpdV93ZWVmcmZ1OFZIR2RsNWx6TmxTUjdQeHBBMXJLVV9rVVhoT3daSW1lckc1Tm9kLUUwSXh6cXF6UXNmWXBvNl9nVnpWR3AySm9wWmZzNVlGc1R5Q2Z0MnNWRU5HdXdkVzc?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="김남국 의원, 대학 기숙사·국공립 어린이집 확충 촉구 - shinailbo.co.kr 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFAxaWR2c0tLdDk1ZjZ3QWozZUFqMFZmTXJWZlBBUk9SWlJLOUNhODFfSTQ0MFdXMlctTDlzM05xb25lYTZJVFZXTklOMzI1MVdZdkphclZ0NENNaGdlMGhneFhYNmhvUQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">아주대, 日 교토대에 첨단에너지과학연구센터 개소…차세대 배터리 공동 연구 - 한국대학신문</a>
+      <p class="article-card__desc">아주대, 日 교토대에 첨단에너지과학연구센터 개소…차세대 배터리 공동 연구  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFAxaWR2c0tLdDk1ZjZ3QWozZUFqMFZmTXJWZlBBUk9SWlJLOUNhODFfSTQ0MFdXMlctTDlzM05xb25lYTZJVFZXTklOMzI1MVdZdkphclZ0NENNaGdlMGhneFhYNmhvUQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="아주대, 日 교토대에 첨단에너지과학연구센터 개소…차세대 배터리 공동 연구 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="헤럴드경제">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE4teFphWjlDa3RhLWIzRTRyQUk5dVlXbmdjLWlUbDZfekJVaExhZUxXSEhZNjltTWlfZUZPYWxPNmRDQVR4c1JGbTU3ZFYwTWM0QXRMVVJ3?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[속보]‘中유학생 살해’ 중국인 대학강사는 31세 정창성 - 헤럴드경제</a>
+      <p class="article-card__desc">[속보]‘中유학생 살해’ 중국인 대학강사는 31세 정창성  헤럴드경제</p>
+      <div class="article-card__meta">
+        <span class="badge-source">헤럴드경제</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE4teFphWjlDa3RhLWIzRTRyQUk5dVlXbmdjLWlUbDZfekJVaExhZUxXSEhZNjltTWlfZUZPYWxPNmRDQVR4c1JGbTU3ZFYwTWM0QXRMVVJ3?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[속보]‘中유학생 살해’ 중국인 대학강사는 31세 정창성 - 헤럴드경제 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="radiokorea.com">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5OTVlWM0hySmpYamNuYnEzWlhEZTc3cFVCWlJJSU9iZlg5Y0pEVU1hM242N0Fsc2tMcDhRT2FpWTlQMklpWE1jdnJNVjVybnJaX0RNV1p0eS01Mm8waVNHTXVpMXQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">UCLA 체육국장 교체가 보여준 현실…대학 스포츠도 ‘돈의 시대’ - radiokorea.com</a>
+      <p class="article-card__desc">UCLA 체육국장 교체가 보여준 현실…대학 스포츠도 ‘돈의 시대’  radiokorea.com</p>
+      <div class="article-card__meta">
+        <span class="badge-source">radiokorea.com</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5OTVlWM0hySmpYamNuYnEzWlhEZTc3cFVCWlJJSU9iZlg5Y0pEVU1hM242N0Fsc2tMcDhRT2FpWTlQMklpWE1jdnJNVjVybnJaX0RNV1p0eS01Mm8waVNHTXVpMXQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="UCLA 체육국장 교체가 보여준 현실…대학 스포츠도 ‘돈의 시대’ - radiokorea.com 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="조선일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE16eHpjd09ZdkdLTWczTFZPWEduVzA5V0JWZXFfdTRpX0Z6NThZRmlEazJtRXp2anpRZXFFMTRObVcyVThsc0Rub0ptUk5pZklEaFQ2YmZrZzdLSUYxTDhERVN6Y1MweFMtVVpIMEJBUmtZTVg5ODNNeFRR?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">中유학생 살해·시체 손괴한 대학강사는 31세 정창성 - 조선일보</a>
+      <p class="article-card__desc">中유학생 살해·시체 손괴한 대학강사는 31세 정창성  조선일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">조선일보</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE16eHpjd09ZdkdLTWczTFZPWEduVzA5V0JWZXFfdTRpX0Z6NThZRmlEazJtRXp2anpRZXFFMTRObVcyVThsc0Rub0ptUk5pZklEaFQ2YmZrZzdLSUYxTDhERVN6Y1MweFMtVVpIMEJBUmtZTVg5ODNNeFRR?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="中유학생 살해·시체 손괴한 대학강사는 31세 정창성 - 조선일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="cine21.com">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBmUElPZ21ZZEJhcnZzM21kR1FjVEV3VlFSRFNrZE1jQ0t5dS1aWWl1b2tGd2lGZ3RPOWNXNGlpTjBfRTg5emdDeUI5RUZhZWtWdkxGeENn?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[인터뷰] 다른 전공과의 원활한 협업이 장점 - 권상우 정화예술대학교 융합예술학부 영상제작전공 26학번 재학생 - cine21.com</a>
+      <p class="article-card__desc">[인터뷰] 다른 전공과의 원활한 협업이 장점 - 권상우 정화예술대학교 융합예술학부 영상제작전공 26학번 재학생  cine21.com</p>
+      <div class="article-card__meta">
+        <span class="badge-source">cine21.com</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBmUElPZ21ZZEJhcnZzM21kR1FjVEV3VlFSRFNrZE1jQ0t5dS1aWWl1b2tGd2lGZ3RPOWNXNGlpTjBfRTg5emdDeUI5RUZhZWtWdkxGeENn?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[인터뷰] 다른 전공과의 원활한 협업이 장점 - 권상우 정화예술대학교 융합예술학부 영상제작전공 26학번 재학생 - cine21.com 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="중부일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE5BRGI2MUg3UWlMUjZpY1ctRmFFT2RESkFGYm0tR0NzYkQ0SFhfc0hQb3BsTlFVQ1hsVnZQRUpJWDVKRl9UQ3laNDNSSml4bk8yUWtReFhraURtZF9sZzJaRng3NEoxejZIWmpJSV93?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">경복대 대학일자리플러스센터, ‘2026 남양주 Job Connect Day!’ 마무리 - 중부일보</a>
+      <p class="article-card__desc">경복대 대학일자리플러스센터, ‘2026 남양주 Job Connect Day!’ 마무리  중부일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">중부일보</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE5BRGI2MUg3UWlMUjZpY1ctRmFFT2RESkFGYm0tR0NzYkQ0SFhfc0hQb3BsTlFVQ1hsVnZQRUpJWDVKRl9UQ3laNDNSSml4bk8yUWtReFhraURtZF9sZzJaRng3NEoxejZIWmpJSV93?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="경복대 대학일자리플러스센터, ‘2026 남양주 Job Connect Day!’ 마무리 - 중부일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="프레시안">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE4tVUx4aFk5dGNTazFlaXhWUXZQUkVVczJkNlluZ3RtZ1A3RFhWT19UNkhHa2VlSUZJX2NxazNzNEFGcDNnZW83MGFET0N0aVJ4bnNhNml1Q01NNGQ2MlVBSS1RLVVsb0JTY2tr?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">강성휘 목포시장 &quot;속은 용광로, 분통 터져&quot;…의대 탈락에 '대학병원급 거점병원' 요구 - 프레시안</a>
+      <p class="article-card__desc">강성휘 목포시장 &quot;속은 용광로, 분통 터져&quot;…의대 탈락에 '대학병원급 거점병원' 요구  프레시안</p>
+      <div class="article-card__meta">
+        <span class="badge-source">프레시안</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE4tVUx4aFk5dGNTazFlaXhWUXZQUkVVczJkNlluZ3RtZ1A3RFhWT19UNkhHa2VlSUZJX2NxazNzNEFGcDNnZW83MGFET0N0aVJ4bnNhNml1Q01NNGQ2MlVBSS1RLVVsb0JTY2tr?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="강성휘 목포시장 &quot;속은 용광로, 분통 터져&quot;…의대 탈락에 '대학병원급 거점병원' 요구 - 프레시안 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="경기시사투데이">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE0tanRfRVdmbEhUQlVIMGY5NmNTemRLb09aVVFySTRDdjZFLV9RcDg5WVZ3c3ZCcFFfbjAtR3E5bU9SNUx5TTgtSUczbFREVEdIaE1fbWlLbnN1Um12ZFBWcGEwcXJ4eVBG?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">이천시–서강대 연계, 양정여고 학생 반도체 대학 탐방 실시 - 경기시사투데이</a>
+      <p class="article-card__desc">이천시–서강대 연계, 양정여고 학생 반도체 대학 탐방 실시  경기시사투데이</p>
+      <div class="article-card__meta">
+        <span class="badge-source">경기시사투데이</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE0tanRfRVdmbEhUQlVIMGY5NmNTemRLb09aVVFySTRDdjZFLV9RcDg5WVZ3c3ZCcFFfbjAtR3E5bU9SNUx5TTgtSUczbFREVEdIaE1fbWlLbnN1Um12ZFBWcGEwcXJ4eVBG?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="이천시–서강대 연계, 양정여고 학생 반도체 대학 탐방 실시 - 경기시사투데이 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="전남타임스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBRUjZoRlVWYTYtVC1hRzhvTDhyTERsNnR5MFVKN2N6NVNvRUVNT085ZmgxemQ1aFlrSmlkWURXekllRzNVOFMzZ0VoS1pnMXB3WXlPSm42ZS1NcXpFeTFmeWVZZm1uZw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">무안군, 목포대 국립의대 후보대학 탈락에 유감 표명 - 전남타임스</a>
+      <p class="article-card__desc">무안군, 목포대 국립의대 후보대학 탈락에 유감 표명  전남타임스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">전남타임스</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBRUjZoRlVWYTYtVC1hRzhvTDhyTERsNnR5MFVKN2N6NVNvRUVNT085ZmgxemQ1aFlrSmlkWURXekllRzNVOFMzZ0VoS1pnMXB3WXlPSm42ZS1NcXpFeTFmeWVZZm1uZw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="무안군, 목포대 국립의대 후보대학 탈락에 유감 표명 - 전남타임스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="wikitree.co.kr">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1lbTB2YzJ0eGo0bld6R1VlRGI4MGtSNmpEQWNvYWpaT0pGeU1JbjF0WFFvcG5yNC1GMFRrQmZtWk44Q2dSOE1rSmtxUDMtcHFyakNBcnNn?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">중국인 유학생 살해 후 시신 훼손한 중국인 대학강사는 '31세 정창성' - wikitree.co.kr</a>
+      <p class="article-card__desc">중국인 유학생 살해 후 시신 훼손한 중국인 대학강사는 '31세 정창성'  wikitree.co.kr</p>
+      <div class="article-card__meta">
+        <span class="badge-source">wikitree.co.kr</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1lbTB2YzJ0eGo0bld6R1VlRGI4MGtSNmpEQWNvYWpaT0pGeU1JbjF0WFFvcG5yNC1GMFRrQmZtWk44Q2dSOE1rSmtxUDMtcHFyakNBcnNn?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="중국인 유학생 살해 후 시신 훼손한 중국인 대학강사는 '31세 정창성' - wikitree.co.kr 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="서산포스트">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBBbkc0bDlVQU5iSDVLV0N1eTlQc05zSkhJN19pNzlrM3BBV1dRWllXeElPcnB1bW5LTVBkenRYbGlzUFkwVXVTV0xBeWdBYVA1LWM5Z3I0Vkx2MW9hUzIxSXpFSHBqeEJpUVctclNzbw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">이완섭 서산시장, 보훈복지문화대학 특강 ‘보훈가족과 소통’ - 서산포스트</a>
+      <p class="article-card__desc">이완섭 서산시장, 보훈복지문화대학 특강 ‘보훈가족과 소통’  서산포스트</p>
+      <div class="article-card__meta">
+        <span class="badge-source">서산포스트</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBBbkc0bDlVQU5iSDVLV0N1eTlQc05zSkhJN19pNzlrM3BBV1dRWllXeElPcnB1bW5LTVBkenRYbGlzUFkwVXVTV0xBeWdBYVA1LWM5Z3I0Vkx2MW9hUzIxSXpFSHBqeEJpUVctclNzbw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="이완섭 서산시장, 보훈복지문화대학 특강 ‘보훈가족과 소통’ - 서산포스트 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBCWHVJSVJJaDFwWENmQmY0U3NhenhRcWcyWElTQm12TXMwc09LU1QwRDhOX1JtUVVad2VrRW9sSUFvQUFmN3ItR1JFT2dlTV84WFRTNG42YkFubkZyRDJGRkJnNmQtZw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">한국사학진흥재단, 광양보건대 학사 관련 증명서 발급 서비스 개시 - 한국대학신문</a>
+      <p class="article-card__desc">한국사학진흥재단, 광양보건대 학사 관련 증명서 발급 서비스 개시  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBCWHVJSVJJaDFwWENmQmY0U3NhenhRcWcyWElTQm12TXMwc09LU1QwRDhOX1JtUVVad2VrRW9sSUFvQUFmN3ItR1JFT2dlTV84WFRTNG42YkFubkZyRDJGRkJnNmQtZw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="한국사학진흥재단, 광양보건대 학사 관련 증명서 발급 서비스 개시 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="헤럴드경제">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE5JT1d0bXpULXpTMFhYN2ZpaDBOOVo4SExjdDJYaTM2NnRCRDljRU9vNTdxa2ZWUWVWWVM5THdXXzZfWnA3SWlDODJqYTJTcGNESHpvOFp3?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대구대 등 지역 3개 대학, 2026 SNS 마케팅지도사 자격과정 캠프 공동 개최 - 헤럴드경제</a>
+      <p class="article-card__desc">대구대 등 지역 3개 대학, 2026 SNS 마케팅지도사 자격과정 캠프 공동 개최  헤럴드경제</p>
+      <div class="article-card__meta">
+        <span class="badge-source">헤럴드경제</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE5JT1d0bXpULXpTMFhYN2ZpaDBOOVo4SExjdDJYaTM2NnRCRDljRU9vNTdxa2ZWUWVWWVM5THdXXzZfWnA3SWlDODJqYTJTcGNESHpvOFp3?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대구대 등 지역 3개 대학, 2026 SNS 마케팅지도사 자격과정 캠프 공동 개최 - 헤럴드경제 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9EZ1hSdmc0WnpaVGRnbjlBSUVJRFhNV3dkOGF6VWJNQjkxekQ0bEpuSWlPT1E4MWpQR2RQdTB6NGdtSWRVdU44bWZSZ0pRYWdWSFlqUGpSR1dVXzdQMHRxY2lsS0g0dw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">송하철 목포대 총장, ‘국립의대 유치 무산’ 책임지고 사의 표명 - 한국대학신문</a>
+      <p class="article-card__desc">송하철 목포대 총장, ‘국립의대 유치 무산’ 책임지고 사의 표명  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9EZ1hSdmc0WnpaVGRnbjlBSUVJRFhNV3dkOGF6VWJNQjkxekQ0bEpuSWlPT1E4MWpQR2RQdTB6NGdtSWRVdU44bWZSZ0pRYWdWSFlqUGpSR1dVXzdQMHRxY2lsS0g0dw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="송하철 목포대 총장, ‘국립의대 유치 무산’ 책임지고 사의 표명 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="koreaeaglenews.com">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE9BLU0yWmJTYVhtNk9pSGI5M2VPSDJpb29jWE5Pc3VfTVE2azRUUHhtRmJMN1hMTGdvS0VDZm5BaEtudDlaYjZIU2tCeGd0WDF1YXpnb0E3REl3Wm5LUWFsV0FYSmFiS2pwd05ieGtDY2Q2MWM?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">경상남도, 대학·기업 협력 ‘교육→연구→채용→정주’로 확대 - koreaeaglenews.com</a>
+      <p class="article-card__desc">경상남도, 대학·기업 협력 ‘교육→연구→채용→정주’로 확대  koreaeaglenews.com</p>
+      <div class="article-card__meta">
+        <span class="badge-source">koreaeaglenews.com</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE9BLU0yWmJTYVhtNk9pSGI5M2VPSDJpb29jWE5Pc3VfTVE2azRUUHhtRmJMN1hMTGdvS0VDZm5BaEtudDlaYjZIU2tCeGd0WDF1YXpnb0E3REl3Wm5LUWFsV0FYSmFiS2pwd05ieGtDY2Q2MWM?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="경상남도, 대학·기업 협력 ‘교육→연구→채용→정주’로 확대 - koreaeaglenews.com 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스(사회)">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://www.yna.co.kr/view/AKR20260901067400704" target="_blank" rel="noopener noreferrer" class="article-card__title">[영상] '中 유학생 살해' 중국인 대학강사 신상공개…31세 정창성</a>
+      <p class="article-card__desc">(서울=연합뉴스) 왼손에 검은색 비닐봉지를 들고 휴대전화를 보며 어디론가 이동하는 남성.</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스(사회)</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://www.yna.co.kr/view/AKR20260901067400704" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[영상] '中 유학생 살해' 중국인 대학강사 신상공개…31세 정창성 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스(사회)">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://www.yna.co.kr/view/AKR20260901053500065" target="_blank" rel="noopener noreferrer" class="article-card__title">인하대·조선 3사, 극지 운항 선박 핵심기술 개발 추진</a>
+      <p class="article-card__desc">(인천=연합뉴스) 홍현기 기자 = 인하대학교는 김유일 조선해양공학과 교수 연구팀이 국내 대형 조선 3사와 함께 극지 운항 선박의 핵심기술을 개발...</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스(사회)</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://www.yna.co.kr/view/AKR20260901053500065" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="인하대·조선 3사, 극지 운항 선박 핵심기술 개발 추진 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스(사회)">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://www.yna.co.kr/view/AKR20260901050400051" target="_blank" rel="noopener noreferrer" class="article-card__title">[인사] 부산대학교</a>
+      <p class="article-card__desc">▲ 학부대학장 이형우 ▲ 입학부처장 손성애 ▲ 미래시민교육원장 최진아 ▲ 효원상담원장 이동형 ▲ 공과대학·산업대학원·환경대학원·기술창업대학원·데...</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스(사회)</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://www.yna.co.kr/view/AKR20260901050400051" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[인사] 부산대학교 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스(사회)">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://www.yna.co.kr/view/AKR20260901043400062" target="_blank" rel="noopener noreferrer" class="article-card__title">[인사] 강원대학교</a>
+      <p class="article-card__desc">◇ 총장 및 보직</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스(사회)</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://www.yna.co.kr/view/AKR20260901043400062" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[인사] 강원대학교 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스(사회)">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://www.yna.co.kr/view/AKR20260901042400053" target="_blank" rel="noopener noreferrer" class="article-card__title">中유학생 살해한 중국인 대학강사는 31세 정창성</a>
+      <p class="article-card__desc">(경산=연합뉴스) 김선형 기자 = 자신의 강의를 수강한 중국인 여성 유학생을 살해하고 시신을 훼손한 혐의(살인·시체손괴 등)로 구속된 중국인 대...</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스(사회)</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://www.yna.co.kr/view/AKR20260901042400053" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="中유학생 살해한 중국인 대학강사는 31세 정창성 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스(사회)">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://www.yna.co.kr/view/AKR20260901042000004" target="_blank" rel="noopener noreferrer" class="article-card__title">[인사] 서울여대</a>
+      <p class="article-card__desc">▲ 과학기술융합대학장 이도희 ▲ 도서관장 이정미 ▲ 기숙사책임교수 김소라 ▲ 여성연구소장 양희영 ▲ 첨단융합학부장 김명숙 ▲ AI융합학부장 홍헬...</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스(사회)</span>
+        <span class="article-date">2026-09-01</span>
+      </div>
+    </div>
+    <a href="https://www.yna.co.kr/view/AKR20260901042000004" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[인사] 서울여대 읽기">&#8599;</a>
+  </div>
+</article></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <span class="site-footer__text">© 대학 기사 아카이브</span>
+    <span class="site-footer__text">총 <strong>8788</strong>개 기사 보관</span>
+  </div>
+</footer>
+
+<script>
+function goToDate(val) {
+  if (val) window.location.href = './' + val + '.html';
+}
+function filterBy(btn) {
+  var src = btn.dataset.src;
+  var cards = document.querySelectorAll('.article-card');
+  var count = 0;
+  cards.forEach(function(c) {
+    var show = !src || c.dataset.source === src;
+    c.style.display = show ? '' : 'none';
+    if (show) count++;
+  });
+  document.querySelectorAll('.filter-chip').forEach(function(c) {
+    c.classList.remove('filter-chip--active');
+  });
+  btn.classList.add('filter-chip--active');
+  document.getElementById('sub-count').textContent = count + '건';
+  document.getElementById('hero-count').textContent = count + '건의 기사';
+}
+</script>
+</body>
+</html>
