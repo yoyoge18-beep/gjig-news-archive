@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026년 9월 11일 — 대학 기사 아카이브</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="./static/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="g-nav" role="navigation" aria-label="전역 내비게이션">
+  <div class="g-nav__inner">
+    <a href="./index.html" class="g-nav__brand">대학 기사 아카이브</a>
+    <div class="g-nav__right">
+      <span class="g-nav__count">총 <strong>9672</strong>개</span>
+      <a href="./search.html" class="g-nav__icon-btn" title="검색" aria-label="검색">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+          <path d="M10 6.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0zm-.687 3.02a4.5 4.5 0 1 1 .707-.707l2.834 2.833a.5.5 0 0 1-.708.708L9.313 9.52z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="s-nav" role="navigation" aria-label="날짜 내비게이션">
+  <div class="s-nav__inner">
+    <div class="s-nav__date-group">
+      <a href="./2026-09-10.html" class="s-nav__arrow" aria-label="이전 날">&#8592;</a>
+      <label class="date-pick-wrap" aria-label="날짜 선택">
+        <span class="s-nav__label">2026년 9월 11일</span>
+        <input type="date" value="2026-09-11" onchange="goToDate(this.value)" aria-label="날짜 선택">
+      </label>
+      <span class="s-nav__arrow s-nav__arrow--off" aria-hidden="true">&#8594;</span>
+      <label class="date-pick-wrap" aria-label="달력으로 날짜 선택">
+        <span class="date-pick-badge">&#128197; 날짜 선택</span>
+        <input type="date" value="2026-09-11" onchange="goToDate(this.value)" aria-label="달력 날짜 선택">
+      </label>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="hero-tile" aria-label="키워드">
+    <div class="hero-tile__inner">
+      <p class="hero-tile__eyebrow">키워드</p>
+      <h1 class="hero-tile__headline">대학</h1>
+      <p class="hero-tile__tagline" id="hero-count">10건의 기사</p>
+      <p class="hero-tile__sub">2026년 9월 11일 기준</p>
+    </div>
+  </section>
+
+  <section class="content-tile">
+    <div class="content-tile__inner">
+      <div class="section-header">
+        <div>
+          <h2 class="section-header__title">2026년 9월 11일</h2>
+          <p class="section-header__subtitle" id="sub-count">10건</p>
+        </div>
+        <div class="date-chips" role="navigation" aria-label="최근 수집일">
+          <a href="./2026-09-11.html" class="date-chip date-chip--active">2026-09-11</a><a href="./2026-09-10.html" class="date-chip">2026-09-10</a><a href="./2026-09-09.html" class="date-chip">2026-09-09</a><a href="./2026-09-08.html" class="date-chip">2026-09-08</a><a href="./2026-09-07.html" class="date-chip">2026-09-07</a><a href="./2026-09-06.html" class="date-chip">2026-09-06</a><a href="./2026-09-05.html" class="date-chip">2026-09-05</a><a href="./2026-09-04.html" class="date-chip">2026-09-04</a>
+        </div>
+      </div>
+      <div class="filter-row" role="group" aria-label="언론사 필터"><button type="button" class="filter-chip filter-chip--active" data-src="" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전체 <span class="filter-chip__count">10</span></button><button type="button" class="filter-chip" data-src="KBC광주방송" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">KBC광주방송</button><button type="button" class="filter-chip" data-src="ccnnews.co.kr" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">ccnnews.co.kr</button><button type="button" class="filter-chip" data-src="citizenadmnews.co.kr" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">citizenadmnews.co.kr</button><button type="button" class="filter-chip" data-src="농수축산신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">농수축산신문</button><button type="button" class="filter-chip" data-src="뉴시스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴시스</button><button type="button" class="filter-chip" data-src="데일리대구경북뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">데일리대구경북뉴스</button><button type="button" class="filter-chip" data-src="신아일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">신아일보</button><button type="button" class="filter-chip" data-src="연합뉴스(사회)" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스(사회)</button><button type="button" class="filter-chip" data-src="파이낸스투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">파이낸스투데이</button></div>
+      <div class="article-grid" role="list" aria-label="기사 목록" id="article-grid"><article class="article-card" role="listitem" data-source="데일리대구경북뉴스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBDbmp6bVpiSkdoNXRHVWRCT3dELTZLMXhlOWJwYUtWd180SHlyR1Z0T2lHRFhDQUZvT0l2dFdaVmlGMC0xakFjWU1ZemlUYlRSbW1XNjRlQ3V3SkJyN04tZ3FUZE9QQQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">국립금오공과대학교, ‘초광역 성장엔진 인재육성 사업’ 선정 - 데일리대구경북뉴스</a>
+      <p class="article-card__desc">국립금오공과대학교, ‘초광역 성장엔진 인재육성 사업’ 선정  데일리대구경북뉴스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">데일리대구경북뉴스</span>
+        <span class="article-date">2026-09-11</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBDbmp6bVpiSkdoNXRHVWRCT3dELTZLMXhlOWJwYUtWd180SHlyR1Z0T2lHRFhDQUZvT0l2dFdaVmlGMC0xakFjWU1ZemlUYlRSbW1XNjRlQ3V3SkJyN04tZ3FUZE9QQQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="국립금오공과대학교, ‘초광역 성장엔진 인재육성 사업’ 선정 - 데일리대구경북뉴스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="신아일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFAyZkMtMHFGZWMxenZjTU9RaHdmVkYwRXc1Z0JKcUY5aFplNXFyUnpTVTk4SUsyamdUMjh0VkZnYzhQMTNPZHNRRVdPbW9pcks0RkhhUjFIQ3BNVU05d2g0NWlkUWpLak9CT1phcmhTTV8?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">춘천 5개 대학 한자리에…체육·e스포츠·공연으로 ‘청춘 교류’ - 신아일보</a>
+      <p class="article-card__desc">춘천 5개 대학 한자리에…체육·e스포츠·공연으로 ‘청춘 교류’  신아일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">신아일보</span>
+        <span class="article-date">2026-09-11</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFAyZkMtMHFGZWMxenZjTU9RaHdmVkYwRXc1Z0JKcUY5aFplNXFyUnpTVTk4SUsyamdUMjh0VkZnYzhQMTNPZHNRRVdPbW9pcks0RkhhUjFIQ3BNVU05d2g0NWlkUWpLak9CT1phcmhTTV8?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="춘천 5개 대학 한자리에…체육·e스포츠·공연으로 ‘청춘 교류’ - 신아일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="ccnnews.co.kr">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE05Wm1ONllrdGpkaEN6UHVadjBVdGFOdk1oTXZEUTFPa09jM2luWDIwNDFFZ0sxWEkxbllHNGFCNnZCX2ZJZnFVSjUzRW5ZQ0dwLVJZQWhjZndxUVhpNE92NHotak5GU3RxZ3hr?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">충남대-국립공주대 통합 찬반투표 ‘엇갈린 민심’…글로컬대학 사업 동력 차질 우려 - ccnnews.co.kr</a>
+      <p class="article-card__desc">충남대-국립공주대 통합 찬반투표 ‘엇갈린 민심’…글로컬대학 사업 동력 차질 우려  ccnnews.co.kr</p>
+      <div class="article-card__meta">
+        <span class="badge-source">ccnnews.co.kr</span>
+        <span class="article-date">2026-09-11</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE05Wm1ONllrdGpkaEN6UHVadjBVdGFOdk1oTXZEUTFPa09jM2luWDIwNDFFZ0sxWEkxbllHNGFCNnZCX2ZJZnFVSjUzRW5ZQ0dwLVJZQWhjZndxUVhpNE92NHotak5GU3RxZ3hr?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="충남대-국립공주대 통합 찬반투표 ‘엇갈린 민심’…글로컬대학 사업 동력 차질 우려 - ccnnews.co.kr 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="KBC광주방송">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1EVEhTN1R2OUY4QkpOdW4wNWZLaVdsSGNhUEZ0SDVUdU5zN0FybzhXSF9uSXJuUndrN3J5bHdVUlpvQUphR3hfZ3V2WURGNU5KcExlU1liS2Z4RmQ2LW1tMA?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">전남 서남권 9개 시·군의회, 국립의대 후보대학 추천 철회·교육부 직접 선정 촉구 - KBC광주방송</a>
+      <p class="article-card__desc">전남 서남권 9개 시·군의회, 국립의대 후보대학 추천 철회·교육부 직접 선정 촉구  KBC광주방송</p>
+      <div class="article-card__meta">
+        <span class="badge-source">KBC광주방송</span>
+        <span class="article-date">2026-09-11</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1EVEhTN1R2OUY4QkpOdW4wNWZLaVdsSGNhUEZ0SDVUdU5zN0FybzhXSF9uSXJuUndrN3J5bHdVUlpvQUphR3hfZ3V2WURGNU5KcExlU1liS2Z4RmQ2LW1tMA?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="전남 서남권 9개 시·군의회, 국립의대 후보대학 추천 철회·교육부 직접 선정 촉구 - KBC광주방송 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="농수축산신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE9xLW44TFY2bklPb1JMa3RtdzJ0S0Fhc0VHdE5aMXJpN0pvUXJmaV96Nk9EZy1NMjlEVGVSM2ltdFFVanl3Uzk5ZXJCb3JjYnpmcXFnWjhRSHVzUENqTENqX09sR3lnVThoSjVnOQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">학사모 쓴 조합원 68명…두북농협 조합원대학 2기 ‘배움의 결실’ - 농수축산신문</a>
+      <p class="article-card__desc">학사모 쓴 조합원 68명…두북농협 조합원대학 2기 ‘배움의 결실’  농수축산신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">농수축산신문</span>
+        <span class="article-date">2026-09-11</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE9xLW44TFY2bklPb1JMa3RtdzJ0S0Fhc0VHdE5aMXJpN0pvUXJmaV96Nk9EZy1NMjlEVGVSM2ltdFFVanl3Uzk5ZXJCb3JjYnpmcXFnWjhRSHVzUENqTENqX09sR3lnVThoSjVnOQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="학사모 쓴 조합원 68명…두북농협 조합원대학 2기 ‘배움의 결실’ - 농수축산신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="파이낸스투데이">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE51S3pVUVEtSjdNeFphX09wVE92Ykw2Yl91SDlKcDZPeU5Id2otd3BQUTlLYjFpaXB1blVZVk00alR4LVUzOU5sMy1kQzI3bVZEdnRiYWRZdTVQemZwWlNrRTVqS2NJWHJsa2NUTA?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">美 터닝포인트USA, 대학 대신 ‘준비학년’ 운영…“제2의 찰리 커크 키운다” - 파이낸스투데이</a>
+      <p class="article-card__desc">美 터닝포인트USA, 대학 대신 ‘준비학년’ 운영…“제2의 찰리 커크 키운다”  파이낸스투데이</p>
+      <div class="article-card__meta">
+        <span class="badge-source">파이낸스투데이</span>
+        <span class="article-date">2026-09-11</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE51S3pVUVEtSjdNeFphX09wVE92Ykw2Yl91SDlKcDZPeU5Id2otd3BQUTlLYjFpaXB1blVZVk00alR4LVUzOU5sMy1kQzI3bVZEdnRiYWRZdTVQemZwWlNrRTVqS2NJWHJsa2NUTA?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="美 터닝포인트USA, 대학 대신 ‘준비학년’ 운영…“제2의 찰리 커크 키운다” - 파이낸스투데이 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="citizenadmnews.co.kr">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFB5R3hHSDJZaTVqNUoyYUhpNXotT1J2M0w4d3lpd0Q5czlFeTUwVUM5UEJuZ0pDUEFOS2kxMnBxRkVmT1djR1F2Mk4zb1lpalNNTWNRZ1J3Q3dXWVBLYWJNT0g4MGs1RDJ3dU5mMUtR?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">한국대학축구연맹↔태백시↔태백시축구협회 ‘제63~64회 추계대학축구연맹전’ 업무협약식 개최 - citizenadmnews.co.kr</a>
+      <p class="article-card__desc">한국대학축구연맹↔태백시↔태백시축구협회 ‘제63~64회 추계대학축구연맹전’ 업무협약식 개최  citizenadmnews.co.kr</p>
+      <div class="article-card__meta">
+        <span class="badge-source">citizenadmnews.co.kr</span>
+        <span class="article-date">2026-09-11</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFB5R3hHSDJZaTVqNUoyYUhpNXotT1J2M0w4d3lpd0Q5czlFeTUwVUM5UEJuZ0pDUEFOS2kxMnBxRkVmT1djR1F2Mk4zb1lpalNNTWNRZ1J3Q3dXWVBLYWJNT0g4MGs1RDJ3dU5mMUtR?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="한국대학축구연맹↔태백시↔태백시축구협회 ‘제63~64회 추계대학축구연맹전’ 업무협약식 개최 - citizenadmnews.co.kr 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="뉴시스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE9TSUN3N1pLRUJ5MzFQWW1veVpJalFDZWN4TXQ0aHNkcGZNX2JjT0duSDBhd1l6Ty1FN2FpRXRuM0lEZmlGeGJiRHZrcG1IM3MyVmNmN0NEQThqZVRaNTAyddIBeEFVX3lxTE1QNU16ZjhVZ0l0aGthVmVNV2hFZTBxbWtCdF9WOHBTbkkzQ0J3RFlDZDROcWZTcDJYT1l1aFJJdzFzYkNBbmJwa0M3bVNreVJEeUpsQnNXRF9jYW1JT0tkSm1vUjZUR25Qa3V6OTVJYk9GYWdMOGp1ZQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[태백소식]2027·2028년 추계대학축구연맹전 유치 확정 등 - 뉴시스</a>
+      <p class="article-card__desc">[태백소식]2027·2028년 추계대학축구연맹전 유치 확정 등  뉴시스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">뉴시스</span>
+        <span class="article-date">2026-09-11</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE9TSUN3N1pLRUJ5MzFQWW1veVpJalFDZWN4TXQ0aHNkcGZNX2JjT0duSDBhd1l6Ty1FN2FpRXRuM0lEZmlGeGJiRHZrcG1IM3MyVmNmN0NEQThqZVRaNTAyddIBeEFVX3lxTE1QNU16ZjhVZ0l0aGthVmVNV2hFZTBxbWtCdF9WOHBTbkkzQ0J3RFlDZDROcWZTcDJYT1l1aFJJdzFzYkNBbmJwa0M3bVNreVJEeUpsQnNXRF9jYW1JT0tkSm1vUjZUR25Qa3V6OTVJYk9GYWdMOGp1ZQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[태백소식]2027·2028년 추계대학축구연맹전 유치 확정 등 - 뉴시스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스(사회)">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://www.yna.co.kr/view/AKR20260911040500062" target="_blank" rel="noopener noreferrer" class="article-card__title">평창인재육성장학재단, 16억원 규모 장학생 선발</a>
+      <p class="article-card__desc">(평창=연합뉴스) 임보연 기자 = 강원 평창인재육성장학재단은 대학생과 지역 청소년을 대상으로  2026년도 제2차 장학생 을 선발한다고 11일 ...</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스(사회)</span>
+        <span class="article-date">2026-09-11</span>
+      </div>
+    </div>
+    <a href="https://www.yna.co.kr/view/AKR20260911040500062" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="평창인재육성장학재단, 16억원 규모 장학생 선발 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스(사회)">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://www.yna.co.kr/view/AKR20260911034400005" target="_blank" rel="noopener noreferrer" class="article-card__title">임형주, 숙명여대 최연소 특임교수 임용…&quot;세계무대 경험 전수&quot;</a>
+      <p class="article-card__desc">(서울=연합뉴스) 이태수 기자 = 팝페라 테너 임형주가 숙명여자대학교 최연소 특임교수로 임용됐다고 소속사 디지엔콤이 11일 밝혔다.</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스(사회)</span>
+        <span class="article-date">2026-09-11</span>
+      </div>
+    </div>
+    <a href="https://www.yna.co.kr/view/AKR20260911034400005" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="임형주, 숙명여대 최연소 특임교수 임용…&quot;세계무대 경험 전수&quot; 읽기">&#8599;</a>
+  </div>
+</article></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <span class="site-footer__text">© 대학 기사 아카이브</span>
+    <span class="site-footer__text">총 <strong>9672</strong>개 기사 보관</span>
+  </div>
+</footer>
+
+<script>
+function goToDate(val) {
+  if (val) window.location.href = './' + val + '.html';
+}
+function filterBy(btn) {
+  var src = btn.dataset.src;
+  var cards = document.querySelectorAll('.article-card');
+  var count = 0;
+  cards.forEach(function(c) {
+    var show = !src || c.dataset.source === src;
+    c.style.display = show ? '' : 'none';
+    if (show) count++;
+  });
+  document.querySelectorAll('.filter-chip').forEach(function(c) {
+    c.classList.remove('filter-chip--active');
+  });
+  btn.classList.add('filter-chip--active');
+  document.getElementById('sub-count').textContent = count + '건';
+  document.getElementById('hero-count').textContent = count + '건의 기사';
+}
+</script>
+</body>
+</html>
