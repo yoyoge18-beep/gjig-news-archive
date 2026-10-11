@@ -15,7 +15,7 @@
   <div class="g-nav__inner">
     <a href="./index.html" class="g-nav__brand">대학 기사 아카이브</a>
     <div class="g-nav__right">
-      <span class="g-nav__count">총 <strong>11880</strong>개</span>
+      <span class="g-nav__count">총 <strong>11929</strong>개</span>
       <a href="./search.html" class="g-nav__icon-btn" title="검색" aria-label="검색">
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
           <path d="M10 6.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0zm-.687 3.02a4.5 4.5 0 1 1 .707-.707l2.834 2.833a.5.5 0 0 1-.708.708L9.313 9.52z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"/>
@@ -33,7 +33,7 @@
         <span class="s-nav__label">2026년 10월 10일</span>
         <input type="date" value="2026-10-10" onchange="goToDate(this.value)" aria-label="날짜 선택">
       </label>
-      <span class="s-nav__arrow s-nav__arrow--off" aria-hidden="true">&#8594;</span>
+      <a href="./2026-10-11.html" class="s-nav__arrow" aria-label="다음 날">&#8594;</a>
       <label class="date-pick-wrap" aria-label="달력으로 날짜 선택">
         <span class="date-pick-badge">&#128197; 날짜 선택</span>
         <input type="date" value="2026-10-10" onchange="goToDate(this.value)" aria-label="달력 날짜 선택">
@@ -47,7 +47,7 @@
     <div class="hero-tile__inner">
       <p class="hero-tile__eyebrow">키워드</p>
       <h1 class="hero-tile__headline">대학</h1>
-      <p class="hero-tile__tagline" id="hero-count">5건의 기사</p>
+      <p class="hero-tile__tagline" id="hero-count">45건의 기사</p>
       <p class="hero-tile__sub">2026년 10월 10일 기준</p>
     </div>
   </section>
@@ -57,14 +57,574 @@
       <div class="section-header">
         <div>
           <h2 class="section-header__title">2026년 10월 10일</h2>
-          <p class="section-header__subtitle" id="sub-count">5건</p>
+          <p class="section-header__subtitle" id="sub-count">45건</p>
         </div>
         <div class="date-chips" role="navigation" aria-label="최근 수집일">
-          <a href="./2026-10-10.html" class="date-chip date-chip--active">2026-10-10</a><a href="./2026-10-09.html" class="date-chip">2026-10-09</a><a href="./2026-10-08.html" class="date-chip">2026-10-08</a><a href="./2026-10-07.html" class="date-chip">2026-10-07</a><a href="./2026-10-06.html" class="date-chip">2026-10-06</a><a href="./2026-10-05.html" class="date-chip">2026-10-05</a><a href="./2026-10-04.html" class="date-chip">2026-10-04</a><a href="./2026-10-03.html" class="date-chip">2026-10-03</a>
+          <a href="./2026-10-11.html" class="date-chip">2026-10-11</a><a href="./2026-10-10.html" class="date-chip date-chip--active">2026-10-10</a><a href="./2026-10-09.html" class="date-chip">2026-10-09</a><a href="./2026-10-08.html" class="date-chip">2026-10-08</a><a href="./2026-10-07.html" class="date-chip">2026-10-07</a><a href="./2026-10-06.html" class="date-chip">2026-10-06</a><a href="./2026-10-05.html" class="date-chip">2026-10-05</a><a href="./2026-10-04.html" class="date-chip">2026-10-04</a>
         </div>
       </div>
-      <div class="filter-row" role="group" aria-label="언론사 필터"><button type="button" class="filter-chip filter-chip--active" data-src="" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전체 <span class="filter-chip__count">5</span></button><button type="button" class="filter-chip" data-src="Vietnam.vn" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">Vietnam.vn</button><button type="button" class="filter-chip" data-src="newslinejeju.com" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">newslinejeju.com</button><button type="button" class="filter-chip" data-src="강원도민일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">강원도민일보</button><button type="button" class="filter-chip" data-src="위키트리" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">위키트리</button></div>
-      <div class="article-grid" role="list" aria-label="기사 목록" id="article-grid"><article class="article-card" role="listitem" data-source="강원도민일보">
+      <div class="filter-row" role="group" aria-label="언론사 필터"><button type="button" class="filter-chip filter-chip--active" data-src="" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전체 <span class="filter-chip__count">45</span></button><button type="button" class="filter-chip" data-src="KBC광주방송" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">KBC광주방송</button><button type="button" class="filter-chip" data-src="SPOTV NEWS" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">SPOTV NEWS</button><button type="button" class="filter-chip" data-src="Vietnam.vn" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">Vietnam.vn</button><button type="button" class="filter-chip" data-src="YTN" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">YTN</button><button type="button" class="filter-chip" data-src="newslinejeju.com" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">newslinejeju.com</button><button type="button" class="filter-chip" data-src="강원도민일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">강원도민일보</button><button type="button" class="filter-chip" data-src="경기일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경기일보</button><button type="button" class="filter-chip" data-src="경희대학교 미디어센터" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경희대학교 미디어센터</button><button type="button" class="filter-chip" data-src="뉴스1" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴스1</button><button type="button" class="filter-chip" data-src="뉴스컬처" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴스컬처</button><button type="button" class="filter-chip" data-src="뉴스핌" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴스핌</button><button type="button" class="filter-chip" data-src="동아일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">동아일보</button><button type="button" class="filter-chip" data-src="문화일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">문화일보</button><button type="button" class="filter-chip" data-src="미주중앙일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">미주중앙일보</button><button type="button" class="filter-chip" data-src="반월신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">반월신문</button><button type="button" class="filter-chip" data-src="스포츠경향" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">스포츠경향</button><button type="button" class="filter-chip" data-src="싱글리스트" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">싱글리스트</button><button type="button" class="filter-chip" data-src="아시아경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">아시아경제</button><button type="button" class="filter-chip" data-src="연합뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스</button><button type="button" class="filter-chip" data-src="위키리크스한국" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">위키리크스한국</button><button type="button" class="filter-chip" data-src="위키트리" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">위키트리</button><button type="button" class="filter-chip" data-src="일간투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">일간투데이</button><button type="button" class="filter-chip" data-src="중도일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">중도일보</button><button type="button" class="filter-chip" data-src="중앙일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">중앙일보</button><button type="button" class="filter-chip" data-src="천지일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">천지일보</button><button type="button" class="filter-chip" data-src="한국강사신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한국강사신문</button><button type="button" class="filter-chip" data-src="한국영농신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한국영농신문</button></div>
+      <div class="article-grid" role="list" aria-label="기사 목록" id="article-grid"><article class="article-card" role="listitem" data-source="연합뉴스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE9CQURvQ0l2cl8tUUt5RllRQnNtT2xMc3VaeFI2eXl6SWdkaEtHRDU3S3ZTeWVYcXhUZE5MWVB6cFFYaUpST25vNVVjQW9DZTdpdGU0UG1XTVpqNWPSAWBBVV95cUxOcjM5X3RMcHZ5Wlh0dEZWczZYclkyc1dPaDNoZWhSYUVnUEJ1V253aTNyMHBoQXN3UGxBVzFYN2w0NFNMelpYOUhLdFoxMWFDQTVvWUF1cXVBbE1pX1gtbjE?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">서울 대학서 지인 여성 찌르고 출국한 영국인 검거…도주 9일만 - 연합뉴스</a>
+      <p class="article-card__desc">서울 대학서 지인 여성 찌르고 출국한 영국인 검거…도주 9일만  연합뉴스서울 대학서 20대 여성 찌른 뒤 도주한 영국인···인터폴 수배 9일 만에 본국서 검거  경향신문서울 대학에서 여성 찌른 영국인 검거‥본국 도주 9일 만  MBC 뉴스대학서 女지인 흉기 찌르고 출국한 영국男…현지 검거  노컷뉴스대학 캠퍼스서 여대생 찌른 영국인…본국 도주 9일 만에 검거 - 조선비즈  Chosunbiz서울 대학서 지인 여성에 흉기 휘두르고 도주한 영국인 남성…현지 검거  한겨레서울 시내 대학서 여성 찌른 영국인…본국 도주 9일 만 검거  한국경제TV서울 대학 30대 영국인, 흉기 살인미수 후 9일 만에 영국서 검거  국제뉴스서울 대학서 20대 여성 찌르고 출국한 영국인 검거…도주 9일만  매일신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE9CQURvQ0l2cl8tUUt5RllRQnNtT2xMc3VaeFI2eXl6SWdkaEtHRDU3S3ZTeWVYcXhUZE5MWVB6cFFYaUpST25vNVVjQW9DZTdpdGU0UG1XTVpqNWPSAWBBVV95cUxOcjM5X3RMcHZ5Wlh0dEZWczZYclkyc1dPaDNoZWhSYUVnUEJ1V253aTNyMHBoQXN3UGxBVzFYN2w0NFNMelpYOUhLdFoxMWFDQTVvWUF1cXVBbE1pX1gtbjE?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="서울 대학서 지인 여성 찌르고 출국한 영국인 검거…도주 9일만 - 연합뉴스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE9FekxrSTl3OUpTV1ozVW4xZ1RzamlVaWowcHJKUF9NT0lZdkdJbFd6d3l4b2taY2owQWQ5MFBPbzNLcDNuekRqQU5kaFplUU1kN1g4X1RkTWZqMzQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">금융권서 교회·대학까지…해킹에 개인정보 100만건 넘게 노출 - 연합뉴스</a>
+      <p class="article-card__desc">금융권서 교회·대학까지…해킹에 개인정보 100만건 넘게 노출  연합뉴스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE9FekxrSTl3OUpTV1ozVW4xZ1RzamlVaWowcHJKUF9NT0lZdkdJbFd6d3l4b2taY2owQWQ5MFBPbzNLcDNuekRqQU5kaFplUU1kN1g4X1RkTWZqMzQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="금융권서 교회·대학까지…해킹에 개인정보 100만건 넘게 노출 - 연합뉴스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="YTN">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE43Szg0QkdhcTYxVWJTdmROZ2lkaGJibWpaTHdTbjZxM2NLS1Fxc3lKaVAzTERWRWVxNmEtREM5LXlNR2xtZW5MblBSaWdXYlFSbnUwLUhzUEUzMTQwQUE?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대학 맞춤형 지원 효과 '톡톡'...기업 성장 결실 - YTN</a>
+      <p class="article-card__desc">대학 맞춤형 지원 효과 '톡톡'...기업 성장 결실  YTN</p>
+      <div class="article-card__meta">
+        <span class="badge-source">YTN</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE43Szg0QkdhcTYxVWJTdmROZ2lkaGJibWpaTHdTbjZxM2NLS1Fxc3lKaVAzTERWRWVxNmEtREM5LXlNR2xtZW5MblBSaWdXYlFSbnUwLUhzUEUzMTQwQUE?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대학 맞춤형 지원 효과 '톡톡'...기업 성장 결실 - YTN 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="경희대학교 미디어센터">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFBwS1c1bnowY0hNWVFiYlpFRVY3OEdEVFRsVFpnM09wQW1fNWdfYVdXT0ppS1A3dmROQUljcG1CQktaMEg2dThsVEJaVXBSRTRnZUN1dnYwbkNWNVNudlJ5bXpJVWRqZ0ZzX01JblhDMFFuQlZKSVE?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">선택권 넓어진 경영대, 수강난 대책은 어떻게 계열제·다전공 확대 속 강좌·교원 부족 - 경희대학교 미디어센터</a>
+      <p class="article-card__desc">선택권 넓어진 경영대, 수강난 대책은 어떻게 계열제·다전공 확대 속 강좌·교원 부족  경희대학교 미디어센터</p>
+      <div class="article-card__meta">
+        <span class="badge-source">경희대학교 미디어센터</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFBwS1c1bnowY0hNWVFiYlpFRVY3OEdEVFRsVFpnM09wQW1fNWdfYVdXT0ppS1A3dmROQUljcG1CQktaMEg2dThsVEJaVXBSRTRnZUN1dnYwbkNWNVNudlJ5bXpJVWRqZ0ZzX01JblhDMFFuQlZKSVE?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="선택권 넓어진 경영대, 수강난 대책은 어떻게 계열제·다전공 확대 속 강좌·교원 부족 - 경희대학교 미디어센터 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="뉴스1">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Iam90RE9UTVVWSVktd3RsQXNKRVlGQkFaTTZVYUI2MGp3YzJxRjNZX0lZWXpQZ01UeTBpVjBNbVMxQms2b1gwd2tMV3BiUlZOWVg2bXNlZ0hwQQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대학만 입시? 초등학교도 입학 전쟁…서울 국·사립초 지원 시즌 개막 - 뉴스1</a>
+      <p class="article-card__desc">대학만 입시? 초등학교도 입학 전쟁…서울 국·사립초 지원 시즌 개막  뉴스1</p>
+      <div class="article-card__meta">
+        <span class="badge-source">뉴스1</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Iam90RE9UTVVWSVktd3RsQXNKRVlGQkFaTTZVYUI2MGp3YzJxRjNZX0lZWXpQZ01UeTBpVjBNbVMxQms2b1gwd2tMV3BiUlZOWVg2bXNlZ0hwQQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대학만 입시? 초등학교도 입학 전쟁…서울 국·사립초 지원 시즌 개막 - 뉴스1 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="SPOTV NEWS">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5VelFROTRqOG85MmY1bHhoWnYxZHhzOVJ0ZzJfWHNWbFdQeTBvQ0FWZXhzQmllZWdlM2FSaENHMHdvQUxESFgtQnhnZENhVzR1clJxN25jM1Q4c08zdmtKOHhLUmJzUHRkYUJLRVhRSnA?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">&quot;미국에서 가장 섹시한 여성&quot; 난리 났는데…美 대학풋볼 금발 미녀 충격 정체…원본 영상 비교했더니 'AI 합성' 의혹 - SPOTV NEWS</a>
+      <p class="article-card__desc">&quot;미국에서 가장 섹시한 여성&quot; 난리 났는데…美 대학풋볼 금발 미녀 충격 정체…원본 영상 비교했더니 'AI 합성' 의혹  SPOTV NEWS</p>
+      <div class="article-card__meta">
+        <span class="badge-source">SPOTV NEWS</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5VelFROTRqOG85MmY1bHhoWnYxZHhzOVJ0ZzJfWHNWbFdQeTBvQ0FWZXhzQmllZWdlM2FSaENHMHdvQUxESFgtQnhnZENhVzR1clJxN25jM1Q4c08zdmtKOHhLUmJzUHRkYUJLRVhRSnA?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="&quot;미국에서 가장 섹시한 여성&quot; 난리 났는데…美 대학풋볼 금발 미녀 충격 정체…원본 영상 비교했더니 'AI 합성' 의혹 - SPOTV NEWS 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="경희대학교 미디어센터">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1wQUFSeFBrMVJoLTVhSGMwUWxndVowVVh3bFR0UTJueWh1S3hWTjM5Ukk1dnlFZ2hMR1VfOTFWZlk4TFJ3OFpIYmVSMkdTekptWlYxcXljQ0xDMjFRbHpYV2t0dnUtbW9KcWxybm9QTGJBaXVoSFE?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[특별기획] AI가 만든 결과물, 학생 실력은 어디에 “과제 결과물은 좋은데, 이해하고 있는지는 의문” - 경희대학교 미디어센터</a>
+      <p class="article-card__desc">[특별기획] AI가 만든 결과물, 학생 실력은 어디에 “과제 결과물은 좋은데, 이해하고 있는지는 의문”  경희대학교 미디어센터</p>
+      <div class="article-card__meta">
+        <span class="badge-source">경희대학교 미디어센터</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1wQUFSeFBrMVJoLTVhSGMwUWxndVowVVh3bFR0UTJueWh1S3hWTjM5Ukk1dnlFZ2hMR1VfOTFWZlk4TFJ3OFpIYmVSMkdTekptWlYxcXljQ0xDMjFRbHpYV2t0dnUtbW9KcWxybm9QTGJBaXVoSFE?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[특별기획] AI가 만든 결과물, 학생 실력은 어디에 “과제 결과물은 좋은데, 이해하고 있는지는 의문” - 경희대학교 미디어센터 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="경희대학교 미디어센터">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFB6dGl3a1ItdGdLX0RMNEd5YmtoeEM2cVFLQUMxZ0lJNzNnMTIxNlV5Z1hJTWxXcmhJVmJoV0E0UGQzSXhkUEJpcW1QYzhCbHBGWS1UUFRDUTZmY2lZN091WG16ZmIyd2NQRkNtUzJKVVN3UXZ3WXc?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[뉴스] 아이스하키 U-리그 초반 아쉬운 성적 - 경희대학교 미디어센터</a>
+      <p class="article-card__desc">[뉴스] 아이스하키 U-리그 초반 아쉬운 성적  경희대학교 미디어센터</p>
+      <div class="article-card__meta">
+        <span class="badge-source">경희대학교 미디어센터</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFB6dGl3a1ItdGdLX0RMNEd5YmtoeEM2cVFLQUMxZ0lJNzNnMTIxNlV5Z1hJTWxXcmhJVmJoV0E0UGQzSXhkUEJpcW1QYzhCbHBGWS1UUFRDUTZmY2lZN091WG16ZmIyd2NQRkNtUzJKVVN3UXZ3WXc?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[뉴스] 아이스하키 U-리그 초반 아쉬운 성적 - 경희대학교 미디어센터 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="경희대학교 미디어센터">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE5pRnZvQk1rUHFhVjBsSFRzcUhLX2xYNE1ORzNaWklweEt6Y0tEdnYzejNFRnBvUktsb0JLUHBMbU1pQ2N4NmdpbkFINlNiaFhTVDdqQkhUb3FEN1J5X1ZxNUJpVWtsbjZ5QUQ5akZZUmNFSjdOY0E?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[특별기획] ‘깜깜이 예산’·‘줄어드는 전임’, 해결할 숙제 국고 사업 수주 동력 약화·매년 축소되는 전임교원 - 경희대학교 미디어센터</a>
+      <p class="article-card__desc">[특별기획] ‘깜깜이 예산’·‘줄어드는 전임’, 해결할 숙제 국고 사업 수주 동력 약화·매년 축소되는 전임교원  경희대학교 미디어센터</p>
+      <div class="article-card__meta">
+        <span class="badge-source">경희대학교 미디어센터</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE5pRnZvQk1rUHFhVjBsSFRzcUhLX2xYNE1ORzNaWklweEt6Y0tEdnYzejNFRnBvUktsb0JLUHBMbU1pQ2N4NmdpbkFINlNiaFhTVDdqQkhUb3FEN1J5X1ZxNUJpVWtsbjZ5QUQ5akZZUmNFSjdOY0E?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[특별기획] ‘깜깜이 예산’·‘줄어드는 전임’, 해결할 숙제 국고 사업 수주 동력 약화·매년 축소되는 전임교원 - 경희대학교 미디어센터 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="경희대학교 미디어센터">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFBVY2d1eEg5RjJiMzFVRHc4dzFKYmpRN2lldjJPazRCdG1yNFNpcWJWdFF0dUJybWZwQnBYSnF4allpTHRlaVpmM0N0SHJfNDItZVJQbDZ5VFVFUDZ0ck9oWFk3Tnc0Y0hmUlRhRklBVjFrSVZDSXc?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">달을 보는 일에서 지구를 이해하는 일로, 다누리와 함께 이어온 탐사의 시간 - 경희대학교 미디어센터</a>
+      <p class="article-card__desc">달을 보는 일에서 지구를 이해하는 일로, 다누리와 함께 이어온 탐사의 시간  경희대학교 미디어센터</p>
+      <div class="article-card__meta">
+        <span class="badge-source">경희대학교 미디어센터</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFBVY2d1eEg5RjJiMzFVRHc4dzFKYmpRN2lldjJPazRCdG1yNFNpcWJWdFF0dUJybWZwQnBYSnF4allpTHRlaVpmM0N0SHJfNDItZVJQbDZ5VFVFUDZ0ck9oWFk3Tnc0Y0hmUlRhRklBVjFrSVZDSXc?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="달을 보는 일에서 지구를 이해하는 일로, 다누리와 함께 이어온 탐사의 시간 - 경희대학교 미디어센터 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="경희대학교 미디어센터">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE13UVFEVGJ5NW9XajdCcFI2VE1tYThGaDMwZXZ2cXV3dUFyQXRKSHN2bUZsNG1LMmIzcjBvV1JpTlUzWE9sczg1ZVluVnRoamxmYXljeXZ3Qmtwdjg1WUR1dzJ5QzZ6ZWR2RDlEWVVTeWRlV0EzOEE?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[뉴스] 월세에 가려진 ‘깜깜이 관리비’, 대학가 원룸의 사각지대 - 경희대학교 미디어센터</a>
+      <p class="article-card__desc">[뉴스] 월세에 가려진 ‘깜깜이 관리비’, 대학가 원룸의 사각지대  경희대학교 미디어센터</p>
+      <div class="article-card__meta">
+        <span class="badge-source">경희대학교 미디어센터</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE13UVFEVGJ5NW9XajdCcFI2VE1tYThGaDMwZXZ2cXV3dUFyQXRKSHN2bUZsNG1LMmIzcjBvV1JpTlUzWE9sczg1ZVluVnRoamxmYXljeXZ3Qmtwdjg1WUR1dzJ5QzZ6ZWR2RDlEWVVTeWRlV0EzOEE?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[뉴스] 월세에 가려진 ‘깜깜이 관리비’, 대학가 원룸의 사각지대 - 경희대학교 미디어센터 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="경희대학교 미디어센터">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE5uUVd6X3ZmMWJxdWFPX3BBTXBiN1lRaFQyLTVhZXluX0xsVjU3Tk1IdVhmNFlwSU1YUXkzMUstal9PYzdfanpGNnpLNnhRWERsY1M5SV9tb0x4M29KdEZSNTBkNDdfV0YwQk8wcjR4blA1NV9nY0E?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[뉴스] 아시안게임 종합마술 동메달 이동화 “다음 무대는 2030 아시안게임” - 경희대학교 미디어센터</a>
+      <p class="article-card__desc">[뉴스] 아시안게임 종합마술 동메달 이동화 “다음 무대는 2030 아시안게임”  경희대학교 미디어센터</p>
+      <div class="article-card__meta">
+        <span class="badge-source">경희대학교 미디어센터</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE5uUVd6X3ZmMWJxdWFPX3BBTXBiN1lRaFQyLTVhZXluX0xsVjU3Tk1IdVhmNFlwSU1YUXkzMUstal9PYzdfanpGNnpLNnhRWERsY1M5SV9tb0x4M29KdEZSNTBkNDdfV0YwQk8wcjR4blA1NV9nY0E?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[뉴스] 아시안게임 종합마술 동메달 이동화 “다음 무대는 2030 아시안게임” - 경희대학교 미디어센터 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="경희대학교 미디어센터">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE50aDRWSi1LMUVLeV9GRmxHanBpWUV3V3hQenB1YkF0WXhlYWxXTDkzaTN0SE1rdUZsZHZkOVp4c2FGU3YwX2FUQ25lUHVzNFpNTDBzcFpocTRNRllzRnhmbk9DOW5qTUFrNUVhTFdpMXNYTHZ0OWc?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[특별기획] 같은 후마, 다른 결정… 양캠 조정 체계는 어디에 ‘캠퍼스별 특성에 맞게 거버넌스 분리’ 주장도 - 경희대학교 미디어센터</a>
+      <p class="article-card__desc">[특별기획] 같은 후마, 다른 결정… 양캠 조정 체계는 어디에 ‘캠퍼스별 특성에 맞게 거버넌스 분리’ 주장도  경희대학교 미디어센터</p>
+      <div class="article-card__meta">
+        <span class="badge-source">경희대학교 미디어센터</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE50aDRWSi1LMUVLeV9GRmxHanBpWUV3V3hQenB1YkF0WXhlYWxXTDkzaTN0SE1rdUZsZHZkOVp4c2FGU3YwX2FUQ25lUHVzNFpNTDBzcFpocTRNRllzRnhmbk9DOW5qTUFrNUVhTFdpMXNYTHZ0OWc?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[특별기획] 같은 후마, 다른 결정… 양캠 조정 체계는 어디에 ‘캠퍼스별 특성에 맞게 거버넌스 분리’ 주장도 - 경희대학교 미디어센터 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="동아일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFB2dG5nZDJMbnBpTXlnZHhZVUhqa21fM3JMOHBxWk9iR3R6U0kxTHh6UUNPQkNNeWtkVXBSODAyeTBzUGFocDNqeGt3QmNaXzBFc3pkQlk0V2RUaEFNejFHWnNrTDREQnFtSFpOOUl5LW1WS3QybXfSAWZBVV95cUxPaGt5M21WSHR2X2NSQXE2Vzg3eGZuWV8zaTBDdTFrRmQzNTMxSVB3YXpLM1dKbnhIOWRJVlFSWE92bDlYSl9BaWxkZmtXby15Smx6cllNaFZIeEV4S0p3WXNnLTJhaHc?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">서울 대학서 女지인 흉기 찌르고 출국한 영국인…9일 만에 검거 - 동아일보</a>
+      <p class="article-card__desc">서울 대학서 女지인 흉기 찌르고 출국한 영국인…9일 만에 검거  동아일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">동아일보</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFB2dG5nZDJMbnBpTXlnZHhZVUhqa21fM3JMOHBxWk9iR3R6U0kxTHh6UUNPQkNNeWtkVXBSODAyeTBzUGFocDNqeGt3QmNaXzBFc3pkQlk0V2RUaEFNejFHWnNrTDREQnFtSFpOOUl5LW1WS3QybXfSAWZBVV95cUxPaGt5M21WSHR2X2NSQXE2Vzg3eGZuWV8zaTBDdTFrRmQzNTMxSVB3YXpLM1dKbnhIOWRJVlFSWE92bDlYSl9BaWxkZmtXby15Smx6cllNaFZIeEV4S0p3WXNnLTJhaHc?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="서울 대학서 女지인 흉기 찌르고 출국한 영국인…9일 만에 검거 - 동아일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="천지일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE13WmEyakwzd2tJMmtwb2xwRnFvaloxdFdkM1YxcXNmZ3hYakkyckNQR0dtakxKY2ZwLUhBdVlwZHNaMVlZSEc1dDZsTXNQOFlqSmluYUxKdGdjbnRuN1M3cEpHOV9mYUIxYXc?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">서울 대학서 여대생 흉기 공격한 영국인, 도주 9일 만에 검거 - 천지일보</a>
+      <p class="article-card__desc">서울 대학서 여대생 흉기 공격한 영국인, 도주 9일 만에 검거  천지일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">천지일보</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE13WmEyakwzd2tJMmtwb2xwRnFvaloxdFdkM1YxcXNmZ3hYakkyckNQR0dtakxKY2ZwLUhBdVlwZHNaMVlZSEc1dDZsTXNQOFlqSmluYUxKdGdjbnRuN1M3cEpHOV9mYUIxYXc?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="서울 대학서 여대생 흉기 공격한 영국인, 도주 9일 만에 검거 - 천지일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="경희대학교 미디어센터">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1wbVNpaXZURnJWMWJWTTFBd2pWUlRTWjdHVGcwU0d6a0xyck5xSkZ1UjhDVkM0MG1hRHcwUjlmMGxfZ1BuNkNHVVE2UHdYSF9rcWgwVHpBNmdPaU9PZUh5SUlyNnkyRnZ0N3BGckVjdlpqU0VhNVE?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">40년 만에 문 열리는 중앙도서관 3층 보존서고, 학습·휴게 공간으로 전환 - 경희대학교 미디어센터</a>
+      <p class="article-card__desc">40년 만에 문 열리는 중앙도서관 3층 보존서고, 학습·휴게 공간으로 전환  경희대학교 미디어센터</p>
+      <div class="article-card__meta">
+        <span class="badge-source">경희대학교 미디어센터</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1wbVNpaXZURnJWMWJWTTFBd2pWUlRTWjdHVGcwU0d6a0xyck5xSkZ1UjhDVkM0MG1hRHcwUjlmMGxfZ1BuNkNHVVE2UHdYSF9rcWgwVHpBNmdPaU9PZUh5SUlyNnkyRnZ0N3BGckVjdlpqU0VhNVE?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="40년 만에 문 열리는 중앙도서관 3층 보존서고, 학습·휴게 공간으로 전환 - 경희대학교 미디어센터 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="문화일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFBRRUhSdnVfRHdMR1FfdnNoS210SHZaSDljQWdxNFZqdFhadFJSOUtsbG1sU0VNbjg2a01WZDVLUi1ZdWwxQWVaMkd2b1UxV2g5?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">서울 대학서 여성 목 찌르고 영국 도주한 30대…9일 만에 현지서 검거 - 문화일보</a>
+      <p class="article-card__desc">서울 대학서 여성 목 찌르고 영국 도주한 30대…9일 만에 현지서 검거  문화일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">문화일보</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFBRRUhSdnVfRHdMR1FfdnNoS210SHZaSDljQWdxNFZqdFhadFJSOUtsbG1sU0VNbjg2a01WZDVLUi1ZdWwxQWVaMkd2b1UxV2g5?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="서울 대학서 여성 목 찌르고 영국 도주한 30대…9일 만에 현지서 검거 - 문화일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="경희대학교 미디어센터">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFBUNHltVDZPUFMtYzNYZlhFWDlQLVNMOTNmcjZBcVVqeHpYVHUyYjdTZ0JlMjhvTlB3UklvZDkxUVg3YkRDR1Y5WXNMYkFnZkhMbEZEckVGUTBuNVBRV2V4bWtyQnZQbThvc0JzZmJiNmQzaFV3a1E?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[취재수첩] 관행이 된 관리비 - 경희대학교 미디어센터</a>
+      <p class="article-card__desc">[취재수첩] 관행이 된 관리비  경희대학교 미디어센터</p>
+      <div class="article-card__meta">
+        <span class="badge-source">경희대학교 미디어센터</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFBUNHltVDZPUFMtYzNYZlhFWDlQLVNMOTNmcjZBcVVqeHpYVHUyYjdTZ0JlMjhvTlB3UklvZDkxUVg3YkRDR1Y5WXNMYkFnZkhMbEZEckVGUTBuNVBRV2V4bWtyQnZQbThvc0JzZmJiNmQzaFV3a1E?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[취재수첩] 관행이 된 관리비 - 경희대학교 미디어센터 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="SPOTV NEWS">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFAxRVBJY1VGTHNqb1FmZnpOTl9aX1RwcXhOMVhON3F1QnBIWVNuYWZFQTFuOTdsZTBTR2pCeFV2b2ZGZTR0djUwbWNiTi04OE5NcGc1Njlkd183czFJR1Y0SDI4QzliRlBadFcycFFaVHI?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대학 브리지대표팀 세계대학선수권 출격! 중국 랴오청서 세계무대 첫 승 도전 - SPOTV NEWS</a>
+      <p class="article-card__desc">대학 브리지대표팀 세계대학선수권 출격! 중국 랴오청서 세계무대 첫 승 도전  SPOTV NEWS</p>
+      <div class="article-card__meta">
+        <span class="badge-source">SPOTV NEWS</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFAxRVBJY1VGTHNqb1FmZnpOTl9aX1RwcXhOMVhON3F1QnBIWVNuYWZFQTFuOTdsZTBTR2pCeFV2b2ZGZTR0djUwbWNiTi04OE5NcGc1Njlkd183czFJR1Y0SDI4QzliRlBadFcycFFaVHI?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대학 브리지대표팀 세계대학선수권 출격! 중국 랴오청서 세계무대 첫 승 도전 - SPOTV NEWS 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국강사신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBKMzV0WVpHb0tLbnQ2bm8wSFlJMGx3amFwcG9TQ0VORzRtanF0czdWc2xsMkVjQ2UzTXh6UlJZVDhrbGF3cFp4RjNGN0hVa2JHVGs2RmVBT0xlM1Z0Qmthc3NpNnJ4ZkNmWUpka1BscmI?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">세종대학교 대학일자리플러스센터, 금융·SOC·보건·복지·에너지 등 4개 분야 공공기관 채용전략 집중 분석 - 한국강사신문</a>
+      <p class="article-card__desc">세종대학교 대학일자리플러스센터, 금융·SOC·보건·복지·에너지 등 4개 분야 공공기관 채용전략 집중 분석  한국강사신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국강사신문</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBKMzV0WVpHb0tLbnQ2bm8wSFlJMGx3amFwcG9TQ0VORzRtanF0czdWc2xsMkVjQ2UzTXh6UlJZVDhrbGF3cFp4RjNGN0hVa2JHVGs2RmVBT0xlM1Z0Qmthc3NpNnJ4ZkNmWUpka1BscmI?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="세종대학교 대학일자리플러스센터, 금융·SOC·보건·복지·에너지 등 4개 분야 공공기관 채용전략 집중 분석 - 한국강사신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="KBC광주방송">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE93ZDd0LWdwV053WWpXZkw0VlJNMnVaUXZaNWhGX2RzaDRRZHFoNXlLOVBlVmVoNTl1U2VvU2FxVDNqeHUwRHozUWJlem9FWjJsNEtfbjhKODg5OFFub01xUw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">서울 대학서 20대 지인 여성 목 찌르고 도주한 영국인…9일 만에 검거 - KBC광주방송</a>
+      <p class="article-card__desc">서울 대학서 20대 지인 여성 목 찌르고 도주한 영국인…9일 만에 검거  KBC광주방송</p>
+      <div class="article-card__meta">
+        <span class="badge-source">KBC광주방송</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE93ZDd0LWdwV053WWpXZkw0VlJNMnVaUXZaNWhGX2RzaDRRZHFoNXlLOVBlVmVoNTl1U2VvU2FxVDNqeHUwRHozUWJlem9FWjJsNEtfbjhKODg5OFFub01xUw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="서울 대학서 20대 지인 여성 목 찌르고 도주한 영국인…9일 만에 검거 - KBC광주방송 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="중앙일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1RZnZiT3J2bmdzSGhKM0o3dHg4S0dsQjl4S2NvRTdZdjBZRDFsRGdJTklyNXFaSFJDNDdLWjAzaE1zNF9JVm92RC1zbGQ4cm5KRG5kYzhR?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">서울 시내 대학서 여성 찌른 영국인…본국 도주 9일 만에 검거 - 중앙일보</a>
+      <p class="article-card__desc">서울 시내 대학서 여성 찌른 영국인…본국 도주 9일 만에 검거  중앙일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">중앙일보</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1RZnZiT3J2bmdzSGhKM0o3dHg4S0dsQjl4S2NvRTdZdjBZRDFsRGdJTklyNXFaSFJDNDdLWjAzaE1zNF9JVm92RC1zbGQ4cm5KRG5kYzhR?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="서울 시내 대학서 여성 찌른 영국인…본국 도주 9일 만에 검거 - 중앙일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국영농신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE1qX1N0Y0RnNDhMQXZtUjNycHhHTXE2TDBDcVdDcnU5aTY3Y3BGa3IxN09OTHl3R0VJVV9HaFFIWXZobVdsYmJyVmxQS3lvZ3I5RkkzTnRQcGNiVHRhQ3JkQkJfU0xjV1RuSkktUjNB?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">한국산림아카데미재단, 미국 대학과 산림·정원 국제교육 협력 - 한국영농신문</a>
+      <p class="article-card__desc">한국산림아카데미재단, 미국 대학과 산림·정원 국제교육 협력  한국영농신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국영농신문</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE1qX1N0Y0RnNDhMQXZtUjNycHhHTXE2TDBDcVdDcnU5aTY3Y3BGa3IxN09OTHl3R0VJVV9HaFFIWXZobVdsYmJyVmxQS3lvZ3I5RkkzTnRQcGNiVHRhQ3JkQkJfU0xjV1RuSkktUjNB?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="한국산림아카데미재단, 미국 대학과 산림·정원 국제교육 협력 - 한국영농신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국강사신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE1vbS1Qbmw1TDh3WXdhVFZfUnBrTkhQNnpJRERESVJ2M2s1VGN0elVORnU2b0wzRlNVbUdPUm4yekw4NEdTN0RCSU91NGZ3ZDZSb0E1S09QR3BveFZLemRFM3BVX210RzB5b3AtZXBESVY?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">전공 탐색부터 진로 설계까지…EBS 미리 가본 대학, 동국대학교 WISE캠퍼스서 새내기 하루 체험 - 한국강사신문</a>
+      <p class="article-card__desc">전공 탐색부터 진로 설계까지…EBS 미리 가본 대학, 동국대학교 WISE캠퍼스서 새내기 하루 체험  한국강사신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국강사신문</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE1vbS1Qbmw1TDh3WXdhVFZfUnBrTkhQNnpJRERESVJ2M2s1VGN0elVORnU2b0wzRlNVbUdPUm4yekw4NEdTN0RCSU91NGZ3ZDZSb0E1S09QR3BveFZLemRFM3BVX210RzB5b3AtZXBESVY?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="전공 탐색부터 진로 설계까지…EBS 미리 가본 대학, 동국대학교 WISE캠퍼스서 새내기 하루 체험 - 한국강사신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="중도일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5nYzJTUWswRy1XT054TWhEMlZoeGtBVzY1SVl2ejVIbGZJRHhJY0JvX1lhSTM4Ry1QSjRaQXNZbnIyTTB1YWNiOEpFY0pNUGxLZ1Z1RnhTc3JTRHFRX0I5SFo0S1Q?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">청양군농업인대학 제19기 졸업식···전문 농업인 39명 배출 - 중도일보</a>
+      <p class="article-card__desc">청양군농업인대학 제19기 졸업식···전문 농업인 39명 배출  중도일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">중도일보</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5nYzJTUWswRy1XT054TWhEMlZoeGtBVzY1SVl2ejVIbGZJRHhJY0JvX1lhSTM4Ry1QSjRaQXNZbnIyTTB1YWNiOEpFY0pNUGxLZ1Z1RnhTc3JTRHFRX0I5SFo0S1Q?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="청양군농업인대학 제19기 졸업식···전문 농업인 39명 배출 - 중도일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="일간투데이">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE1weE1BR2s0Z2hGTVE3NzI3SjM2RFdNY0haSDBiWVZxUGdLOTZFRW1uWWxfdUgzZ0RRVDhCRTE2NkhXLWo5QVZMaGw2Tl9Ra3VxdFlmcVktVWxubVpEMkh1SEl1TE1IQVRQd0lj?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">국립공주대 산업과학대학, 2026학년도 대동제 ‘도화(圖火)’ 성료 - 일간투데이</a>
+      <p class="article-card__desc">국립공주대 산업과학대학, 2026학년도 대동제 ‘도화(圖火)’ 성료  일간투데이</p>
+      <div class="article-card__meta">
+        <span class="badge-source">일간투데이</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE1weE1BR2s0Z2hGTVE3NzI3SjM2RFdNY0haSDBiWVZxUGdLOTZFRW1uWWxfdUgzZ0RRVDhCRTE2NkhXLWo5QVZMaGw2Tl9Ra3VxdFlmcVktVWxubVpEMkh1SEl1TE1IQVRQd0lj?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="국립공주대 산업과학대학, 2026학년도 대동제 ‘도화(圖火)’ 성료 - 일간투데이 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="경기일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE1HWFUycUlZSldWbVpQVDJvS2pmMXEzenNiODNZY2ducGVYdjlJTldYXzhKcDJmZmxRb25lWExqb0VmRHA2blpsdlRiM2lHLXc3QktPZkxCOHZwSXc?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">서울 대학서 20대 여대생 찌르고 출국한 영국인...9일 만에 덜미 - 경기일보</a>
+      <p class="article-card__desc">서울 대학서 20대 여대생 찌르고 출국한 영국인...9일 만에 덜미  경기일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">경기일보</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE1HWFUycUlZSldWbVpQVDJvS2pmMXEzenNiODNZY2ducGVYdjlJTldYXzhKcDJmZmxRb25lWExqb0VmRHA2blpsdlRiM2lHLXc3QktPZkxCOHZwSXc?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="서울 대학서 20대 여대생 찌르고 출국한 영국인...9일 만에 덜미 - 경기일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="반월신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE85bElkWVEtbl9oeTBJdjFvNHo4c2cxTzRCNC1QM3BFRGRmYTZkb09zWFRiQ3Q1dWQ4WS1zUHNjVF9MQjBXRHg4UFpzM3BESmlTYlNOaDhCVjZIREVxMDNqX1VqRFBKSlU?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">경기도의회 교육기획위원회 박은경 의원 “교육청․대학 협력, MOU 넘어 실질적 상생모델 만들어야” - 반월신문</a>
+      <p class="article-card__desc">경기도의회 교육기획위원회 박은경 의원 “교육청․대학 협력, MOU 넘어 실질적 상생모델 만들어야”  반월신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">반월신문</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE85bElkWVEtbl9oeTBJdjFvNHo4c2cxTzRCNC1QM3BFRGRmYTZkb09zWFRiQ3Q1dWQ4WS1zUHNjVF9MQjBXRHg4UFpzM3BESmlTYlNOaDhCVjZIREVxMDNqX1VqRFBKSlU?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="경기도의회 교육기획위원회 박은경 의원 “교육청․대학 협력, MOU 넘어 실질적 상생모델 만들어야” - 반월신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="아시아경제">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBua3hwclBjQk14MUhUWGV1bUp3aTZJaVVIamhIVHNJMWZaNnR0ZnVNZUNZTG05MmkySjVqc3FCajl5MllydVZTalh1Uzl0c0RnSkZpVHVtMFVjYmllZGI1eg?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">&quot;여대 아니었어?&quot;…남녀 둘러앉은 캠퍼스, 파격 결단 내린 日대학 - 아시아경제</a>
+      <p class="article-card__desc">&quot;여대 아니었어?&quot;…남녀 둘러앉은 캠퍼스, 파격 결단 내린 日대학  아시아경제</p>
+      <div class="article-card__meta">
+        <span class="badge-source">아시아경제</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBua3hwclBjQk14MUhUWGV1bUp3aTZJaVVIamhIVHNJMWZaNnR0ZnVNZUNZTG05MmkySjVqc3FCajl5MllydVZTalh1Uzl0c0RnSkZpVHVtMFVjYmllZGI1eg?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="&quot;여대 아니었어?&quot;…남녀 둘러앉은 캠퍼스, 파격 결단 내린 日대학 - 아시아경제 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="위키리크스한국">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5jcl9rTE5QUmNqbkplcmxfcEZYSmhKX2NpbG9VLUVnZzRNRDVHMFBLUk43ZnF0ZzNXRlNPMHhfRlN3X3A5WDdkVE9ZN1dJbEhDR1NPWDQ4WGlzTWN0eXRncTRvVHZwSV9sREVocFVjNjg?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">서울 대학서 지인 여성 목 찌르고 도주한 영국인, 9일 만에 현지서 검거 - 위키리크스한국</a>
+      <p class="article-card__desc">서울 대학서 지인 여성 목 찌르고 도주한 영국인, 9일 만에 현지서 검거  위키리크스한국</p>
+      <div class="article-card__meta">
+        <span class="badge-source">위키리크스한국</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5jcl9rTE5QUmNqbkplcmxfcEZYSmhKX2NpbG9VLUVnZzRNRDVHMFBLUk43ZnF0ZzNXRlNPMHhfRlN3X3A5WDdkVE9ZN1dJbEhDR1NPWDQ4WGlzTWN0eXRncTRvVHZwSV9sREVocFVjNjg?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="서울 대학서 지인 여성 목 찌르고 도주한 영국인, 9일 만에 현지서 검거 - 위키리크스한국 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="Vietnam.vn">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQQVJfZXFtcm5lRWFwVUZHSEFHaXhnZUZrbUZTaEJMNEhRaHNVZ1k3c3RYVW1IWnVxOTFYZ0JaQ0sxNVBQYlVSQVhyeS1EblNLT0FtSm1LOFo4eHcyZHZuQ20wdllYNFBoQnp3T0pEbDZtb1B6bGNUeXhrZ0paQ3VKSEJXUTU3eFJSdm43STd2ekdzVkh5?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">AI 기반 대학 모델은 교육, 학습 및 평가에 AI를 도입하여 혁신을 이끌어냅니다. - Vietnam.vn</a>
+      <p class="article-card__desc">AI 기반 대학 모델은 교육, 학습 및 평가에 AI를 도입하여 혁신을 이끌어냅니다.  Vietnam.vn</p>
+      <div class="article-card__meta">
+        <span class="badge-source">Vietnam.vn</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQQVJfZXFtcm5lRWFwVUZHSEFHaXhnZUZrbUZTaEJMNEhRaHNVZ1k3c3RYVW1IWnVxOTFYZ0JaQ0sxNVBQYlVSQVhyeS1EblNLT0FtSm1LOFo4eHcyZHZuQ20wdllYNFBoQnp3T0pEbDZtb1B6bGNUeXhrZ0paQ3VKSEJXUTU3eFJSdm43STd2ekdzVkh5?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="AI 기반 대학 모델은 교육, 학습 및 평가에 AI를 도입하여 혁신을 이끌어냅니다. - Vietnam.vn 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="뉴스핌">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE5pTVRtalJIVTVBSVNqS0xRZGl2Qnpla2JZVU5INklfaTJYMFdDdTJQbjlwTFo2ZFVLbHlfYk01ejE2MlloOHlfR0JMNVc4ZFFFTktqblFFNzBweGJU?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">서울 시내 대학서 여성 찌르고 도주한 영국인…도주 9일만 검거 - 뉴스핌</a>
+      <p class="article-card__desc">서울 시내 대학서 여성 찌르고 도주한 영국인…도주 9일만 검거  뉴스핌</p>
+      <div class="article-card__meta">
+        <span class="badge-source">뉴스핌</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE5pTVRtalJIVTVBSVNqS0xRZGl2Qnpla2JZVU5INklfaTJYMFdDdTJQbjlwTFo2ZFVLbHlfYk01ejE2MlloOHlfR0JMNVc4ZFFFTktqblFFNzBweGJU?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="서울 시내 대학서 여성 찌르고 도주한 영국인…도주 9일만 검거 - 뉴스핌 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="Vietnam.vn">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNSlZnUDRsYk9zTmYxT2wyRXdsWEd2U1h2dWVrMWRCSlgzNmE4TGpKODNwZy10MGUzc2NvUGZKT2s2ek5mdDFBcWJNdm1ob29XREdfcGZsWU92VlB1aGY3T1ZNYkxUZ2t0VU1mNC1TajZJSm9QQkt1YTV3OGppM2lKZnFkT3JzdGd6LVMybkNRd0NGX2xNZGdsMA?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">끼엔장 대학은 약 2,000명의 정규 학생을 모집하고 있습니다. - Vietnam.vn</a>
+      <p class="article-card__desc">끼엔장 대학은 약 2,000명의 정규 학생을 모집하고 있습니다.  Vietnam.vn</p>
+      <div class="article-card__meta">
+        <span class="badge-source">Vietnam.vn</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNSlZnUDRsYk9zTmYxT2wyRXdsWEd2U1h2dWVrMWRCSlgzNmE4TGpKODNwZy10MGUzc2NvUGZKT2s2ek5mdDFBcWJNdm1ob29XREdfcGZsWU92VlB1aGY3T1ZNYkxUZ2t0VU1mNC1TajZJSm9QQkt1YTV3OGppM2lKZnFkT3JzdGd6LVMybkNRd0NGX2xNZGdsMA?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="끼엔장 대학은 약 2,000명의 정규 학생을 모집하고 있습니다. - Vietnam.vn 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="싱글리스트">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBITElyYmxaS0V5WFZDQUFhUGcyTHlTU3lpVHlXN2FYS3EzMEVhODVUSncyZHNMem55cnRNRjN3bFdOd19SMDEyZnJkamRUOGo2SVJQT2ltMXp0RENJSXAwUHhMcERfQQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">금융권부터 한전·교회·대학…해킹에 개인정보 100만건 이상 노출 - 싱글리스트</a>
+      <p class="article-card__desc">금융권부터 한전·교회·대학…해킹에 개인정보 100만건 이상 노출  싱글리스트</p>
+      <div class="article-card__meta">
+        <span class="badge-source">싱글리스트</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBITElyYmxaS0V5WFZDQUFhUGcyTHlTU3lpVHlXN2FYS3EzMEVhODVUSncyZHNMem55cnRNRjN3bFdOd19SMDEyZnJkamRUOGo2SVJQT2ltMXp0RENJSXAwUHhMcERfQQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="금융권부터 한전·교회·대학…해킹에 개인정보 100만건 이상 노출 - 싱글리스트 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="아시아경제">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBuUVI2a2hDSng2eWpQc2dSay1nV3FJRjdLS2lkWmVrVEV0Y05ZTlBNYkcwcTAyNkhQQVRLaTV0NGJkRnB1Y21xejBScUVjMlhBSmJOYWtzdU41X1dWc3c5UA?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">서울 대학서 지인 흉기 공격한 영국인…9일 만에 영국서 검거 - 아시아경제</a>
+      <p class="article-card__desc">서울 대학서 지인 흉기 공격한 영국인…9일 만에 영국서 검거  아시아경제</p>
+      <div class="article-card__meta">
+        <span class="badge-source">아시아경제</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBuUVI2a2hDSng2eWpQc2dSay1nV3FJRjdLS2lkWmVrVEV0Y05ZTlBNYkcwcTAyNkhQQVRLaTV0NGJkRnB1Y21xejBScUVjMlhBSmJOYWtzdU41X1dWc3c5UA?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="서울 대학서 지인 흉기 공격한 영국인…9일 만에 영국서 검거 - 아시아경제 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="Vietnam.vn">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTFVmU3Q4OGEtZWxiZHVaX3RCREtnVzRtUzBGTmV3QXNGbm1ydkdyek1fWUtCeElkRzBPN0xpVnFGYlUtMzhUWHM1bzNqRVpvWkZoZmF3d1J5M0c2TS04eURDd2VnZmlPdG1JZWdtVnB5TUlxRVp5M1J5c21JQ0dHWFNNd2xqT2hBQXNEaE4wN19aMVd0eFZnRXZjQ0o0N2s5SExwOXhRZHA?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">국립경제대학교는 2026년에 912명의 졸업생에게 석사 학위를 수여했습니다. - Vietnam.vn</a>
+      <p class="article-card__desc">국립경제대학교는 2026년에 912명의 졸업생에게 석사 학위를 수여했습니다.  Vietnam.vn</p>
+      <div class="article-card__meta">
+        <span class="badge-source">Vietnam.vn</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTFVmU3Q4OGEtZWxiZHVaX3RCREtnVzRtUzBGTmV3QXNGbm1ydkdyek1fWUtCeElkRzBPN0xpVnFGYlUtMzhUWHM1bzNqRVpvWkZoZmF3d1J5M0c2TS04eURDd2VnZmlPdG1JZWdtVnB5TUlxRVp5M1J5c21JQ0dHWFNNd2xqT2hBQXNEaE4wN19aMVd0eFZnRXZjQ0o0N2s5SExwOXhRZHA?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="국립경제대학교는 2026년에 912명의 졸업생에게 석사 학위를 수여했습니다. - Vietnam.vn 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="경희대학교 미디어센터">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE11ZkRiSGZBdURBM1lIX2VmUmhqa1pTdlc1X0FVajFYZ3l1eTFKcmdyOUU5ampodWphSXRSMEJjNEdkdmFXcklTd2ZCaThrOGJkcVZHRkhiRndLdDBBeGQ4cEF5UWJuYVlYd0paRkRlVVRzMUE?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[뉴스] 난간 너머 아래 ‘뻥’ 뚫린 계단, 공과대학 C동 안전 사각지대 - 경희대학교 미디어센터</a>
+      <p class="article-card__desc">[뉴스] 난간 너머 아래 ‘뻥’ 뚫린 계단, 공과대학 C동 안전 사각지대  경희대학교 미디어센터</p>
+      <div class="article-card__meta">
+        <span class="badge-source">경희대학교 미디어센터</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE11ZkRiSGZBdURBM1lIX2VmUmhqa1pTdlc1X0FVajFYZ3l1eTFKcmdyOUU5ampodWphSXRSMEJjNEdkdmFXcklTd2ZCaThrOGJkcVZHRkhiRndLdDBBeGQ4cEF5UWJuYVlYd0paRkRlVVRzMUE?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[뉴스] 난간 너머 아래 ‘뻥’ 뚫린 계단, 공과대학 C동 안전 사각지대 - 경희대학교 미디어센터 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="미주중앙일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTFBRdk1EaEVKeFNoZW9wWHNsM1ltYnZxb2pZS0Y3blFINDMzX1o2eU5QZjM0bnpnNUpZUXZhcXRyeGdUSEFlVlVqVWdDMmFpYUpJS0NlVVc3YlFXTTNQb25QRWln?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">서울 시내 대학서 여성 찌른 영국인…본국 도주 9일 만에 검거 - 미주중앙일보</a>
+      <p class="article-card__desc">서울 시내 대학서 여성 찌른 영국인…본국 도주 9일 만에 검거  미주중앙일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">미주중앙일보</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTFBRdk1EaEVKeFNoZW9wWHNsM1ltYnZxb2pZS0Y3blFINDMzX1o2eU5QZjM0bnpnNUpZUXZhcXRyeGdUSEFlVlVqVWdDMmFpYUpJS0NlVVc3YlFXTTNQb25QRWln?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="서울 시내 대학서 여성 찌른 영국인…본국 도주 9일 만에 검거 - 미주중앙일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="뉴스컬처">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE1hX1piNGwyZjMtbHBzeXpIZFpYYjlGVXhxQk5DdkpfNlNaSjJvVUtzX2xPUXhrOXJ5WHVXakZ4b3lKeVV4Qmg2UC1FUXRrQ1VIV1N5MVd4cVFlRW9nLWQ3UnlSbXZLZw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">춘천연극제 대상 '검사반점', 대학로서 3일간 특별 공연 - 뉴스컬처</a>
+      <p class="article-card__desc">춘천연극제 대상 '검사반점', 대학로서 3일간 특별 공연  뉴스컬처</p>
+      <div class="article-card__meta">
+        <span class="badge-source">뉴스컬처</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE1hX1piNGwyZjMtbHBzeXpIZFpYYjlGVXhxQk5DdkpfNlNaSjJvVUtzX2xPUXhrOXJ5WHVXakZ4b3lKeVV4Qmg2UC1FUXRrQ1VIV1N5MVd4cVFlRW9nLWQ3UnlSbXZLZw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="춘천연극제 대상 '검사반점', 대학로서 3일간 특별 공연 - 뉴스컬처 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="스포츠경향">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE5EN0JYLWRiLUxTYXAwazI3M3oxdG9VTFoyZ2lXS21LLVFRdzZ3N1h1ZUlQNEdGYm9oZjF0SXZhd2lTcTNYazY1aVJ4ZDBIMm8yN05scWp5YjNSdkZlclHSAWNBVV95cUxQSTZjQ1o1X0JicUp4ZmdBcHRWbUxieG5wTzVpaDZKZ1VUc2k2VWowNWEzd1BYaW13MEp6Q1BVbl80V1lMbHVQMHpTUVdLa1AtVE9DczB6Y1pVYVNpTi0yX19QWlk?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">엔플라잉, 대학 축제 무대에 男 난입 ‘당황’ - 스포츠경향</a>
+      <p class="article-card__desc">엔플라잉, 대학 축제 무대에 男 난입 ‘당황’  스포츠경향</p>
+      <div class="article-card__meta">
+        <span class="badge-source">스포츠경향</span>
+        <span class="article-date">2026-10-10</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE5EN0JYLWRiLUxTYXAwazI3M3oxdG9VTFoyZ2lXS21LLVFRdzZ3N1h1ZUlQNEdGYm9oZjF0SXZhd2lTcTNYazY1aVJ4ZDBIMm8yN05scWp5YjNSdkZlclHSAWNBVV95cUxQSTZjQ1o1X0JicUp4ZmdBcHRWbUxieG5wTzVpaDZKZ1VUc2k2VWowNWEzd1BYaW13MEp6Q1BVbl80V1lMbHVQMHpTUVdLa1AtVE9DczB6Y1pVYVNpTi0yX19QWlk?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="엔플라잉, 대학 축제 무대에 男 난입 ‘당황’ - 스포츠경향 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="강원도민일보">
   <div class="article-card__inner">
     <div class="article-card__content">
       <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBKOWxEQjhvNXZLb2ZrWW5PWnZuSU01aDc1Rm9XRFVyTE9EZG1KeUM4YUR0NkZMZjFZdndORGM1QjZZdG80RzZfMjJwUXlkS01zSDBtTVdXdXVBS1RQNnJDdXAzUkI4Tk0?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">전국 대학 테니스 대축제 춘천서 막올렸다 - 강원도민일보</a>
@@ -141,7 +701,7 @@
 <footer class="site-footer">
   <div class="site-footer__inner">
     <span class="site-footer__text">© 대학 기사 아카이브</span>
-    <span class="site-footer__text">총 <strong>11880</strong>개 기사 보관</span>
+    <span class="site-footer__text">총 <strong>11929</strong>개 기사 보관</span>
   </div>
 </footer>
 
