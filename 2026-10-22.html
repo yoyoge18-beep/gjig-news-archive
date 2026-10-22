@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026년 10월 22일 — 대학 기사 아카이브</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="./static/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="g-nav" role="navigation" aria-label="전역 내비게이션">
+  <div class="g-nav__inner">
+    <a href="./index.html" class="g-nav__brand">대학 기사 아카이브</a>
+    <div class="g-nav__right">
+      <span class="g-nav__count">총 <strong>12886</strong>개</span>
+      <a href="./search.html" class="g-nav__icon-btn" title="검색" aria-label="검색">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+          <path d="M10 6.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0zm-.687 3.02a4.5 4.5 0 1 1 .707-.707l2.834 2.833a.5.5 0 0 1-.708.708L9.313 9.52z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="s-nav" role="navigation" aria-label="날짜 내비게이션">
+  <div class="s-nav__inner">
+    <div class="s-nav__date-group">
+      <a href="./2026-10-21.html" class="s-nav__arrow" aria-label="이전 날">&#8592;</a>
+      <label class="date-pick-wrap" aria-label="날짜 선택">
+        <span class="s-nav__label">2026년 10월 22일</span>
+        <input type="date" value="2026-10-22" onchange="goToDate(this.value)" aria-label="날짜 선택">
+      </label>
+      <span class="s-nav__arrow s-nav__arrow--off" aria-hidden="true">&#8594;</span>
+      <label class="date-pick-wrap" aria-label="달력으로 날짜 선택">
+        <span class="date-pick-badge">&#128197; 날짜 선택</span>
+        <input type="date" value="2026-10-22" onchange="goToDate(this.value)" aria-label="달력 날짜 선택">
+      </label>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="hero-tile" aria-label="키워드">
+    <div class="hero-tile__inner">
+      <p class="hero-tile__eyebrow">키워드</p>
+      <h1 class="hero-tile__headline">대학</h1>
+      <p class="hero-tile__tagline" id="hero-count">18건의 기사</p>
+      <p class="hero-tile__sub">2026년 10월 22일 기준</p>
+    </div>
+  </section>
+
+  <section class="content-tile">
+    <div class="content-tile__inner">
+      <div class="section-header">
+        <div>
+          <h2 class="section-header__title">2026년 10월 22일</h2>
+          <p class="section-header__subtitle" id="sub-count">18건</p>
+        </div>
+        <div class="date-chips" role="navigation" aria-label="최근 수집일">
+          <a href="./2026-10-22.html" class="date-chip date-chip--active">2026-10-22</a><a href="./2026-10-21.html" class="date-chip">2026-10-21</a><a href="./2026-10-20.html" class="date-chip">2026-10-20</a><a href="./2026-10-19.html" class="date-chip">2026-10-19</a><a href="./2026-10-18.html" class="date-chip">2026-10-18</a><a href="./2026-10-17.html" class="date-chip">2026-10-17</a><a href="./2026-10-16.html" class="date-chip">2026-10-16</a><a href="./2026-10-15.html" class="date-chip">2026-10-15</a>
+        </div>
+      </div>
+      <div class="filter-row" role="group" aria-label="언론사 필터"><button type="button" class="filter-chip filter-chip--active" data-src="" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전체 <span class="filter-chip__count">18</span></button><button type="button" class="filter-chip" data-src="SPOTV NEWS" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">SPOTV NEWS</button><button type="button" class="filter-chip" data-src="경남도민일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경남도민일보</button><button type="button" class="filter-chip" data-src="경북문화신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경북문화신문</button><button type="button" class="filter-chip" data-src="고신뉴스 KNC" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">고신뉴스 KNC</button><button type="button" class="filter-chip" data-src="뉴스더보이스헬스케어" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴스더보이스헬스케어</button><button type="button" class="filter-chip" data-src="당진신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">당진신문</button><button type="button" class="filter-chip" data-src="로컬투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">로컬투데이</button><button type="button" class="filter-chip" data-src="문화일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">문화일보</button><button type="button" class="filter-chip" data-src="성남일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">성남일보</button><button type="button" class="filter-chip" data-src="스마트경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">스마트경제</button><button type="button" class="filter-chip" data-src="연합뉴스(사회)" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스(사회)</button><button type="button" class="filter-chip" data-src="충남일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">충남일보</button><button type="button" class="filter-chip" data-src="한국대학신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한국대학신문</button></div>
+      <div class="article-grid" role="list" aria-label="기사 목록" id="article-grid"><article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE84VlQtYTJ5SUhUV0FlZ0hTSzlMSW5YSG96QlZkem9CZjlRTlluWWtkYk5MSDlXVUxncGM1eW1BeGNHajhtWVMycmdPMzdnaC1oQlZuZWg3R0dxMXVMRWEzVVVlSXFWUQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">아주대 대학일자리플러스센터, 현직자와 함께 하는 ‘커리어 프리뷰’ 운영 - 한국대학신문</a>
+      <p class="article-card__desc">아주대 대학일자리플러스센터, 현직자와 함께 하는 ‘커리어 프리뷰’ 운영  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-10-22</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE84VlQtYTJ5SUhUV0FlZ0hTSzlMSW5YSG96QlZkem9CZjlRTlluWWtkYk5MSDlXVUxncGM1eW1BeGNHajhtWVMycmdPMzdnaC1oQlZuZWg3R0dxMXVMRWEzVVVlSXFWUQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="아주대 대학일자리플러스센터, 현직자와 함께 하는 ‘커리어 프리뷰’ 운영 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="경남도민일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE84SWF4Y3pGbjlsSk5jbk9nRm4ybVZNQXpsbmZtcUJSSDZvOUhtSzZTZVJDX05EVnJycHBWbHp0c0lNRThEd2NGMDBMcF9jN1pLUkNvNEdlYjBUMzY4X0tEYWl4cUMxZU9OTFE?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">남해 보물섬농업대학 축산학과 수료식 - 경남도민일보</a>
+      <p class="article-card__desc">남해 보물섬농업대학 축산학과 수료식  경남도민일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">경남도민일보</span>
+        <span class="article-date">2026-10-22</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE84SWF4Y3pGbjlsSk5jbk9nRm4ybVZNQXpsbmZtcUJSSDZvOUhtSzZTZVJDX05EVnJycHBWbHp0c0lNRThEd2NGMDBMcF9jN1pLUkNvNEdlYjBUMzY4X0tEYWl4cUMxZU9OTFE?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="남해 보물섬농업대학 축산학과 수료식 - 경남도민일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="뉴스더보이스헬스케어">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE04M05RRnE4cjJ3VnVnQjllMi1YUUF2TlhyS2RPdUhVdFRuU1o4OF9TN2dMSUdGTndsREVZdXBBeU1Kd3laRThNVmxrR0dvTjJOWFE0eVh4NGMtZjIwY1NNeU5yVmIwZkhQclZoS0VaOA?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[대화제약] 강원대 약학대학과 제약·바이오 인재 육성 협약 - 뉴스더보이스헬스케어</a>
+      <p class="article-card__desc">[대화제약] 강원대 약학대학과 제약·바이오 인재 육성 협약  뉴스더보이스헬스케어</p>
+      <div class="article-card__meta">
+        <span class="badge-source">뉴스더보이스헬스케어</span>
+        <span class="article-date">2026-10-22</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE04M05RRnE4cjJ3VnVnQjllMi1YUUF2TlhyS2RPdUhVdFRuU1o4OF9TN2dMSUdGTndsREVZdXBBeU1Kd3laRThNVmxrR0dvTjJOWFE0eVh4NGMtZjIwY1NNeU5yVmIwZkhQclZoS0VaOA?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[대화제약] 강원대 약학대학과 제약·바이오 인재 육성 협약 - 뉴스더보이스헬스케어 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="당진신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTFBvLWtSMDNEQkJ1SkFsY3F0VXl2d09DSjVlNVV0YzJ0UmFFUEZnVFUyWHI2R2RmbE1vMjNxTWQxdjdZOTVOakF6QjNZN2dRTDZhQ0VEMmxkcjVWTkxPbkkxVjVyQ1NCVC13?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">당진꿈나래학교, 학교·마을·대학 함께 '꿈꿈꿈 한마당'..체험부스 20개 운영 - 당진신문</a>
+      <p class="article-card__desc">당진꿈나래학교, 학교·마을·대학 함께 '꿈꿈꿈 한마당'..체험부스 20개 운영  당진신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">당진신문</span>
+        <span class="article-date">2026-10-22</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTFBvLWtSMDNEQkJ1SkFsY3F0VXl2d09DSjVlNVV0YzJ0UmFFUEZnVFUyWHI2R2RmbE1vMjNxTWQxdjdZOTVOakF6QjNZN2dRTDZhQ0VEMmxkcjVWTkxPbkkxVjVyQ1NCVC13?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="당진꿈나래학교, 학교·마을·대학 함께 '꿈꿈꿈 한마당'..체험부스 20개 운영 - 당진신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="성남일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE42YmxLZWRsaU9ORkZCYlF1ckdKN1cwVEhnbGJJN0dVdlgxd25YSllNWWd2NW1YMUkzMjh4SF9YSFh3X093Vzc5OVpXSXZvV09BYjlxNmgzXzlmWEFzMXhGUU9qTXhNcFZRLUJLeQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">지역 산업현장 이끌 기술인재 키운다 … 한국폴리텍대학 성남캠퍼스, 제2회 에이스테크 장학금 수여식 - 성남일보</a>
+      <p class="article-card__desc">지역 산업현장 이끌 기술인재 키운다 … 한국폴리텍대학 성남캠퍼스, 제2회 에이스테크 장학금 수여식  성남일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">성남일보</span>
+        <span class="article-date">2026-10-22</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE42YmxLZWRsaU9ORkZCYlF1ckdKN1cwVEhnbGJJN0dVdlgxd25YSllNWWd2NW1YMUkzMjh4SF9YSFh3X093Vzc5OVpXSXZvV09BYjlxNmgzXzlmWEFzMXhGUU9qTXhNcFZRLUJLeQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="지역 산업현장 이끌 기술인재 키운다 … 한국폴리텍대학 성남캠퍼스, 제2회 에이스테크 장학금 수여식 - 성남일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="고신뉴스 KNC">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE4wX2RmRGZuRGN2VUNKejR4Wi1TZVl4ci1JcXo5THNnb0ZCd3JrRkxuckRVNG93MGhubUU0bkhzTmNseGFrNk9STWRpeGtlVW5YQjIxTmRaNm5ZSk9vNVdBYVpCYjl4elduOWJr?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">서촌교회, 제1기 바이블 키 교리대학 졸업식 32주간 교리교육 마치고 7명 배출 - 고신뉴스 KNC</a>
+      <p class="article-card__desc">서촌교회, 제1기 바이블 키 교리대학 졸업식 32주간 교리교육 마치고 7명 배출  고신뉴스 KNC</p>
+      <div class="article-card__meta">
+        <span class="badge-source">고신뉴스 KNC</span>
+        <span class="article-date">2026-10-22</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE4wX2RmRGZuRGN2VUNKejR4Wi1TZVl4ci1JcXo5THNnb0ZCd3JrRkxuckRVNG93MGhubUU0bkhzTmNseGFrNk9STWRpeGtlVW5YQjIxTmRaNm5ZSk9vNVdBYVpCYjl4elduOWJr?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="서촌교회, 제1기 바이블 키 교리대학 졸업식 32주간 교리교육 마치고 7명 배출 - 고신뉴스 KNC 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="경북문화신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE1tVDNkVVR4YXE4ZjQ2QTJqM1ptOGhXbW9HamxpcEJqLXJ5NWlhdFNSNzUwWHBRZGNQQ1ZwdDZUVU1uWFJNY291a0M1WGNWVjViaE14VllNQWExTUdsM2RibG82ZFdjY0F6QWZFeWRGc1htMUlCTEpoZDl3MUJhZw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">경북도, 대학 앵커사업 ‘지역 성장 플랫폼’으로 전환 - 경북문화신문</a>
+      <p class="article-card__desc">경북도, 대학 앵커사업 ‘지역 성장 플랫폼’으로 전환  경북문화신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">경북문화신문</span>
+        <span class="article-date">2026-10-22</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE1tVDNkVVR4YXE4ZjQ2QTJqM1ptOGhXbW9HamxpcEJqLXJ5NWlhdFNSNzUwWHBRZGNQQ1ZwdDZUVU1uWFJNY291a0M1WGNWVjViaE14VllNQWExTUdsM2RibG82ZFdjY0F6QWZFeWRGc1htMUlCTEpoZDl3MUJhZw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="경북도, 대학 앵커사업 ‘지역 성장 플랫폼’으로 전환 - 경북문화신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE1KZC1odmRGVVNrY1g4SENWelJlWnF1X2lIZnI5ZWJ4RG1uUDg5ajlEN01ZaENtY3NXVExWZWliNEE1d3VPQlRuWkFrVjRVclE3WkpFeHR0bFZrc1JMODRJZjlQeDFTQQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">삼육대 등 서울북부 4개 대학, 온라인 취업 박람회 개최 - 한국대학신문</a>
+      <p class="article-card__desc">삼육대 등 서울북부 4개 대학, 온라인 취업 박람회 개최  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-10-22</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE1KZC1odmRGVVNrY1g4SENWelJlWnF1X2lIZnI5ZWJ4RG1uUDg5ajlEN01ZaENtY3NXVExWZWliNEE1d3VPQlRuWkFrVjRVclE3WkpFeHR0bFZrc1JMODRJZjlQeDFTQQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="삼육대 등 서울북부 4개 대학, 온라인 취업 박람회 개최 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="로컬투데이">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBYLU5RMzVqT0pTNHNjcmhER2RhMml0VEEySDNWU0c1b2M4NkhIbXhQMFhsdXM3elVhR0dhVDV6Szhlb0Vmc251amFtQzhSLV9jRTlsNnJscy1vYUNDb2pnOWNIQTBINk1pRzVoMzNYY3g?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">한국기술교육대 – 독일 고용서비스 특성화 대학 HdBA 교류 프로그램 성료 - 로컬투데이</a>
+      <p class="article-card__desc">한국기술교육대 – 독일 고용서비스 특성화 대학 HdBA 교류 프로그램 성료  로컬투데이</p>
+      <div class="article-card__meta">
+        <span class="badge-source">로컬투데이</span>
+        <span class="article-date">2026-10-22</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBYLU5RMzVqT0pTNHNjcmhER2RhMml0VEEySDNWU0c1b2M4NkhIbXhQMFhsdXM3elVhR0dhVDV6Szhlb0Vmc251amFtQzhSLV9jRTlsNnJscy1vYUNDb2pnOWNIQTBINk1pRzVoMzNYY3g?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="한국기술교육대 – 독일 고용서비스 특성화 대학 HdBA 교류 프로그램 성료 - 로컬투데이 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBUdE9WckpQNkZLNzRhdVlOWkVVVzBZY2Y0bWNuQS1TWWVRQjIwZ1h4cTNEVkxPR1Z5OGVnOXVvOHliMHcyR3hRa2p0cTNfcjMyMTFhaE5aMGc2V3FTeEN4ajBIMmR4Zw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">명지대, AI 기반 MJU 취업·창업·진학 박람회 개최 - 한국대학신문</a>
+      <p class="article-card__desc">명지대, AI 기반 MJU 취업·창업·진학 박람회 개최  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-10-22</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBUdE9WckpQNkZLNzRhdVlOWkVVVzBZY2Y0bWNuQS1TWWVRQjIwZ1h4cTNEVkxPR1Z5OGVnOXVvOHliMHcyR3hRa2p0cTNfcjMyMTFhaE5aMGc2V3FTeEN4ajBIMmR4Zw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="명지대, AI 기반 MJU 취업·창업·진학 박람회 개최 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE5WbFlWeHI0TmxvcnEyYTFwMWhVbUt2R2ZfVHk0YWw5NnBGUkJRM0o2LVZPd2hWUld4OXFYSy1VTlpuakFqa29FNFpjR194N0RwUXA4QzUzalhIam5UcXpiLWJGOHhPUQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">광운대, 영화 ‘테트리스’ 실화 주인공 행크 로저스 초청 특별 강연 - 한국대학신문</a>
+      <p class="article-card__desc">광운대, 영화 ‘테트리스’ 실화 주인공 행크 로저스 초청 특별 강연  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-10-22</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE5WbFlWeHI0TmxvcnEyYTFwMWhVbUt2R2ZfVHk0YWw5NnBGUkJRM0o2LVZPd2hWUld4OXFYSy1VTlpuakFqa29FNFpjR194N0RwUXA4QzUzalhIam5UcXpiLWJGOHhPUQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="광운대, 영화 ‘테트리스’ 실화 주인공 행크 로저스 초청 특별 강연 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="충남일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5qZVlDUG9GX2ozRW5BQzlLcWpJblVkOWhXaXdvRnUyWGQ2RmtYXzY3Um5SRG03U21jSnFmSllESVB0c3V4UHNIWU9ZNkVuTXEzOFlDRVhNaEsxVm9NYlNBZGVnXy1pdmsyeDd5cmc5M0VYTzA?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">예산군행복마을지원센터, ‘제21기 마을대학’ 입학식 개최 - 충남일보</a>
+      <p class="article-card__desc">예산군행복마을지원센터, ‘제21기 마을대학’ 입학식 개최  충남일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">충남일보</span>
+        <span class="article-date">2026-10-22</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5qZVlDUG9GX2ozRW5BQzlLcWpJblVkOWhXaXdvRnUyWGQ2RmtYXzY3Um5SRG03U21jSnFmSllESVB0c3V4UHNIWU9ZNkVuTXEzOFlDRVhNaEsxVm9NYlNBZGVnXy1pdmsyeDd5cmc5M0VYTzA?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="예산군행복마을지원센터, ‘제21기 마을대학’ 입학식 개최 - 충남일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="SPOTV NEWS">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBfVGk2VkZ0OXBBUlc4eDBDNTlQT0MxUkZQRWtFVC1lb1BFdzFIR29xU1ZRSWNnb2ZtS2hJTG8xdVN3NmhLMDZhc2R4OWZzZ0pXWXhtMHlDTjA1OWp3ejc0NW9FM2QyOGhVS19SaWllclo?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">'왜 거짓말하고 약국을'…34기 영철, '대학 표지모델' 현숙 아프자 &quot;내가 아픈 느낌&quot;('나는솔로') - SPOTV NEWS</a>
+      <p class="article-card__desc">'왜 거짓말하고 약국을'…34기 영철, '대학 표지모델' 현숙 아프자 &quot;내가 아픈 느낌&quot;('나는솔로')  SPOTV NEWS</p>
+      <div class="article-card__meta">
+        <span class="badge-source">SPOTV NEWS</span>
+        <span class="article-date">2026-10-22</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBfVGk2VkZ0OXBBUlc4eDBDNTlQT0MxUkZQRWtFVC1lb1BFdzFIR29xU1ZRSWNnb2ZtS2hJTG8xdVN3NmhLMDZhc2R4OWZzZ0pXWXhtMHlDTjA1OWp3ejc0NW9FM2QyOGhVS19SaWllclo?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="'왜 거짓말하고 약국을'…34기 영철, '대학 표지모델' 현숙 아프자 &quot;내가 아픈 느낌&quot;('나는솔로') - SPOTV NEWS 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="스마트경제">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE52cExhZmZUbVBrRXZqS3kwWEdiUDhUWGxHbUJhelRPX1k0NXljb0toYzRwYS1GakxLcU1TQ0VQV2xyYm81SmZaU2FHX2JVem9Ja0FwdnQ4UkNjRkc0YVk5bkNRMV9TYTRsVEdWaXBmQWE?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">“배터리 취업 핵심 무기 장착”… 국민대 대학일자리플러스센터, ‘전기차 배터리 공정실무 특화과정’ 성황리 마쳐 - 스마트경제</a>
+      <p class="article-card__desc">“배터리 취업 핵심 무기 장착”… 국민대 대학일자리플러스센터, ‘전기차 배터리 공정실무 특화과정’ 성황리 마쳐  스마트경제</p>
+      <div class="article-card__meta">
+        <span class="badge-source">스마트경제</span>
+        <span class="article-date">2026-10-22</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE52cExhZmZUbVBrRXZqS3kwWEdiUDhUWGxHbUJhelRPX1k0NXljb0toYzRwYS1GakxLcU1TQ0VQV2xyYm81SmZaU2FHX2JVem9Ja0FwdnQ4UkNjRkc0YVk5bkNRMV9TYTRsVEdWaXBmQWE?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="“배터리 취업 핵심 무기 장착”… 국민대 대학일자리플러스센터, ‘전기차 배터리 공정실무 특화과정’ 성황리 마쳐 - 스마트경제 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE12UWkwMjNJM2VtN0JKOVBzX2VDV1ZxVVp5OExEcThZbFVVQTIwZHhrbUtSUFRLQXVMTldrTnVka045NDhDY2wwRjNXTUIxODJGcWJ0ckp1TDJwTUxTOUxvU3djZ2FoUQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">경희대 자연사박물관, 특별전 ‘세 도시의 캠퍼스, 초록을 읽다’ 개최 - 한국대학신문</a>
+      <p class="article-card__desc">경희대 자연사박물관, 특별전 ‘세 도시의 캠퍼스, 초록을 읽다’ 개최  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-10-22</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE12UWkwMjNJM2VtN0JKOVBzX2VDV1ZxVVp5OExEcThZbFVVQTIwZHhrbUtSUFRLQXVMTldrTnVka045NDhDY2wwRjNXTUIxODJGcWJ0ckp1TDJwTUxTOUxvU3djZ2FoUQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="경희대 자연사박물관, 특별전 ‘세 도시의 캠퍼스, 초록을 읽다’ 개최 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="문화일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFB4WHhHSnkzVjNYTVg3TEJrTnh3azNxdVgzNGpzRGlNekhTTGM1MFJfWW9pM0tvWUg0ZGlrcVNWODJ0R2ppQjdNcDlvRkpvcm5s?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">서정대학교, ‘마을 위기 대응 사업 성과토론회’ 28일 개최 - 문화일보</a>
+      <p class="article-card__desc">서정대학교, ‘마을 위기 대응 사업 성과토론회’ 28일 개최  문화일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">문화일보</span>
+        <span class="article-date">2026-10-22</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFB4WHhHSnkzVjNYTVg3TEJrTnh3azNxdVgzNGpzRGlNekhTTGM1MFJfWW9pM0tvWUg0ZGlrcVNWODJ0R2ppQjdNcDlvRkpvcm5s?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="서정대학교, ‘마을 위기 대응 사업 성과토론회’ 28일 개최 - 문화일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBuV255WThWN1Z3WDkySzNQOUsta0gwamxKcmxJQ1dIZVhwQm4zMWo2enJjX2dtSmVGRXpRSVJHeWxZdDN2bkItYXEtQjJFQmducDU3SWljU3B2WjdfWnpoRlZQeHZrUQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">배재대, 시민 누구나 무상으로 온라인 강의 듣는다…플랫폼 ‘오픈 클래스’ 구축 - 한국대학신문</a>
+      <p class="article-card__desc">배재대, 시민 누구나 무상으로 온라인 강의 듣는다…플랫폼 ‘오픈 클래스’ 구축  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-10-22</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBuV255WThWN1Z3WDkySzNQOUsta0gwamxKcmxJQ1dIZVhwQm4zMWo2enJjX2dtSmVGRXpRSVJHeWxZdDN2bkItYXEtQjJFQmducDU3SWljU3B2WjdfWnpoRlZQeHZrUQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="배재대, 시민 누구나 무상으로 온라인 강의 듣는다…플랫폼 ‘오픈 클래스’ 구축 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스(사회)">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://www.yna.co.kr/view/AKR20261022056900051" target="_blank" rel="noopener noreferrer" class="article-card__title">[부산소식] 부산대, 11월 13일 개교 80주년 시민동행 걷기대회</a>
+      <p class="article-card__desc">(부산=연합뉴스) ▲ 부산대, 11월 13일 개교 80주년 시민동행 걷기대회 = 부산대학교는 오는 11월 13일 오전 9시 30분부터 오후 2시...</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스(사회)</span>
+        <span class="article-date">2026-10-22</span>
+      </div>
+    </div>
+    <a href="https://www.yna.co.kr/view/AKR20261022056900051" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[부산소식] 부산대, 11월 13일 개교 80주년 시민동행 걷기대회 읽기">&#8599;</a>
+  </div>
+</article></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <span class="site-footer__text">© 대학 기사 아카이브</span>
+    <span class="site-footer__text">총 <strong>12886</strong>개 기사 보관</span>
+  </div>
+</footer>
+
+<script>
+function goToDate(val) {
+  if (val) window.location.href = './' + val + '.html';
+}
+function filterBy(btn) {
+  var src = btn.dataset.src;
+  var cards = document.querySelectorAll('.article-card');
+  var count = 0;
+  cards.forEach(function(c) {
+    var show = !src || c.dataset.source === src;
+    c.style.display = show ? '' : 'none';
+    if (show) count++;
+  });
+  document.querySelectorAll('.filter-chip').forEach(function(c) {
+    c.classList.remove('filter-chip--active');
+  });
+  btn.classList.add('filter-chip--active');
+  document.getElementById('sub-count').textContent = count + '건';
+  document.getElementById('hero-count').textContent = count + '건의 기사';
+}
+</script>
+</body>
+</html>
