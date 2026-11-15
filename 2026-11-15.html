@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026년 11월 15일 — 대학 기사 아카이브</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="./static/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="g-nav" role="navigation" aria-label="전역 내비게이션">
+  <div class="g-nav__inner">
+    <a href="./index.html" class="g-nav__brand">대학 기사 아카이브</a>
+    <div class="g-nav__right">
+      <span class="g-nav__count">총 <strong>14939</strong>개</span>
+      <a href="./search.html" class="g-nav__icon-btn" title="검색" aria-label="검색">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+          <path d="M10 6.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0zm-.687 3.02a4.5 4.5 0 1 1 .707-.707l2.834 2.833a.5.5 0 0 1-.708.708L9.313 9.52z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="s-nav" role="navigation" aria-label="날짜 내비게이션">
+  <div class="s-nav__inner">
+    <div class="s-nav__date-group">
+      <a href="./2026-11-14.html" class="s-nav__arrow" aria-label="이전 날">&#8592;</a>
+      <label class="date-pick-wrap" aria-label="날짜 선택">
+        <span class="s-nav__label">2026년 11월 15일</span>
+        <input type="date" value="2026-11-15" onchange="goToDate(this.value)" aria-label="날짜 선택">
+      </label>
+      <span class="s-nav__arrow s-nav__arrow--off" aria-hidden="true">&#8594;</span>
+      <label class="date-pick-wrap" aria-label="달력으로 날짜 선택">
+        <span class="date-pick-badge">&#128197; 날짜 선택</span>
+        <input type="date" value="2026-11-15" onchange="goToDate(this.value)" aria-label="달력 날짜 선택">
+      </label>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="hero-tile" aria-label="키워드">
+    <div class="hero-tile__inner">
+      <p class="hero-tile__eyebrow">키워드</p>
+      <h1 class="hero-tile__headline">대학</h1>
+      <p class="hero-tile__tagline" id="hero-count">29건의 기사</p>
+      <p class="hero-tile__sub">2026년 11월 15일 기준</p>
+    </div>
+  </section>
+
+  <section class="content-tile">
+    <div class="content-tile__inner">
+      <div class="section-header">
+        <div>
+          <h2 class="section-header__title">2026년 11월 15일</h2>
+          <p class="section-header__subtitle" id="sub-count">29건</p>
+        </div>
+        <div class="date-chips" role="navigation" aria-label="최근 수집일">
+          <a href="./2026-11-15.html" class="date-chip date-chip--active">2026-11-15</a><a href="./2026-11-14.html" class="date-chip">2026-11-14</a><a href="./2026-11-13.html" class="date-chip">2026-11-13</a><a href="./2026-11-12.html" class="date-chip">2026-11-12</a><a href="./2026-11-11.html" class="date-chip">2026-11-11</a><a href="./2026-11-10.html" class="date-chip">2026-11-10</a><a href="./2026-11-09.html" class="date-chip">2026-11-09</a><a href="./2026-11-08.html" class="date-chip">2026-11-08</a>
+        </div>
+      </div>
+      <div class="filter-row" role="group" aria-label="언론사 필터"><button type="button" class="filter-chip filter-chip--active" data-src="" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전체 <span class="filter-chip__count">29</span></button><button type="button" class="filter-chip" data-src="www.hidomin.com" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">www.hidomin.com</button><button type="button" class="filter-chip" data-src="강원일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">강원일보</button><button type="button" class="filter-chip" data-src="경북신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경북신문</button><button type="button" class="filter-chip" data-src="국제뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">국제뉴스</button><button type="button" class="filter-chip" data-src="노동일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">노동일보</button><button type="button" class="filter-chip" data-src="뉴스1" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴스1</button><button type="button" class="filter-chip" data-src="뉴스핌" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴스핌</button><button type="button" class="filter-chip" data-src="뉴시스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴시스</button><button type="button" class="filter-chip" data-src="브릿지경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">브릿지경제</button><button type="button" class="filter-chip" data-src="서울Pn" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">서울Pn</button><button type="button" class="filter-chip" data-src="아시아경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">아시아경제</button><button type="button" class="filter-chip" data-src="아시아투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">아시아투데이</button><button type="button" class="filter-chip" data-src="연합뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스</button><button type="button" class="filter-chip" data-src="연합뉴스(사회)" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스(사회)</button><button type="button" class="filter-chip" data-src="영남일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">영남일보</button><button type="button" class="filter-chip" data-src="이데일리" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">이데일리</button><button type="button" class="filter-chip" data-src="전자신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전자신문</button><button type="button" class="filter-chip" data-src="중도일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">중도일보</button><button type="button" class="filter-chip" data-src="파이낸셜뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">파이낸셜뉴스</button><button type="button" class="filter-chip" data-src="한국경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한국경제</button><button type="button" class="filter-chip" data-src="한국대학신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한국대학신문</button></div>
+      <div class="article-grid" role="list" aria-label="기사 목록" id="article-grid"><article class="article-card" role="listitem" data-source="아시아경제">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFA3bGZvb1c5VVJBcXU2OTA2T0pnem5odFVONkVfQms5QXRaTjZwUHhMV3k1cEVOemdVdlcyNHlHaDMzdDAzekFSZFE2cW9tVjdqM1JaalJOOU95ZWlndVJEVg?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">AI가 답을 줘도 판단은 인간 몫… 박동순, 세계 대학교육 방향 제시 - 아시아경제</a>
+      <p class="article-card__desc">AI가 답을 줘도 판단은 인간 몫… 박동순, 세계 대학교육 방향 제시  아시아경제</p>
+      <div class="article-card__meta">
+        <span class="badge-source">아시아경제</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFA3bGZvb1c5VVJBcXU2OTA2T0pnem5odFVONkVfQms5QXRaTjZwUHhMV3k1cEVOemdVdlcyNHlHaDMzdDAzekFSZFE2cW9tVjdqM1JaalJOOU95ZWlndVJEVg?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="AI가 답을 줘도 판단은 인간 몫… 박동순, 세계 대학교육 방향 제시 - 아시아경제 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="국제뉴스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBLVkFBZnMyLVZwRXctc0ZXRTA3LWxWajJoRHhyUHhveUVXY0dwZUZjTkdrM3hxM2NQWm91VUJNb2gxUlNxNkp0QlpNWTBnNy1hWUdlcDY2YXQzVFIxOVVWT3ZWVFRibzRRT2IxaVF3?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대구보건대학교, 카자흐스탄 4개 대학과 교환학생·학술교류 협약 - 국제뉴스</a>
+      <p class="article-card__desc">대구보건대학교, 카자흐스탄 4개 대학과 교환학생·학술교류 협약  국제뉴스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">국제뉴스</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBLVkFBZnMyLVZwRXctc0ZXRTA3LWxWajJoRHhyUHhveUVXY0dwZUZjTkdrM3hxM2NQWm91VUJNb2gxUlNxNkp0QlpNWTBnNy1hWUdlcDY2YXQzVFIxOVVWT3ZWVFRibzRRT2IxaVF3?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대구보건대학교, 카자흐스탄 4개 대학과 교환학생·학술교류 협약 - 국제뉴스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국경제">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBpdDZSWEpoMzhiWjcwRTUwV2I1b2k3elk1SkZaRXZFQk1KcllGUzZtQ0JpRFZmeEF5UUIyZ2tDQnJFaFRtOTU3LVplZWphbE1OVFp4dWREWUszdw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">설립 공식 바뀌는 中 대학…생수 팔아 번 돈으로 세운다 [차이나 워치] - 한국경제</a>
+      <p class="article-card__desc">설립 공식 바뀌는 中 대학…생수 팔아 번 돈으로 세운다 [차이나 워치]  한국경제</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국경제</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBpdDZSWEpoMzhiWjcwRTUwV2I1b2k3elk1SkZaRXZFQk1KcllGUzZtQ0JpRFZmeEF5UUIyZ2tDQnJFaFRtOTU3LVplZWphbE1OVFp4dWREWUszdw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="설립 공식 바뀌는 中 대학…생수 팔아 번 돈으로 세운다 [차이나 워치] - 한국경제 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="이데일리">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPMXRaNmxvazV4SE1ZVmttSDUwc0NVR2IwUjlLNi0ybnYtWFA0SHlXU3VDcjVBbU9MMVlobHlLQ25aR0RZTW9WQ0kydGN1R2wzNVkybmUwT0pkRVhzM3RPZXF2MVB0Ulo5aENRT0JtQWtKbmJOcmZMb014bV92NEZtaA?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대학 기숙사 수용률 4년째 하락…서울은 13.1% 그쳐 - 이데일리</a>
+      <p class="article-card__desc">대학 기숙사 수용률 4년째 하락…서울은 13.1% 그쳐  이데일리</p>
+      <div class="article-card__meta">
+        <span class="badge-source">이데일리</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPMXRaNmxvazV4SE1ZVmttSDUwc0NVR2IwUjlLNi0ybnYtWFA0SHlXU3VDcjVBbU9MMVlobHlLQ25aR0RZTW9WQ0kydGN1R2wzNVkybmUwT0pkRVhzM3RPZXF2MVB0Ulo5aENRT0JtQWtKbmJOcmZMb014bV92NEZtaA?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대학 기숙사 수용률 4년째 하락…서울은 13.1% 그쳐 - 이데일리 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE1TMngwaE5neE1sUWNJTC14blBDcjNiLXhpN2hOaEpfUGxSWFNYLXBzSEt3amhYZnhSQTFabzNUdGdObWpmMlRYVk10b1lZZmRoVXVQaXFLS2lPcDjSAWBBVV95cUxNc3g2Zk14c3NpQV9hQVpQbllxX1Uta0UxWU5rMVgyT19LU2FXUGtfaGwzdnlqYUowdlprRzhVYmFXcHkxUFBvLVBfZGFMbk45bjBfeVVtUzB4Q3Z1NjdYZGg?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[동정] 박동순 동서학원 이사장, 세계대학 여성총장포럼서 연설 - 연합뉴스</a>
+      <p class="article-card__desc">[동정] 박동순 동서학원 이사장, 세계대학 여성총장포럼서 연설  연합뉴스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE1TMngwaE5neE1sUWNJTC14blBDcjNiLXhpN2hOaEpfUGxSWFNYLXBzSEt3amhYZnhSQTFabzNUdGdObWpmMlRYVk10b1lZZmRoVXVQaXFLS2lPcDjSAWBBVV95cUxNc3g2Zk14c3NpQV9hQVpQbllxX1Uta0UxWU5rMVgyT19LU2FXUGtfaGwzdnlqYUowdlprRzhVYmFXcHkxUFBvLVBfZGFMbk45bjBfeVVtUzB4Q3Z1NjdYZGg?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[동정] 박동순 동서학원 이사장, 세계대학 여성총장포럼서 연설 - 연합뉴스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="강원일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE5ibWF4bktYeFFtUDR3enhYaVIxWjRNSHp2eFVZM3FtMnZSQkgtVC0xWjlQelM4WVRKQVJ6SElpbkNycjNGX0VveXRQWnpSVXVSQTVXYm5xZFJ2WjQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">원주농업대학·신규농업인교육 69명 배출 - 강원일보</a>
+      <p class="article-card__desc">원주농업대학·신규농업인교육 69명 배출  강원일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">강원일보</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE5ibWF4bktYeFFtUDR3enhYaVIxWjRNSHp2eFVZM3FtMnZSQkgtVC0xWjlQelM4WVRKQVJ6SElpbkNycjNGX0VveXRQWnpSVXVSQTVXYm5xZFJ2WjQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="원주농업대학·신규농업인교육 69명 배출 - 강원일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="뉴스핌">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QcldaWks4bk9uUnNZLWlVMzBZNUZ1ZHlSY1NEb3Z3VUphWE5mLV92MUUzbUx5NmVxNjlOZGRHTUlOejdlbnBNZTlPTlBndkpWYUoxdzNHOHVwajdv?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">서울 대학 기숙사 수용률 13.1% 그쳐…원룸 월세·관리비는 월 71만원 - 뉴스핌</a>
+      <p class="article-card__desc">서울 대학 기숙사 수용률 13.1% 그쳐…원룸 월세·관리비는 월 71만원  뉴스핌</p>
+      <div class="article-card__meta">
+        <span class="badge-source">뉴스핌</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QcldaWks4bk9uUnNZLWlVMzBZNUZ1ZHlSY1NEb3Z3VUphWE5mLV92MUUzbUx5NmVxNjlOZGRHTUlOejdlbnBNZTlPTlBndkpWYUoxdzNHOHVwajdv?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="서울 대학 기숙사 수용률 13.1% 그쳐…원룸 월세·관리비는 월 71만원 - 뉴스핌 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="경북신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE5FaUtCVlAtX1lta2xid21pN3BuNjBnNzZXVGhKTVNmMlViR3FLZjFzbWxGYTNXUVp4SmVwc0VwOHJCNUJxY21XOHdPNnNHN2xyQzFkTFRpZGY?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대구보건대, 카자흐스탄 4개 대학과 교육교류 확대 - 경북신문</a>
+      <p class="article-card__desc">대구보건대, 카자흐스탄 4개 대학과 교육교류 확대  경북신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">경북신문</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE5FaUtCVlAtX1lta2xid21pN3BuNjBnNzZXVGhKTVNmMlViR3FLZjFzbWxGYTNXUVp4SmVwc0VwOHJCNUJxY21XOHdPNnNHN2xyQzFkTFRpZGY?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대구보건대, 카자흐스탄 4개 대학과 교육교류 확대 - 경북신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="전자신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE9BMk1BMkJiVk5pSUFvTzM1Y2pXazNRbk05bFhsd3VuVlpMUFdheVhOZlJXYmg5TmN0QVdOaXRPc1BPM25xcjBpTWtSV2x0Zw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[AX 인재 키우는 대학]〈1〉 한양대, 반도체에 AI 접목…23개 기업과 현장형 융합인재 양성 - 전자신문</a>
+      <p class="article-card__desc">[AX 인재 키우는 대학]〈1〉 한양대, 반도체에 AI 접목…23개 기업과 현장형 융합인재 양성  전자신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">전자신문</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE9BMk1BMkJiVk5pSUFvTzM1Y2pXazNRbk05bFhsd3VuVlpMUFdheVhOZlJXYmg5TmN0QVdOaXRPc1BPM25xcjBpTWtSV2x0Zw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[AX 인재 키우는 대학]〈1〉 한양대, 반도체에 AI 접목…23개 기업과 현장형 융합인재 양성 - 전자신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="www.hidomin.com">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFA3U1lqWTljX0FDNllkS3BFS0gxNXJzb0lRX1Y3MGtiN20wcnh3ckdTcERMVUxoU3UxVmdqZFkzUVJyQ28yNjdLdXBmcXo2OWJ2dE4yanZkZzJLOExDRWZRUFZNSlhTbFAzYlE?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">동국대 WISE캠퍼스, 일본 2개 대학과 교류 협정 - www.hidomin.com</a>
+      <p class="article-card__desc">동국대 WISE캠퍼스, 일본 2개 대학과 교류 협정  www.hidomin.com</p>
+      <div class="article-card__meta">
+        <span class="badge-source">www.hidomin.com</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFA3U1lqWTljX0FDNllkS3BFS0gxNXJzb0lRX1Y3MGtiN20wcnh3ckdTcERMVUxoU3UxVmdqZFkzUVJyQ28yNjdLdXBmcXo2OWJ2dE4yanZkZzJLOExDRWZRUFZNSlhTbFAzYlE?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="동국대 WISE캠퍼스, 일본 2개 대학과 교류 협정 - www.hidomin.com 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="뉴스1">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9DSTN5Q3d6OGJEa3c4M1R5bklySmRQdE1oUHFRZGZuNmZPZjFWLUhnOWI4NEV5LTJCQUF5RWxySXJYTXlJYXNtRlVJb3d1bjB4UDJQY3EyQTEyZw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">서울 대학 기숙사 '좁은 문'…100명 중 고작 13명 수용 - 뉴스1</a>
+      <p class="article-card__desc">서울 대학 기숙사 '좁은 문'…100명 중 고작 13명 수용  뉴스1</p>
+      <div class="article-card__meta">
+        <span class="badge-source">뉴스1</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9DSTN5Q3d6OGJEa3c4M1R5bklySmRQdE1oUHFRZGZuNmZPZjFWLUhnOWI4NEV5LTJCQUF5RWxySXJYTXlJYXNtRlVJb3d1bjB4UDJQY3EyQTEyZw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="서울 대학 기숙사 '좁은 문'…100명 중 고작 13명 수용 - 뉴스1 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="영남일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBpT1hfWHFsaS1UaVNVQ2N4YXd4bzgzOERTaHlaUFYxemNoZFNmOUFjVDZBMldfMWVoeUhaN1pZc2EyYzRSejNxVEV5VTJVSmxncUZNVlVXeWkzWExYNzQ3SzJ3R21wbUduOEtj?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대구경북권 대학 인권센터, 12곳은 전담인력 ‘0명’… 운영 예산 격차는 370배 - 영남일보</a>
+      <p class="article-card__desc">대구경북권 대학 인권센터, 12곳은 전담인력 ‘0명’… 운영 예산 격차는 370배  영남일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">영남일보</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBpT1hfWHFsaS1UaVNVQ2N4YXd4bzgzOERTaHlaUFYxemNoZFNmOUFjVDZBMldfMWVoeUhaN1pZc2EyYzRSejNxVEV5VTJVSmxncUZNVlVXeWkzWExYNzQ3SzJ3R21wbUduOEtj?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대구경북권 대학 인권센터, 12곳은 전담인력 ‘0명’… 운영 예산 격차는 370배 - 영남일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="파이낸셜뉴스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE84cld0NFZUaUNOOWpHU0ZfOVpkd0ZVWW1IbGYxUmJZVnpKTjAwZDVyU2w3VlRzbkdiaGpUdmRESjRGeExBTlBxbi1wZFk3V09XTjVyTG00NzJXQQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">&quot;AI 활용 테러 예방, 인권침해 위험도&quot;…경찰대학 연구 국제학술지 게재 - 파이낸셜뉴스</a>
+      <p class="article-card__desc">&quot;AI 활용 테러 예방, 인권침해 위험도&quot;…경찰대학 연구 국제학술지 게재  파이낸셜뉴스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">파이낸셜뉴스</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE84cld0NFZUaUNOOWpHU0ZfOVpkd0ZVWW1IbGYxUmJZVnpKTjAwZDVyU2w3VlRzbkdiaGpUdmRESjRGeExBTlBxbi1wZFk3V09XTjVyTG00NzJXQQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="&quot;AI 활용 테러 예방, 인권침해 위험도&quot;…경찰대학 연구 국제학술지 게재 - 파이낸셜뉴스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="브릿지경제">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9HYkYzS19qSW5lSThwRUc1MEtfZmFaa2pQSERWZE1BWHdueVNOTTN6VU9idHFEN0xyakZ4SzdUdmFzV19CYjFrZUcyQnNoS0VvRFRDdGdmVjd0QQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대학도시 천안, 5개 대학과 청년 취업 멘토링 연다 - 브릿지경제</a>
+      <p class="article-card__desc">대학도시 천안, 5개 대학과 청년 취업 멘토링 연다  브릿지경제</p>
+      <div class="article-card__meta">
+        <span class="badge-source">브릿지경제</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9HYkYzS19qSW5lSThwRUc1MEtfZmFaa2pQSERWZE1BWHdueVNOTTN6VU9idHFEN0xyakZ4SzdUdmFzV19CYjFrZUcyQnNoS0VvRFRDdGdmVjd0QQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대학도시 천안, 5개 대학과 청년 취업 멘토링 연다 - 브릿지경제 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBJeHpJX0xfbG5IVzRsc2t5Q2taejdtc1ZHVHRKaERfclR1NzVMMXQ2aEJsS01HNEoyZDAzc2tOUTZRc1c5WmNoZnZuWWUxa0pjZXl3bXdVcEhiOHNJUTdjV3NiODd6UQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">충북보건과학대, 제1회 총장배 파크골프대회 성황리 개최 - 한국대학신문</a>
+      <p class="article-card__desc">충북보건과학대, 제1회 총장배 파크골프대회 성황리 개최  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBJeHpJX0xfbG5IVzRsc2t5Q2taejdtc1ZHVHRKaERfclR1NzVMMXQ2aEJsS01HNEoyZDAzc2tOUTZRc1c5WmNoZnZuWWUxa0pjZXl3bXdVcEhiOHNJUTdjV3NiODd6UQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="충북보건과학대, 제1회 총장배 파크골프대회 성황리 개최 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE9pUTVOWUstNGZ1a2FvZm94cldINTc3cktmSlliMnVGOExMX2RVczR0NzZHWmxmZHBaanVDNlBQUkFkOHl0MGhfaGxnM0dNQXRhcUIzc1F4djFMQXPSAWBBVV95cUxNazJGRFNfc1pSZWR2ZTJjYXhrbDRYSFFkUHZxNkFfbUlfN01mRF9MYkhuM2xHMjlCX0hwTlpBVEFrS0hRNTEyYVhvYXdOZGREX0F1T3BXRTZPWjh3Skdobkc?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[그래픽] 2027학년도 대학입시 주요 일정 - 연합뉴스</a>
+      <p class="article-card__desc">[그래픽] 2027학년도 대학입시 주요 일정  연합뉴스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE9pUTVOWUstNGZ1a2FvZm94cldINTc3cktmSlliMnVGOExMX2RVczR0NzZHWmxmZHBaanVDNlBQUkFkOHl0MGhfaGxnM0dNQXRhcUIzc1F4djFMQXPSAWBBVV95cUxNazJGRFNfc1pSZWR2ZTJjYXhrbDRYSFFkUHZxNkFfbUlfN01mRF9MYkhuM2xHMjlCX0hwTlpBVEFrS0hRNTEyYVhvYXdOZGREX0F1T3BXRTZPWjh3Skdobkc?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[그래픽] 2027학년도 대학입시 주요 일정 - 연합뉴스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBSQlAtOHNDQzEzbnlTRHduOVJ6cmZBOUJ6YjBzUWJfMWFia1poYjN3Y3FjMG11OU1NcXJudVlqX21WT2pQZkhRTWotSldpckM3RHphU0VjQS1qZzdFSW5hV19CaERDZw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">교육부, 의대 교육혁신 8편 선정… ‘맞춤형 교육과정·AI 학습도구’ 주목 - 한국대학신문</a>
+      <p class="article-card__desc">교육부, 의대 교육혁신 8편 선정… ‘맞춤형 교육과정·AI 학습도구’ 주목  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBSQlAtOHNDQzEzbnlTRHduOVJ6cmZBOUJ6YjBzUWJfMWFia1poYjN3Y3FjMG11OU1NcXJudVlqX21WT2pQZkhRTWotSldpckM3RHphU0VjQS1qZzdFSW5hV19CaERDZw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="교육부, 의대 교육혁신 8편 선정… ‘맞춤형 교육과정·AI 학습도구’ 주목 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="아시아투데이">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE50WXZqbDNCb29CNHRISTFQSmIzYndXbHZaNC1HZ3VNeDZmM2NZSmtMOXNyc0pWTjh0eDBIS1hmTkFzNmRpaDVKdXZxaWhIeDMtOEFRZlY2OVhIZzd0U1pBVTVTU2lHeEdEMTJwQg?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">서울 대학 기숙사 수용률 13.1%…전국 최저 - 아시아투데이</a>
+      <p class="article-card__desc">서울 대학 기숙사 수용률 13.1%…전국 최저  아시아투데이</p>
+      <div class="article-card__meta">
+        <span class="badge-source">아시아투데이</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE50WXZqbDNCb29CNHRISTFQSmIzYndXbHZaNC1HZ3VNeDZmM2NZSmtMOXNyc0pWTjh0eDBIS1hmTkFzNmRpaDVKdXZxaWhIeDMtOEFRZlY2OVhIZzd0U1pBVTVTU2lHeEdEMTJwQg?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="서울 대학 기숙사 수용률 13.1%…전국 최저 - 아시아투데이 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE5lUzkzMFo0WHVsZWpSVUE5c0ZDSGp0VGlMeWxPWnY3NWNLdXllRUpZYk1VOGNaQ2Z3ei00RzRKREE4RnVPX0NJUV9NcDlmYm8yRVJNZnlodkJRRXNmcV95WEllazNEQQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">국제대 예비 간호사 102명, 생명존중과 사랑의 간호 실천 다짐 - 한국대학신문</a>
+      <p class="article-card__desc">국제대 예비 간호사 102명, 생명존중과 사랑의 간호 실천 다짐  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE5lUzkzMFo0WHVsZWpSVUE5c0ZDSGp0VGlMeWxPWnY3NWNLdXllRUpZYk1VOGNaQ2Z3ei00RzRKREE4RnVPX0NJUV9NcDlmYm8yRVJNZnlodkJRRXNmcV95WEllazNEQQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="국제대 예비 간호사 102명, 생명존중과 사랑의 간호 실천 다짐 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="중도일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFB3RHNjVV9BbGFVVGkyRUFtLTVsb2JqY3BsQmxBbVFEbHJHdEZBVkJRa3ZLbzA5MkE1Z3d0U1NUYmdTb1k4LU8xX2w4d2ZBSGozUGRZWHZXS01qZ2NPdHl0Y3J6OXg1TVRZT2hjTQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">천안시가 19일 천안시청 대회의실에서 '2026 대학과 함께하는 취업멘토링 페스타'를 개최한다고 밝혔다. - 중도일보</a>
+      <p class="article-card__desc">천안시가 19일 천안시청 대회의실에서 '2026 대학과 함께하는 취업멘토링 페스타'를 개최한다고 밝혔다.  중도일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">중도일보</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFB3RHNjVV9BbGFVVGkyRUFtLTVsb2JqY3BsQmxBbVFEbHJHdEZBVkJRa3ZLbzA5MkE1Z3d0U1NUYmdTb1k4LU8xX2w4d2ZBSGozUGRZWHZXS01qZ2NPdHl0Y3J6OXg1TVRZT2hjTQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="천안시가 19일 천안시청 대회의실에서 '2026 대학과 함께하는 취업멘토링 페스타'를 개최한다고 밝혔다. - 중도일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="노동일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE15Vmh4ZzBkYXVFajdfSjl5WTdTYl9UYXltQXhReThxZWpEUUNuWG5tR2ZfNkZIbmx2Q1VUb0R3N3pLYWg4RXhXMjhoUzdEd256aVBVNkF2aE1id1pRTHp2R3NpZ09HNEM1ei0wbg?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">의과대학 교육의 새로운 변화, 우수사례 8편 선정 - 노동일보</a>
+      <p class="article-card__desc">의과대학 교육의 새로운 변화, 우수사례 8편 선정  노동일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">노동일보</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE15Vmh4ZzBkYXVFajdfSjl5WTdTYl9UYXltQXhReThxZWpEUUNuWG5tR2ZfNkZIbmx2Q1VUb0R3N3pLYWg4RXhXMjhoUzdEd256aVBVNkF2aE1id1pRTHp2R3NpZ09HNEM1ei0wbg?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="의과대학 교육의 새로운 변화, 우수사례 8편 선정 - 노동일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국대학신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE56eUszTVFFVHl3cnRRS2M4SlYwSGdYbjVlNERsRlNhVWZnQ2dySHVOV0RuazZvRTNTWDZkb1NhSkpXMWstZ3V1Z0pEcHpWdHZ2bGNBMUw1SE9fZ3plVXhBR1o0RDlRUQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">전문대 기숙사 수용률 14.2%… 일반대 21.7%와 격차 벌어져 - 한국대학신문</a>
+      <p class="article-card__desc">전문대 기숙사 수용률 14.2%… 일반대 21.7%와 격차 벌어져  한국대학신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국대학신문</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE56eUszTVFFVHl3cnRRS2M4SlYwSGdYbjVlNERsRlNhVWZnQ2dySHVOV0RuazZvRTNTWDZkb1NhSkpXMWstZ3V1Z0pEcHpWdHZ2bGNBMUw1SE9fZ3plVXhBR1o0RDlRUQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="전문대 기숙사 수용률 14.2%… 일반대 21.7%와 격차 벌어져 - 한국대학신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="서울Pn">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE9CU0VwMWxqdGdKZWRscU1DZXZmZ0lYWHFRbVdITWw5QVdiU3ZfUUxVRTNHTGhDSWxaak5ZeXZlclJLQXdXNmlXUGphdjRORm9BcU5ISWNhRDh4Nkt0Z1lfWVFR?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">의과대학 교육의 새로운 변화, 우수사례 8편 선정 - 서울Pn</a>
+      <p class="article-card__desc">의과대학 교육의 새로운 변화, 우수사례 8편 선정  서울Pn</p>
+      <div class="article-card__meta">
+        <span class="badge-source">서울Pn</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE9CU0VwMWxqdGdKZWRscU1DZXZmZ0lYWHFRbVdITWw5QVdiU3ZfUUxVRTNHTGhDSWxaak5ZeXZlclJLQXdXNmlXUGphdjRORm9BcU5ISWNhRDh4Nkt0Z1lfWVFR?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="의과대학 교육의 새로운 변화, 우수사례 8편 선정 - 서울Pn 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="국제뉴스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9NTnF2NzQ3dE9sODR3Zl9Kb3NFN0NETlRoZl85VFJMdFh0OVI4RHBKVXFTdEVxOEFSTTl5MXJ3cUk3cDl0NEdVOUg3aElIRTBfYkJ5ZXE2ZTRRYkJ3QlVoVGwzWFBldHBYMEY5ZEN3?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">전국 대학 기숙사 수용률 4년 연속 하락…올해 20.2% - 국제뉴스</a>
+      <p class="article-card__desc">전국 대학 기숙사 수용률 4년 연속 하락…올해 20.2%  국제뉴스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">국제뉴스</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9NTnF2NzQ3dE9sODR3Zl9Kb3NFN0NETlRoZl85VFJMdFh0OVI4RHBKVXFTdEVxOEFSTTl5MXJ3cUk3cDl0NEdVOUg3aElIRTBfYkJ5ZXE2ZTRRYkJ3QlVoVGwzWFBldHBYMEY5ZEN3?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="전국 대학 기숙사 수용률 4년 연속 하락…올해 20.2% - 국제뉴스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="뉴시스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1UaFpxU1BRU0ZRbmMxWnNYZ1RxYkk0d2lSajR6TmI2bFRadGxsdUtkVE5mNldJczU3SmRBOW5rMjB2d0Fab2Q1STcyeWlmMmR4N2xWVC0yWTBib2VrSGliZdIBeEFVX3lxTFBvY2g1U1Q5em9takltYk5KeUc3NFB3TzYzdVFMN0ZnNWZ3b2h1dEQwMU1Mdm8yekJCWGxCcTJJSlJjMkVONUdZallHYm5lNjFfZ2U4STNWVTNOQkI3eDMycGtQdEZLdDdNWmI3ZXVrQkYzUGRFUFc2eQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">서울 대학가 원룸 주거비 71만원…기숙사 수용률은 13% - 뉴시스</a>
+      <p class="article-card__desc">서울 대학가 원룸 주거비 71만원…기숙사 수용률은 13%  뉴시스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">뉴시스</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1UaFpxU1BRU0ZRbmMxWnNYZ1RxYkk0d2lSajR6TmI2bFRadGxsdUtkVE5mNldJczU3SmRBOW5rMjB2d0Fab2Q1STcyeWlmMmR4N2xWVC0yWTBib2VrSGliZdIBeEFVX3lxTFBvY2g1U1Q5em9takltYk5KeUc3NFB3TzYzdVFMN0ZnNWZ3b2h1dEQwMU1Mdm8yekJCWGxCcTJJSlJjMkVONUdZallHYm5lNjFfZ2U4STNWVTNOQkI3eDMycGtQdEZLdDdNWmI3ZXVrQkYzUGRFUFc2eQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="서울 대학가 원룸 주거비 71만원…기숙사 수용률은 13% - 뉴시스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스(사회)">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://www.yna.co.kr/view/AKR20261115020200051" target="_blank" rel="noopener noreferrer" class="article-card__title">[동정] 박동순 동서학원 이사장, 세계대학 여성총장포럼서 연설</a>
+      <p class="article-card__desc">▲ 박동순 학교법인 동서학원 이사장이 지난 14일 중국 마카오과학기술대학교에서 열린  제12회 세계대학 여성총장포럼  폐막식에 공식 초청 연사로...</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스(사회)</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://www.yna.co.kr/view/AKR20261115020200051" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[동정] 박동순 동서학원 이사장, 세계대학 여성총장포럼서 연설 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스(사회)">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://www.yna.co.kr/view/AKR20261115013400530" target="_blank" rel="noopener noreferrer" class="article-card__title">&quot;수능 탐구과목 결시율, 수시 최저기준에 중대변수 될수도&quot;</a>
+      <p class="article-card__desc">(서울=연합뉴스) 노재현 기자 = 오는 19일 치러질 2027학년도 대학수학능력시험(수능)에서 탐구 과목 결시율이 수시모집의 최저 기준 충족에 ...</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스(사회)</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://www.yna.co.kr/view/AKR20261115013400530" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="&quot;수능 탐구과목 결시율, 수시 최저기준에 중대변수 될수도&quot; 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스(사회)">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://www.yna.co.kr/view/AKR20261115013200530" target="_blank" rel="noopener noreferrer" class="article-card__title">대학 기숙사 수용률 지역차 뚜렷…서울 13% vs 지방 24%</a>
+      <p class="article-card__desc">(서울=연합뉴스) 노재현 기자 = 대학의 기숙사 수용률이 설립 유형 및 지역에 따라 편차가 큰 것으로 나타났다.</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스(사회)</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://www.yna.co.kr/view/AKR20261115013200530" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대학 기숙사 수용률 지역차 뚜렷…서울 13% vs 지방 24% 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스(사회)">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://www.yna.co.kr/view/AKR20261113134800530" target="_blank" rel="noopener noreferrer" class="article-card__title">교육부, 의대 교육혁신 우수사례 8편 선정</a>
+      <p class="article-card__desc">(세종=연합뉴스) 고상민 기자 = 교육부는 올해 처음 실시한  의과대학 교육혁신 우수사례 공모전 에서 8편의 수상작을 선정했다고 15일 밝혔다.</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스(사회)</span>
+        <span class="article-date">2026-11-15</span>
+      </div>
+    </div>
+    <a href="https://www.yna.co.kr/view/AKR20261113134800530" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="교육부, 의대 교육혁신 우수사례 8편 선정 읽기">&#8599;</a>
+  </div>
+</article></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <span class="site-footer__text">© 대학 기사 아카이브</span>
+    <span class="site-footer__text">총 <strong>14939</strong>개 기사 보관</span>
+  </div>
+</footer>
+
+<script>
+function goToDate(val) {
+  if (val) window.location.href = './' + val + '.html';
+}
+function filterBy(btn) {
+  var src = btn.dataset.src;
+  var cards = document.querySelectorAll('.article-card');
+  var count = 0;
+  cards.forEach(function(c) {
+    var show = !src || c.dataset.source === src;
+    c.style.display = show ? '' : 'none';
+    if (show) count++;
+  });
+  document.querySelectorAll('.filter-chip').forEach(function(c) {
+    c.classList.remove('filter-chip--active');
+  });
+  btn.classList.add('filter-chip--active');
+  document.getElementById('sub-count').textContent = count + '건';
+  document.getElementById('hero-count').textContent = count + '건의 기사';
+}
+</script>
+</body>
+</html>
