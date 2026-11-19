@@ -15,7 +15,7 @@
   <div class="g-nav__inner">
     <a href="./index.html" class="g-nav__brand">대학 기사 아카이브</a>
     <div class="g-nav__right">
-      <span class="g-nav__count">총 <strong>15257</strong>개</span>
+      <span class="g-nav__count">총 <strong>15385</strong>개</span>
       <a href="./search.html" class="g-nav__icon-btn" title="검색" aria-label="검색">
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
           <path d="M10 6.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0zm-.687 3.02a4.5 4.5 0 1 1 .707-.707l2.834 2.833a.5.5 0 0 1-.708.708L9.313 9.52z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"/>
@@ -33,7 +33,7 @@
         <span class="s-nav__label">2026년 11월 18일</span>
         <input type="date" value="2026-11-18" onchange="goToDate(this.value)" aria-label="날짜 선택">
       </label>
-      <span class="s-nav__arrow s-nav__arrow--off" aria-hidden="true">&#8594;</span>
+      <a href="./2026-11-19.html" class="s-nav__arrow" aria-label="다음 날">&#8594;</a>
       <label class="date-pick-wrap" aria-label="달력으로 날짜 선택">
         <span class="date-pick-badge">&#128197; 날짜 선택</span>
         <input type="date" value="2026-11-18" onchange="goToDate(this.value)" aria-label="달력 날짜 선택">
@@ -47,7 +47,7 @@
     <div class="hero-tile__inner">
       <p class="hero-tile__eyebrow">키워드</p>
       <h1 class="hero-tile__headline">대학</h1>
-      <p class="hero-tile__tagline" id="hero-count">92건의 기사</p>
+      <p class="hero-tile__tagline" id="hero-count">128건의 기사</p>
       <p class="hero-tile__sub">2026년 11월 18일 기준</p>
     </div>
   </section>
@@ -57,14 +57,518 @@
       <div class="section-header">
         <div>
           <h2 class="section-header__title">2026년 11월 18일</h2>
-          <p class="section-header__subtitle" id="sub-count">92건</p>
+          <p class="section-header__subtitle" id="sub-count">128건</p>
         </div>
         <div class="date-chips" role="navigation" aria-label="최근 수집일">
-          <a href="./2026-11-18.html" class="date-chip date-chip--active">2026-11-18</a><a href="./2026-11-17.html" class="date-chip">2026-11-17</a><a href="./2026-11-16.html" class="date-chip">2026-11-16</a><a href="./2026-11-15.html" class="date-chip">2026-11-15</a><a href="./2026-11-14.html" class="date-chip">2026-11-14</a><a href="./2026-11-13.html" class="date-chip">2026-11-13</a><a href="./2026-11-12.html" class="date-chip">2026-11-12</a><a href="./2026-11-11.html" class="date-chip">2026-11-11</a>
+          <a href="./2026-11-19.html" class="date-chip">2026-11-19</a><a href="./2026-11-18.html" class="date-chip date-chip--active">2026-11-18</a><a href="./2026-11-17.html" class="date-chip">2026-11-17</a><a href="./2026-11-16.html" class="date-chip">2026-11-16</a><a href="./2026-11-15.html" class="date-chip">2026-11-15</a><a href="./2026-11-14.html" class="date-chip">2026-11-14</a><a href="./2026-11-13.html" class="date-chip">2026-11-13</a><a href="./2026-11-12.html" class="date-chip">2026-11-12</a>
         </div>
       </div>
-      <div class="filter-row" role="group" aria-label="언론사 필터"><button type="button" class="filter-chip filter-chip--active" data-src="" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전체 <span class="filter-chip__count">92</span></button><button type="button" class="filter-chip" data-src="BBS불교방송" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">BBS불교방송</button><button type="button" class="filter-chip" data-src="BNT뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">BNT뉴스</button><button type="button" class="filter-chip" data-src="G1방송" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">G1방송</button><button type="button" class="filter-chip" data-src="Tbc.co.kr" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">Tbc.co.kr</button><button type="button" class="filter-chip" data-src="경기도민일보 미디어" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경기도민일보 미디어</button><button type="button" class="filter-chip" data-src="경기신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경기신문</button><button type="button" class="filter-chip" data-src="경기일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경기일보</button><button type="button" class="filter-chip" data-src="경기헤럴드" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경기헤럴드</button><button type="button" class="filter-chip" data-src="경북신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경북신문</button><button type="button" class="filter-chip" data-src="경향신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경향신문</button><button type="button" class="filter-chip" data-src="국토일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">국토일보</button><button type="button" class="filter-chip" data-src="굿모닝투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">굿모닝투데이</button><button type="button" class="filter-chip" data-src="글로벌이코노믹" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">글로벌이코노믹</button><button type="button" class="filter-chip" data-src="기독일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">기독일보</button><button type="button" class="filter-chip" data-src="농민신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">농민신문</button><button type="button" class="filter-chip" data-src="뉴스1" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴스1</button><button type="button" class="filter-chip" data-src="뉴스21 통신" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴스21 통신</button><button type="button" class="filter-chip" data-src="뉴시스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴시스</button><button type="button" class="filter-chip" data-src="대구일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">대구일보</button><button type="button" class="filter-chip" data-src="대학지성 In&amp;Out" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">대학지성 In&amp;Out</button><button type="button" class="filter-chip" data-src="대한경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">대한경제</button><button type="button" class="filter-chip" data-src="대한민국 정책브리핑" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">대한민국 정책브리핑</button><button type="button" class="filter-chip" data-src="더에듀" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">더에듀</button><button type="button" class="filter-chip" data-src="데일리대구경북뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">데일리대구경북뉴스</button><button type="button" class="filter-chip" data-src="디지털데일리" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">디지털데일리</button><button type="button" class="filter-chip" data-src="라이센스뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">라이센스뉴스</button><button type="button" class="filter-chip" data-src="메트로신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">메트로신문</button><button type="button" class="filter-chip" data-src="베리타스알파" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">베리타스알파</button><button type="button" class="filter-chip" data-src="사회적경제뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">사회적경제뉴스</button><button type="button" class="filter-chip" data-src="산경일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">산경일보</button><button type="button" class="filter-chip" data-src="서울경제TV" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">서울경제TV</button><button type="button" class="filter-chip" data-src="세명일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">세명일보</button><button type="button" class="filter-chip" data-src="세종대학교 뉴스룸" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">세종대학교 뉴스룸</button><button type="button" class="filter-chip" data-src="아세안익스프레스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">아세안익스프레스</button><button type="button" class="filter-chip" data-src="아시아경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">아시아경제</button><button type="button" class="filter-chip" data-src="에너지경제신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">에너지경제신문</button><button type="button" class="filter-chip" data-src="에너지신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">에너지신문</button><button type="button" class="filter-chip" data-src="연합뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스</button><button type="button" class="filter-chip" data-src="연합뉴스(사회)" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스(사회)</button><button type="button" class="filter-chip" data-src="연합뉴스TV" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스TV</button><button type="button" class="filter-chip" data-src="완주신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">완주신문</button><button type="button" class="filter-chip" data-src="인천투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">인천투데이</button><button type="button" class="filter-chip" data-src="전국매일신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전국매일신문</button><button type="button" class="filter-chip" data-src="전자신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전자신문</button><button type="button" class="filter-chip" data-src="충청메시지" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">충청메시지</button><button type="button" class="filter-chip" data-src="충청타임즈" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">충청타임즈</button><button type="button" class="filter-chip" data-src="파이낸스투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">파이낸스투데이</button><button type="button" class="filter-chip" data-src="한겨레" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한겨레</button><button type="button" class="filter-chip" data-src="한국NGO신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한국NGO신문</button><button type="button" class="filter-chip" data-src="한국대학신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한국대학신문</button><button type="button" class="filter-chip" data-src="한국항공대학교" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한국항공대학교</button><button type="button" class="filter-chip" data-src="해사신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">해사신문</button></div>
-      <div class="article-grid" role="list" aria-label="기사 목록" id="article-grid"><article class="article-card" role="listitem" data-source="뉴스1">
+      <div class="filter-row" role="group" aria-label="언론사 필터"><button type="button" class="filter-chip filter-chip--active" data-src="" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전체 <span class="filter-chip__count">128</span></button><button type="button" class="filter-chip" data-src="BBS불교방송" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">BBS불교방송</button><button type="button" class="filter-chip" data-src="BNT뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">BNT뉴스</button><button type="button" class="filter-chip" data-src="G1방송" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">G1방송</button><button type="button" class="filter-chip" data-src="JTBC" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">JTBC</button><button type="button" class="filter-chip" data-src="SBS 뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">SBS 뉴스</button><button type="button" class="filter-chip" data-src="SPN 서울평양뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">SPN 서울평양뉴스</button><button type="button" class="filter-chip" data-src="Tbc.co.kr" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">Tbc.co.kr</button><button type="button" class="filter-chip" data-src="YTN" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">YTN</button><button type="button" class="filter-chip" data-src="경기도뉴스포털" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경기도뉴스포털</button><button type="button" class="filter-chip" data-src="경기도민일보 미디어" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경기도민일보 미디어</button><button type="button" class="filter-chip" data-src="경기신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경기신문</button><button type="button" class="filter-chip" data-src="경기일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경기일보</button><button type="button" class="filter-chip" data-src="경기헤럴드" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경기헤럴드</button><button type="button" class="filter-chip" data-src="경북신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경북신문</button><button type="button" class="filter-chip" data-src="경향신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">경향신문</button><button type="button" class="filter-chip" data-src="광역행정신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">광역행정신문</button><button type="button" class="filter-chip" data-src="국토일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">국토일보</button><button type="button" class="filter-chip" data-src="굿모닝투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">굿모닝투데이</button><button type="button" class="filter-chip" data-src="글로벌이코노믹" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">글로벌이코노믹</button><button type="button" class="filter-chip" data-src="기독일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">기독일보</button><button type="button" class="filter-chip" data-src="농민신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">농민신문</button><button type="button" class="filter-chip" data-src="뉴스1" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴스1</button><button type="button" class="filter-chip" data-src="뉴스21 통신" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴스21 통신</button><button type="button" class="filter-chip" data-src="뉴스핌" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴스핌</button><button type="button" class="filter-chip" data-src="뉴시스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">뉴시스</button><button type="button" class="filter-chip" data-src="대구일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">대구일보</button><button type="button" class="filter-chip" data-src="대학지성 In&amp;Out" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">대학지성 In&amp;Out</button><button type="button" class="filter-chip" data-src="대한경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">대한경제</button><button type="button" class="filter-chip" data-src="대한민국 정책브리핑" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">대한민국 정책브리핑</button><button type="button" class="filter-chip" data-src="더에듀" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">더에듀</button><button type="button" class="filter-chip" data-src="데일리대구경북뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">데일리대구경북뉴스</button><button type="button" class="filter-chip" data-src="디지털데일리" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">디지털데일리</button><button type="button" class="filter-chip" data-src="라이센스뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">라이센스뉴스</button><button type="button" class="filter-chip" data-src="매일경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">매일경제</button><button type="button" class="filter-chip" data-src="매일일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">매일일보</button><button type="button" class="filter-chip" data-src="메트로신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">메트로신문</button><button type="button" class="filter-chip" data-src="미주중앙일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">미주중앙일보</button><button type="button" class="filter-chip" data-src="백세시대" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">백세시대</button><button type="button" class="filter-chip" data-src="베리타스알파" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">베리타스알파</button><button type="button" class="filter-chip" data-src="부산일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">부산일보</button><button type="button" class="filter-chip" data-src="사회적경제뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">사회적경제뉴스</button><button type="button" class="filter-chip" data-src="산경일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">산경일보</button><button type="button" class="filter-chip" data-src="서울경제TV" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">서울경제TV</button><button type="button" class="filter-chip" data-src="세명일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">세명일보</button><button type="button" class="filter-chip" data-src="세종대학교 뉴스룸" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">세종대학교 뉴스룸</button><button type="button" class="filter-chip" data-src="아세안익스프레스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">아세안익스프레스</button><button type="button" class="filter-chip" data-src="아시아경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">아시아경제</button><button type="button" class="filter-chip" data-src="약업신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">약업신문</button><button type="button" class="filter-chip" data-src="에너지경제신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">에너지경제신문</button><button type="button" class="filter-chip" data-src="에너지신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">에너지신문</button><button type="button" class="filter-chip" data-src="연합뉴스" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스</button><button type="button" class="filter-chip" data-src="연합뉴스 한민족센터" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스 한민족센터</button><button type="button" class="filter-chip" data-src="연합뉴스(사회)" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스(사회)</button><button type="button" class="filter-chip" data-src="연합뉴스TV" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">연합뉴스TV</button><button type="button" class="filter-chip" data-src="완주신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">완주신문</button><button type="button" class="filter-chip" data-src="인천투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">인천투데이</button><button type="button" class="filter-chip" data-src="전국매일신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전국매일신문</button><button type="button" class="filter-chip" data-src="전자신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">전자신문</button><button type="button" class="filter-chip" data-src="진일보 | 전남일보" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">진일보 | 전남일보</button><button type="button" class="filter-chip" data-src="충청메시지" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">충청메시지</button><button type="button" class="filter-chip" data-src="충청타임즈" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">충청타임즈</button><button type="button" class="filter-chip" data-src="파이낸스투데이" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">파이낸스투데이</button><button type="button" class="filter-chip" data-src="한겨레" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한겨레</button><button type="button" class="filter-chip" data-src="한국NGO신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한국NGO신문</button><button type="button" class="filter-chip" data-src="한국경제" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한국경제</button><button type="button" class="filter-chip" data-src="한국대학신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한국대학신문</button><button type="button" class="filter-chip" data-src="한국항공대학교" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">한국항공대학교</button><button type="button" class="filter-chip" data-src="해사신문" onclick="filterBy(this)" style="font-family:inherit;cursor:pointer;">해사신문</button></div>
+      <div class="article-grid" role="list" aria-label="기사 목록" id="article-grid"><article class="article-card" role="listitem" data-source="SBS 뉴스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE9td0RncGNFYjl0Y2lNaHpUekJDRU96WDRoWldnWGd4LWxmemZiNjRqMkkwSmtma3JudmdwXzRFd1E4N1JkRmViM1FaeG9CY0tiYnh2NlZmQm15UEdqODQ0MmFJaWQwdHZtV0E?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">김정은, 함경남도 해군대학 찾아…북미대화엔 '침묵' - SBS 뉴스</a>
+      <p class="article-card__desc">김정은, 함경남도 해군대학 찾아…북미대화엔 '침묵'  SBS 뉴스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">SBS 뉴스</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE9td0RncGNFYjl0Y2lNaHpUekJDRU96WDRoWldnWGd4LWxmemZiNjRqMkkwSmtma3JudmdwXzRFd1E4N1JkRmViM1FaeG9CY0tiYnh2NlZmQm15UEdqODQ0MmFJaWQwdHZtV0E?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="김정은, 함경남도 해군대학 찾아…북미대화엔 '침묵' - SBS 뉴스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="JTBC">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTFB0N1YxbV9ISWY2NmV2YzhNY1lhWFdkbXpPYjBvNW94XzJSRW02emM4bHZGQmVWSzE5UHUzSVV4cU9Xb0tXS01qVmhibVBZQ21LaW1RbQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">트럼프 ‘러브콜’에도…북한 김정은, 해군대학 등 함경남도 지역 시찰 - JTBC</a>
+      <p class="article-card__desc">트럼프 ‘러브콜’에도…북한 김정은, 해군대학 등 함경남도 지역 시찰  JTBC</p>
+      <div class="article-card__meta">
+        <span class="badge-source">JTBC</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTFB0N1YxbV9ISWY2NmV2YzhNY1lhWFdkbXpPYjBvNW94XzJSRW02emM4bHZGQmVWSzE5UHUzSVV4cU9Xb0tXS01qVmhibVBZQ21LaW1RbQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="트럼프 ‘러브콜’에도…북한 김정은, 해군대학 등 함경남도 지역 시찰 - JTBC 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="뉴시스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE80VnFLZ01rQzAzOXpVamdRTHdZNnpTa3BnMVE5THZtV1dtWnpJX1J0Q3NtcVZqbjJ6aDlfdlBUcnpmenUtMnVBNWRLbUpZbGQ2ZUFDbjljYXpmYm1oV1ZVY9IBeEFVX3lxTE1TdnVqdkZEX1FnOWtRTmJpbWtheXd3UkJVbGdwT0l0bUQ4SHljeXpEMXg1TnppYmpRNG1pR0pWQlpwOXdHVEJJT1IxajRoNkRvWWdvZ3BoM0tpRVhOcFFYUV9UWEJtOGJmVEVkdktfSGw2emVUUmlvTw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[속보]김정은, APEC 개막일에 함경남도 해군대학 현지지도 - 뉴시스</a>
+      <p class="article-card__desc">[속보]김정은, APEC 개막일에 함경남도 해군대학 현지지도  뉴시스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">뉴시스</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE80VnFLZ01rQzAzOXpVamdRTHdZNnpTa3BnMVE5THZtV1dtWnpJX1J0Q3NtcVZqbjJ6aDlfdlBUcnpmenUtMnVBNWRLbUpZbGQ2ZUFDbjljYXpmYm1oV1ZVY9IBeEFVX3lxTE1TdnVqdkZEX1FnOWtRTmJpbWtheXd3UkJVbGdwT0l0bUQ4SHljeXpEMXg1TnppYmpRNG1pR0pWQlpwOXdHVEJJT1IxajRoNkRvWWdvZ3BoM0tpRVhOcFFYUV9UWEJtOGJmVEVkdktfSGw2emVUUmlvTw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[속보]김정은, APEC 개막일에 함경남도 해군대학 현지지도 - 뉴시스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="JTBC">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE81djNHUEY2VnBBUUplckQxZXVJM0tEeDZsbkVSYVRlTXc4alV0NXNIS2M1bl9WZ19EQXBpY2s5Q1Y4eWVYN0dPSU1rcnpCVU1HUFE4Qw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">‘AI 부정’ 적발돼도 타 대학 지원 가능…학칙·법령 개정 추진 - JTBC</a>
+      <p class="article-card__desc">‘AI 부정’ 적발돼도 타 대학 지원 가능…학칙·법령 개정 추진  JTBC</p>
+      <div class="article-card__meta">
+        <span class="badge-source">JTBC</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE81djNHUEY2VnBBUUplckQxZXVJM0tEeDZsbkVSYVRlTXc4alV0NXNIS2M1bl9WZ19EQXBpY2s5Q1Y4eWVYN0dPSU1rcnpCVU1HUFE4Qw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="‘AI 부정’ 적발돼도 타 대학 지원 가능…학칙·법령 개정 추진 - JTBC 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스TV">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBkdHR6cVZsemNJOWJHY0IwS3cxUEZMajBPN0FCMTZaSEJ3VURkOUZYN0dobUdaRmM4bzQzSU9FWFRhMGlTRnBvdXFyU0wyeWZJcDJkQVNZRnZUUEJZZzdEQUNzQWhUSG8?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">김정은, 북미회담 관심 속 해군대학 등 시찰 - 연합뉴스TV</a>
+      <p class="article-card__desc">김정은, 북미회담 관심 속 해군대학 등 시찰  연합뉴스TV</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스TV</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBkdHR6cVZsemNJOWJHY0IwS3cxUEZMajBPN0FCMTZaSEJ3VURkOUZYN0dobUdaRmM4bzQzSU9FWFRhMGlTRnBvdXFyU0wyeWZJcDJkQVNZRnZUUEJZZzdEQUNzQWhUSG8?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="김정은, 북미회담 관심 속 해군대학 등 시찰 - 연합뉴스TV 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="경향신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wUDV3eExYLUhRTlI0RjRJcHlpTTZpcDQzR2ZfTTMwX2dRR1EtX2YtYUkwOWZyRExmMWM4N1VvcnREYkNQTG5qVy1uc1l4UnZnbURVY3FORHhSQdIBX0FVX3lxTE12elNMaURVODZoVHRSRmRuU1hWYnI1Wk54WldkZEZpS1dXQ3hGaWJDSHZFMEpNQ0dIbVU1UWY0d1RCVWxmOTBlMTEyTDJsZkxQU3FCdU5ycFkyM1F5b3M0?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">“졸업장=챗GPT 수료증”…AI가 흔든 대학 시험, 오히려 적극 쓰라는 곳까지 등장 [이윤정 기자의 소소월드] - 경향신문</a>
+      <p class="article-card__desc">“졸업장=챗GPT 수료증”…AI가 흔든 대학 시험, 오히려 적극 쓰라는 곳까지 등장 [이윤정 기자의 소소월드]  경향신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">경향신문</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wUDV3eExYLUhRTlI0RjRJcHlpTTZpcDQzR2ZfTTMwX2dRR1EtX2YtYUkwOWZyRExmMWM4N1VvcnREYkNQTG5qVy1uc1l4UnZnbURVY3FORHhSQdIBX0FVX3lxTE12elNMaURVODZoVHRSRmRuU1hWYnI1Wk54WldkZEZpS1dXQ3hGaWJDSHZFMEpNQ0dIbVU1UWY0d1RCVWxmOTBlMTEyTDJsZkxQU3FCdU5ycFkyM1F5b3M0?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="“졸업장=챗GPT 수료증”…AI가 흔든 대학 시험, 오히려 적극 쓰라는 곳까지 등장 [이윤정 기자의 소소월드] - 경향신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="YTN">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFBmSUNhVmg0T1dmbVk4OUFQR3YzOGFaYUxxZ1g4Tm9WZGVmVEVudUw4YVZsSmEtQWRYSU5oRWxxVThmd09lZGNTczhOd1JSOUN1QkNiYkUta3k5NGJwdjVOVl9rNlo5ZG1hbTdwUTJTMWNrcFpMbEE?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">2027학년도 대학수학능력시험 시작…출제 경향 주목 - YTN</a>
+      <p class="article-card__desc">2027학년도 대학수학능력시험 시작…출제 경향 주목  YTN</p>
+      <div class="article-card__meta">
+        <span class="badge-source">YTN</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFBmSUNhVmg0T1dmbVk4OUFQR3YzOGFaYUxxZ1g4Tm9WZGVmVEVudUw4YVZsSmEtQWRYSU5oRWxxVThmd09lZGNTczhOd1JSOUN1QkNiYkUta3k5NGJwdjVOVl9rNlo5ZG1hbTdwUTJTMWNrcFpMbEE?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="2027학년도 대학수학능력시험 시작…출제 경향 주목 - YTN 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="SPN 서울평양뉴스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE1heXlabkNTY3VubnVmZWd3ZHZBYTRYb254ak1JaW4xc1ZsRU1RYlFzTWt1WXUwQ0FzVGk2ekxoakVtNlduVzZuQS1GOHA2VEJGQ2hrZnFXeWU5dEtidW1uVGU4cmtRaE93TnBn?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">김정은, 나흘 째 지방 시찰...함남 해군대학, 리원군·락원군 현지지도 (종합) - SPN 서울평양뉴스</a>
+      <p class="article-card__desc">김정은, 나흘 째 지방 시찰...함남 해군대학, 리원군·락원군 현지지도 (종합)  SPN 서울평양뉴스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">SPN 서울평양뉴스</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE1heXlabkNTY3VubnVmZWd3ZHZBYTRYb254ak1JaW4xc1ZsRU1RYlFzTWt1WXUwQ0FzVGk2ekxoakVtNlduVzZuQS1GOHA2VEJGQ2hrZnFXeWU5dEtidW1uVGU4cmtRaE93TnBn?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="김정은, 나흘 째 지방 시찰...함남 해군대학, 리원군·락원군 현지지도 (종합) - SPN 서울평양뉴스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="약업신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPb0x4RkJ3WUZXcDNwZkRpNmJBSXdET2I5b0NOczVBOGZJQU1LN2FqV1IxYlNPVXBaUGI0YmExYnFtNFBhZjVYOGw5ZjZRcVJFdXZzdE1GTS11OGIyR3hRVDlSQjdlOE5rN242Qkk2WmhJQk1JOU5TcnRsM0s4cFh4UDlCLVEzeUhvLVJYRHNPa21uYUU?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">아이빔테크놀로지, SFN 2026 참가…북미 대학서 도입 수요 발굴 - 약업신문</a>
+      <p class="article-card__desc">아이빔테크놀로지, SFN 2026 참가…북미 대학서 도입 수요 발굴  약업신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">약업신문</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPb0x4RkJ3WUZXcDNwZkRpNmJBSXdET2I5b0NOczVBOGZJQU1LN2FqV1IxYlNPVXBaUGI0YmExYnFtNFBhZjVYOGw5ZjZRcVJFdXZzdE1GTS11OGIyR3hRVDlSQjdlOE5rN242Qkk2WmhJQk1JOU5TcnRsM0s4cFh4UDlCLVEzeUhvLVJYRHNPa21uYUU?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="아이빔테크놀로지, SFN 2026 참가…북미 대학서 도입 수요 발굴 - 약업신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스TV">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1Vb1lfZHVkNVBpRDJIbVFZUWIxZlFCTVdzNk5ha3J1dlRHLWVQTlVhVm0yN1J3V2k4SWx2WEsxZ1JLWGhFOGhIT2U2VTdObXZ4X0llUk9aeW5HVmt1cXZfVlJudHlpYUk?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[속보] 김정은, 해군대학 등 함경남도 지역 시찰 - 연합뉴스TV</a>
+      <p class="article-card__desc">[속보] 김정은, 해군대학 등 함경남도 지역 시찰  연합뉴스TV</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스TV</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1Vb1lfZHVkNVBpRDJIbVFZUWIxZlFCTVdzNk5ha3J1dlRHLWVQTlVhVm0yN1J3V2k4SWx2WEsxZ1JLWGhFOGhIT2U2VTdObXZ4X0llUk9aeW5HVmt1cXZfVlJudHlpYUk?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[속보] 김정은, 해군대학 등 함경남도 지역 시찰 - 연합뉴스TV 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="매일일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTFBPUTB3YWpZMkVPVWM5Yzh2R0tIOWlUWjg5Q2NLSkliQ2lYeWNuSTRvOE5ZWjJyMWRLUDdxaXI4Z28zVV80N2k5dm5YQ0hqVF93bFVZQmdDWjVPbEl3ZGduQUxSN1k?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰 - 매일일보</a>
+      <p class="article-card__desc">김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰  매일일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">매일일보</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTFBPUTB3YWpZMkVPVWM5Yzh2R0tIOWlUWjg5Q2NLSkliQ2lYeWNuSTRvOE5ZWjJyMWRLUDdxaXI4Z28zVV80N2k5dm5YQ0hqVF93bFVZQmdDWjVPbEl3ZGduQUxSN1k?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰 - 매일일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqWHo4SnI3SUhSVFlqYkR4UlJmUWpHLWpMbW91cHI1ekhhR1JBVmdYbHM3NUJwMmszTVVOWkFwZjlGNU9XLTJrZG5QVHUzV0NMdjZUUzREWlpQLUHSAWBBVV95cUxOTTZJLUJwM1NHWUtHZzI3MW0yT3UwOWV3X1VidVBDNktKQ0RSZGdJWkZlTTVwQ1BzSFFCUlBJQldqVUdPRFMxX1g4akM0b0Z0X1Y4QVJZbm9NLW9Uc0d5Qjg?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[속보] 김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰 - 연합뉴스</a>
+      <p class="article-card__desc">[속보] 김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰  연합뉴스</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqWHo4SnI3SUhSVFlqYkR4UlJmUWpHLWpMbW91cHI1ekhhR1JBVmdYbHM3NUJwMmszTVVOWkFwZjlGNU9XLTJrZG5QVHUzV0NMdjZUUzREWlpQLUHSAWBBVV95cUxOTTZJLUJwM1NHWUtHZzI3MW0yT3UwOWV3X1VidVBDNktKQ0RSZGdJWkZlTTVwQ1BzSFFCUlBJQldqVUdPRFMxX1g4akM0b0Z0X1Y4QVJZbm9NLW9Uc0d5Qjg?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[속보] 김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰 - 연합뉴스 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스TV">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5VRGtXTHNTazdNNExSUXIwa09rTVRHelR2SE01MXc3cUtNNFBSUTNDaEF4YXBkTF9sLXhMTGExM043aGhqV1JLSGxuUDdlYm9yZG1EeEVjZ3VHVV93dnZpQ3dBa1c5dzQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[속보] 김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰 - 연합뉴스TV</a>
+      <p class="article-card__desc">[속보] 김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰  연합뉴스TV</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스TV</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5VRGtXTHNTazdNNExSUXIwa09rTVRHelR2SE01MXc3cUtNNFBSUTNDaEF4YXBkTF9sLXhMTGExM043aGhqV1JLSGxuUDdlYm9yZG1EeEVjZ3VHVV93dnZpQ3dBa1c5dzQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[속보] 김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰 - 연합뉴스TV 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="대한경제">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE54Rmd3M3k5d2R5NUJHcDlGZ1g2UGxEaWhpTU04YmNCdng0TlBTYlpYUWY3Y0JlYlMzdTF5cFNXaVgzbjV4MW5JN0FCRFBaR0RWYW12eGQ2VlNoVkV4b1FfUUN3Vy16QVFSM3dQYnpFLWIxMzg?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[부산ㆍ경남 대학 브리핑 모음(11월19일)] 신라대, 졸업생 특화 취업지원 프로그램 성과공유회 개최 등 - 대한경제</a>
+      <p class="article-card__desc">[부산ㆍ경남 대학 브리핑 모음(11월19일)] 신라대, 졸업생 특화 취업지원 프로그램 성과공유회 개최 등  대한경제</p>
+      <div class="article-card__meta">
+        <span class="badge-source">대한경제</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE54Rmd3M3k5d2R5NUJHcDlGZ1g2UGxEaWhpTU04YmNCdng0TlBTYlpYUWY3Y0JlYlMzdTF5cFNXaVgzbjV4MW5JN0FCRFBaR0RWYW12eGQ2VlNoVkV4b1FfUUN3Vy16QVFSM3dQYnpFLWIxMzg?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[부산ㆍ경남 대학 브리핑 모음(11월19일)] 신라대, 졸업생 특화 취업지원 프로그램 성과공유회 개최 등 - 대한경제 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="부산일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9RYThGaDV0NURfUG40Z1JwVWtWSmtpMkFEZ0hJbGpNOEttaTNjRGx5ZlJYTHpkR0tqVElVTjc1cEZNR0dwa3hKV2ljR2tTZGNBTVhFYTdtSmRxZ1BHVnNMVk42bDBld2pHbVZaWGQyOEViRUNx?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">김정은, 해군대학 등 함경남도 지역 시찰 &quot;유능한 지휘관 많이 양성해야&quot; - 부산일보</a>
+      <p class="article-card__desc">김정은, 해군대학 등 함경남도 지역 시찰 &quot;유능한 지휘관 많이 양성해야&quot;  부산일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">부산일보</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9RYThGaDV0NURfUG40Z1JwVWtWSmtpMkFEZ0hJbGpNOEttaTNjRGx5ZlJYTHpkR0tqVElVTjc1cEZNR0dwa3hKV2ljR2tTZGNBTVhFYTdtSmRxZ1BHVnNMVk42bDBld2pHbVZaWGQyOEViRUNx?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="김정은, 해군대학 등 함경남도 지역 시찰 &quot;유능한 지휘관 많이 양성해야&quot; - 부산일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="한국경제">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE0ySzJ2dzl6STByZUtTVGhNRFNhT05XTGY2eFl2V3JicDJtblZ3ZXI4cWZoamxDUExIaDQ1T2NWaXdlazNTR1VFVHE4bFFfc3pwQ1cxcHowWmg4Zw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰 - 한국경제</a>
+      <p class="article-card__desc">김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰  한국경제</p>
+      <div class="article-card__meta">
+        <span class="badge-source">한국경제</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE0ySzJ2dzl6STByZUtTVGhNRFNhT05XTGY2eFl2V3JicDJtblZ3ZXI4cWZoamxDUExIaDQ1T2NWaXdlazNTR1VFVHE4bFFfc3pwQ1cxcHowWmg4Zw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰 - 한국경제 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="매일경제">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE40alpVUzBMZXFNTHFrenFKcVVHTUU5amJ2TzhyRlV1cjNwRUJVdzVLR096UUdkNG5mSHlsWXR6SXRZUHlpcWxrSlR2NHBvOWEwQVhPRmt3?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[속보] 김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰 - 매일경제</a>
+      <p class="article-card__desc">[속보] 김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰  매일경제</p>
+      <div class="article-card__meta">
+        <span class="badge-source">매일경제</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE40alpVUzBMZXFNTHFrenFKcVVHTUU5amJ2TzhyRlV1cjNwRUJVdzVLR096UUdkNG5mSHlsWXR6SXRZUHlpcWxrSlR2NHBvOWEwQVhPRmt3?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[속보] 김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰 - 매일경제 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="진일보 | 전남일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBqbFFKY2NGVmZhSHlCUzdxWVI3SGxTcjRvaUliQS1jU1E5UWpoLTljRTRBT0E2anFDZWlxQkpqNEhmZjNKTlBvRElCLU94cDRXSWZGQlJTZ1U1NWIzaFhlZkg1RkNCX3owNWNEVUp1OA?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[속보] 김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰 - 진일보 | 전남일보</a>
+      <p class="article-card__desc">[속보] 김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰  진일보 | 전남일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">진일보 | 전남일보</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBqbFFKY2NGVmZhSHlCUzdxWVI3SGxTcjRvaUliQS1jU1E5UWpoLTljRTRBT0E2anFDZWlxQkpqNEhmZjNKTlBvRElCLU94cDRXSWZGQlJTZ1U1NWIzaFhlZkg1RkNCX3owNWNEVUp1OA?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[속보] 김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰 - 진일보 | 전남일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스 한민족센터">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE92U2hndFpZNnhiZEFUTGpmWlFGN2VsZmNISVR1dGloOE9PUUNCSnNZVzk5WnRNUFJyYkN0SFRfanRkVzFmS00yMDk4eWh6ZWQ3d0FWbU1mRm83U3hWa3NXWEhUc3BaLVRqSE9UdUwtNFpXY0Rv?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[속보] 김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰 - 연합뉴스 한민족센터</a>
+      <p class="article-card__desc">[속보] 김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰  연합뉴스 한민족센터</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스 한민족센터</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE92U2hndFpZNnhiZEFUTGpmWlFGN2VsZmNISVR1dGloOE9PUUNCSnNZVzk5WnRNUFJyYkN0SFRfanRkVzFmS00yMDk4eWh6ZWQ3d0FWbU1mRm83U3hWa3NXWEhUc3BaLVRqSE9UdUwtNFpXY0Rv?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[속보] 김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰 - 연합뉴스 한민족센터 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="뉴스핌">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE14ajVmVW1salFLM2Jqdm8zeFJXSUd1ZTZvN2lrR0pOZkkyTjEwdUFLQ0hGTWY5TFZfTUNrMnRzUVhVekx2MUZZcVVYdW9lajhkV2gzbV9Sd1I3bEE3?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">하나금융그룹, 연세대 의과대학과 의사 맞춤 금융서비스 - 뉴스핌</a>
+      <p class="article-card__desc">하나금융그룹, 연세대 의과대학과 의사 맞춤 금융서비스  뉴스핌</p>
+      <div class="article-card__meta">
+        <span class="badge-source">뉴스핌</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE14ajVmVW1salFLM2Jqdm8zeFJXSUd1ZTZvN2lrR0pOZkkyTjEwdUFLQ0hGTWY5TFZfTUNrMnRzUVhVekx2MUZZcVVYdW9lajhkV2gzbV9Sd1I3bEE3?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="하나금융그룹, 연세대 의과대학과 의사 맞춤 금융서비스 - 뉴스핌 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="뉴스핌">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE16OGVPR3NEbTByajNYenlUQWNiS1I3aWRCQnZIUGVzV1VFUXRPczBmOEp0Z29RM2JXZzVOWmhycVJfYVhUZjBvazRSUXBTdlB0WjFUT0FWbUZhZHZh?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대학수학능력시험 향하는 수험생들 - 뉴스핌</a>
+      <p class="article-card__desc">대학수학능력시험 향하는 수험생들  뉴스핌</p>
+      <div class="article-card__meta">
+        <span class="badge-source">뉴스핌</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE16OGVPR3NEbTByajNYenlUQWNiS1I3aWRCQnZIUGVzV1VFUXRPczBmOEp0Z29RM2JXZzVOWmhycVJfYVhUZjBvazRSUXBTdlB0WjFUT0FWbUZhZHZh?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대학수학능력시험 향하는 수험생들 - 뉴스핌 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="미주중앙일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTFBUc3MydkpnZE9qRDAySmtOOXBJallIRGFkNm9Sejh3b2dCUVdiVm93OFY1aHNSX3M3cEVFdE5KZnBJdlJuSXdDVmU5S0lfSWtTbWZrcmZYZDdQMkY3SEhDTmpR?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">[속보] 김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰 - 미주중앙일보</a>
+      <p class="article-card__desc">[속보] 김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰  미주중앙일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">미주중앙일보</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTFBUc3MydkpnZE9qRDAySmtOOXBJallIRGFkNm9Sejh3b2dCUVdiVm93OFY1aHNSX3M3cEVFdE5KZnBJdlJuSXdDVmU5S0lfSWtTbWZrcmZYZDdQMkY3SEhDTmpR?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="[속보] 김정은, 북미회담 주목 속 해군대학 등 함경남도 지역 시찰 - 미주중앙일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="뉴스핌">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE54bkQ1TVJvdkQ3Smh0VVRBNjRXbzhnNmNhV2VxYjltZ2h6Wl9VMDZQRHVKa1kzbDVydmZ6WjFIa3dDQU1FT3BYTWZNaWxjbEkzdFE1cHVHaXoxS0F1?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">&quot;대학 가자!&quot; - 뉴스핌</a>
+      <p class="article-card__desc">&quot;대학 가자!&quot;  뉴스핌</p>
+      <div class="article-card__meta">
+        <span class="badge-source">뉴스핌</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE54bkQ1TVJvdkQ3Smh0VVRBNjRXbzhnNmNhV2VxYjltZ2h6Wl9VMDZQRHVKa1kzbDVydmZ6WjFIa3dDQU1FT3BYTWZNaWxjbEkzdFE1cHVHaXoxS0F1?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="&quot;대학 가자!&quot; - 뉴스핌 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="백세시대">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE42YmR3dy1BMzZfQ2ozM0traU1xamZrYkhXZEVDd3hqZzUtOE9rX1djV2pzVEc2NlE4SXV4bEFQVm9mTjlZVjhlU0VKUDlNS1NwdjJudGhHMnhPcVlCdXhmOFhsZXZNa3V0c0ZZ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대한노인회 경기 성남시 중원구지회 부설 노인대학, 청주로 가을나들이 다녀와 - 백세시대</a>
+      <p class="article-card__desc">대한노인회 경기 성남시 중원구지회 부설 노인대학, 청주로 가을나들이 다녀와  백세시대</p>
+      <div class="article-card__meta">
+        <span class="badge-source">백세시대</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE42YmR3dy1BMzZfQ2ozM0traU1xamZrYkhXZEVDd3hqZzUtOE9rX1djV2pzVEc2NlE4SXV4bEFQVm9mTjlZVjhlU0VKUDlNS1NwdjJudGhHMnhPcVlCdXhmOFhsZXZNa3V0c0ZZ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대한노인회 경기 성남시 중원구지회 부설 노인대학, 청주로 가을나들이 다녀와 - 백세시대 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="백세시대">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE1TckR5b2QtNkRsWGVJT3BTS2puOUNUYzlPMW9EU2pEM2ZmMEY1QS1ucm1CdlFuWVFudFFRVFh6OUR1T3hfamNhM01LWk50VWpBWS05SVVvcEtRdEtMajdsNVotY3RzWWhPTlIw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대한노인회 경기 고양시 일산서구지회 부설 노인대학, 2026년 문화탐방 실시 - 백세시대</a>
+      <p class="article-card__desc">대한노인회 경기 고양시 일산서구지회 부설 노인대학, 2026년 문화탐방 실시  백세시대</p>
+      <div class="article-card__meta">
+        <span class="badge-source">백세시대</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE1TckR5b2QtNkRsWGVJT3BTS2puOUNUYzlPMW9EU2pEM2ZmMEY1QS1ucm1CdlFuWVFudFFRVFh6OUR1T3hfamNhM01LWk50VWpBWS05SVVvcEtRdEtMajdsNVotY3RzWWhPTlIw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대한노인회 경기 고양시 일산서구지회 부설 노인대학, 2026년 문화탐방 실시 - 백세시대 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="뉴스핌">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTFByaHEyYlNlZmcxdFBQMTFsS3pYX2lrQ0ZOdGZ1VGJYQXc2YTZQWTg3WWV4Vmh3UmFmRjhTckVXSkVUbFBYbUVZX2Vuanh1aWQtTkV3REc4MTBCTEl4?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">2027학년도 대학수학능력시험 향하는 수험생들 - 뉴스핌</a>
+      <p class="article-card__desc">2027학년도 대학수학능력시험 향하는 수험생들  뉴스핌</p>
+      <div class="article-card__meta">
+        <span class="badge-source">뉴스핌</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTFByaHEyYlNlZmcxdFBQMTFsS3pYX2lrQ0ZOdGZ1VGJYQXc2YTZQWTg3WWV4Vmh3UmFmRjhTckVXSkVUbFBYbUVZX2Vuanh1aWQtTkV3REc4MTBCTEl4?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="2027학년도 대학수학능력시험 향하는 수험생들 - 뉴스핌 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="뉴스핌">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE5WQmpuZWhzaklrLU1XLURfWk42bW9EN3g3RENUbTRfSFhaTnRib1NKQVRIRjBnT1B1M1lWTzA0MEc1OG1iVGgzYmVPbW5BRlVSQWZqQkJhVHJLRGJz?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">김정은, 어제 함남 해군대학 방문...APEC 계기 정상회담 관측 속 지방체류 - 뉴스핌</a>
+      <p class="article-card__desc">김정은, 어제 함남 해군대학 방문...APEC 계기 정상회담 관측 속 지방체류  뉴스핌</p>
+      <div class="article-card__meta">
+        <span class="badge-source">뉴스핌</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE5WQmpuZWhzaklrLU1XLURfWk42bW9EN3g3RENUbTRfSFhaTnRib1NKQVRIRjBnT1B1M1lWTzA0MEc1OG1iVGgzYmVPbW5BRlVSQWZqQkJhVHJLRGJz?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="김정은, 어제 함남 해군대학 방문...APEC 계기 정상회담 관측 속 지방체류 - 뉴스핌 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="백세시대">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE1LVVA4RGt4ajNxamNTRzJWeGRIODhzbm9rUjVibWNPeFVrR20xTHFMTDVkWFlxS0NzVE96R0ZYb1d5cENJQ3ZHMnpqbDBKQVE3OGdKaFQtaUxVRGViS0RvZjNFV1M1M2pNNXBv?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대한노인회 경기 수원시 팔달구지회 부설 노인대학, 제26기 노인대학 졸업식 개최 - 백세시대</a>
+      <p class="article-card__desc">대한노인회 경기 수원시 팔달구지회 부설 노인대학, 제26기 노인대학 졸업식 개최  백세시대</p>
+      <div class="article-card__meta">
+        <span class="badge-source">백세시대</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE1LVVA4RGt4ajNxamNTRzJWeGRIODhzbm9rUjVibWNPeFVrR20xTHFMTDVkWFlxS0NzVE96R0ZYb1d5cENJQ3ZHMnpqbDBKQVE3OGdKaFQtaUxVRGViS0RvZjNFV1M1M2pNNXBv?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대한노인회 경기 수원시 팔달구지회 부설 노인대학, 제26기 노인대학 졸업식 개최 - 백세시대 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="연합뉴스TV">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE44cXR0dTMtSEVfMXFXT0dKbnVpTG1naDBZZGc3bUlpUmoyS3V0dEVNRTFCWGdEUWUtcURkbmMxeDFSRUFmaTF2ZE40akM5V0cxS09RNzZYZHhBTWthLTB6QWFtcDY5c0k?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">전주대학교, 개인정보 18만 건 유출…&quot;2.5만 건은 주민번호 포함&quot; - 연합뉴스TV</a>
+      <p class="article-card__desc">전주대학교, 개인정보 18만 건 유출…&quot;2.5만 건은 주민번호 포함&quot;  연합뉴스TV</p>
+      <div class="article-card__meta">
+        <span class="badge-source">연합뉴스TV</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE44cXR0dTMtSEVfMXFXT0dKbnVpTG1naDBZZGc3bUlpUmoyS3V0dEVNRTFCWGdEUWUtcURkbmMxeDFSRUFmaTF2ZE40akM5V0cxS09RNzZYZHhBTWthLTB6QWFtcDY5c0k?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="전주대학교, 개인정보 18만 건 유출…&quot;2.5만 건은 주민번호 포함&quot; - 연합뉴스TV 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="메트로신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE0zZWh5ODFLZGw4b2tQdW5KWHAtMUthTkRybzQ3blRnQ0VMRTdSLVR3VXhOVHR3eXh0ZHRTTFlGS0c3OVlFSkMzX3VsUVdxdm1PdFg5YzBOY0ZLXzVtT19oRQ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">하동군 노인대학·노인대학원 수료식 개최… 144명 수료 - 메트로신문</a>
+      <p class="article-card__desc">하동군 노인대학·노인대학원 수료식 개최… 144명 수료  메트로신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">메트로신문</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE0zZWh5ODFLZGw4b2tQdW5KWHAtMUthTkRybzQ3blRnQ0VMRTdSLVR3VXhOVHR3eXh0ZHRTTFlGS0c3OVlFSkMzX3VsUVdxdm1PdFg5YzBOY0ZLXzVtT19oRQ?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="하동군 노인대학·노인대학원 수료식 개최… 144명 수료 - 메트로신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="경기도뉴스포털">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxQSk5xaXZEbVhjTjRPSEV1UENIeEczc1JZMWNoSDlkbmR2ZlB1U3BRazJPaWxPUGFZcTZ6NWN4TWQtVnJDRTFBUTdXUG44MFU5ZlluaWkyOVBULTVRVUc5Z0RBTXJ6X3lJYjRSakJtQzV2Rk1LUDQyYVpHMVFGVmZfNGpKSUE?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">추미애 지사, 대학수학능력시험 수험생 안전관리 철저 특별지시 - 경기도뉴스포털</a>
+      <p class="article-card__desc">추미애 지사, 대학수학능력시험 수험생 안전관리 철저 특별지시  경기도뉴스포털</p>
+      <div class="article-card__meta">
+        <span class="badge-source">경기도뉴스포털</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxQSk5xaXZEbVhjTjRPSEV1UENIeEczc1JZMWNoSDlkbmR2ZlB1U3BRazJPaWxPUGFZcTZ6NWN4TWQtVnJDRTFBUTdXUG44MFU5ZlluaWkyOVBULTVRVUc5Z0RBTXJ6X3lJYjRSakJtQzV2Rk1LUDQyYVpHMVFGVmZfNGpKSUE?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="추미애 지사, 대학수학능력시험 수험생 안전관리 철저 특별지시 - 경기도뉴스포털 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="세명일보">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5pWkEwUl95UUxGOUdfTFF6SGhJWS1nNkFWSFZBSnQteS1DeVNkUUhzNkVjbVNkbnZrVlRqZERrdURjaTZtTmFsc1JFakI3SS1VUTNUakVpNFJmYlROWnpWcy1RY3IwV2ZXUmpuV0xtaTU?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대구대 앵커사업단, 베트남 대학·기업과 글로벌 취창업 협력 - 세명일보</a>
+      <p class="article-card__desc">대구대 앵커사업단, 베트남 대학·기업과 글로벌 취창업 협력  세명일보</p>
+      <div class="article-card__meta">
+        <span class="badge-source">세명일보</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5pWkEwUl95UUxGOUdfTFF6SGhJWS1nNkFWSFZBSnQteS1DeVNkUUhzNkVjbVNkbnZrVlRqZERrdURjaTZtTmFsc1JFakI3SS1VUTNUakVpNFJmYlROWnpWcy1RY3IwV2ZXUmpuV0xtaTU?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대구대 앵커사업단, 베트남 대학·기업과 글로벌 취창업 협력 - 세명일보 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="YTN">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE14bWFSRlRYRmpQT01OLWFabFd5dHIzV05xN2IwdkNnLVJwTE1YNHdRc0oyekVTMnVsS1k5ZFhyWFdNMGVUQmY4VTFnVE5qY2ZxSWVkN2RTTTdyWlJwS3c?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">김정은, 북미회담 주목 속 함경남도 해군대학 등 현지지도 - YTN</a>
+      <p class="article-card__desc">김정은, 북미회담 주목 속 함경남도 해군대학 등 현지지도  YTN</p>
+      <div class="article-card__meta">
+        <span class="badge-source">YTN</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE14bWFSRlRYRmpQT01OLWFabFd5dHIzV05xN2IwdkNnLVJwTE1YNHdRc0oyekVTMnVsS1k5ZFhyWFdNMGVUQmY4VTFnVE5qY2ZxSWVkN2RTTTdyWlJwS3c?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="김정은, 북미회담 주목 속 함경남도 해군대학 등 현지지도 - YTN 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="백세시대">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE5uZzk1WXp4TTN0RE9TNUs1c3hCc0ZvRTZIRnV5NjJSSG9idmxlM3FXNk91RjdtWnBSRFdmckdyZFdpYk5UV2JnbkpjVFNocWl4VTJNMUEwaTlxSUpnSl9aOC1ab0l1UVR6cUJB?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">대한노인회 경북 칠곡군지회 부설 노인대학, 울진 원자력발전소 견학 다녀와 - 백세시대</a>
+      <p class="article-card__desc">대한노인회 경북 칠곡군지회 부설 노인대학, 울진 원자력발전소 견학 다녀와  백세시대</p>
+      <div class="article-card__meta">
+        <span class="badge-source">백세시대</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE5uZzk1WXp4TTN0RE9TNUs1c3hCc0ZvRTZIRnV5NjJSSG9idmxlM3FXNk91RjdtWnBSRFdmckdyZFdpYk5UV2JnbkpjVFNocWl4VTJNMUEwaTlxSUpnSl9aOC1ab0l1UVR6cUJB?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="대한노인회 경북 칠곡군지회 부설 노인대학, 울진 원자력발전소 견학 다녀와 - 백세시대 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="베리타스알파">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5iaHJ6MkViVFo5c2Z4b3FFVHNwRDl6WjRPYmZRcGNEeWZGWk95OElwUUtOWnhDUHM0T3F5R3lOMl9hN2p3aEI2ZDc0aHpjLTd2M19TaEhVa0huZWNuX1JyamRFa0JQTUtKa3BnUw?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">경기대 SW중심대학사업단 ‘2026년 SW중심대학 연합 AI/SW페스티벌' 대상 등 4개 팀 수상.. ‘2년 연속 대상' - 베리타스알파</a>
+      <p class="article-card__desc">경기대 SW중심대학사업단 ‘2026년 SW중심대학 연합 AI/SW페스티벌' 대상 등 4개 팀 수상.. ‘2년 연속 대상'  베리타스알파</p>
+      <div class="article-card__meta">
+        <span class="badge-source">베리타스알파</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5iaHJ6MkViVFo5c2Z4b3FFVHNwRDl6WjRPYmZRcGNEeWZGWk95OElwUUtOWnhDUHM0T3F5R3lOMl9hN2p3aEI2ZDc0aHpjLTd2M19TaEhVa0huZWNuX1JyamRFa0JQTUtKa3BnUw?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="경기대 SW중심대학사업단 ‘2026년 SW중심대학 연합 AI/SW페스티벌' 대상 등 4개 팀 수상.. ‘2년 연속 대상' - 베리타스알파 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="광역행정신문">
+  <div class="article-card__inner">
+    <div class="article-card__content">
+      <a href="https://news.google.com/rss/articles/CBMiREFVX3lxTFAwazNOUFI1Zm5mLWFaSzhWdjFpRnBTOExJaHpJQ0NKSjhTc3Vya1VRNlVzNVZBTlo1Ymw5Q0g0UERQa1Jm?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">경상북도,대학 연계 은퇴자 공동체 구축사업 공모 선정 - 광역행정신문</a>
+      <p class="article-card__desc">경상북도,대학 연계 은퇴자 공동체 구축사업 공모 선정  광역행정신문</p>
+      <div class="article-card__meta">
+        <span class="badge-source">광역행정신문</span>
+        <span class="article-date">2026-11-18</span>
+      </div>
+    </div>
+    <a href="https://news.google.com/rss/articles/CBMiREFVX3lxTFAwazNOUFI1Zm5mLWFaSzhWdjFpRnBTOExJaHpJQ0NKSjhTc3Vya1VRNlVzNVZBTlo1Ymw5Q0g0UERQa1Jm?oc=5" target="_blank" rel="noopener noreferrer"
+       class="article-card__ext-btn" aria-label="경상북도,대학 연계 은퇴자 공동체 구축사업 공모 선정 - 광역행정신문 읽기">&#8599;</a>
+  </div>
+</article>
+<article class="article-card" role="listitem" data-source="뉴스1">
   <div class="article-card__inner">
     <div class="article-card__content">
       <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTFBWa0k2Qkw4OWhoOHZpWjZ5ajdjLTJCVnN2M1JOQ2ZoRVdSVEdsUk43YkVJZ3FhMURDZUdNeldDSGp1Mmw0aUV5M2JfSlJDbDVGS2xhMmM1enJXNzJJ?oc=5" target="_blank" rel="noopener noreferrer" class="article-card__title">&quot;긴장한 채 허리띠 풀고 땀 뻘뻘&quot;…여성 시신 성폭행한 대학병원 경비원 - 뉴스1</a>
@@ -1359,7 +1863,7 @@
 <footer class="site-footer">
   <div class="site-footer__inner">
     <span class="site-footer__text">© 대학 기사 아카이브</span>
-    <span class="site-footer__text">총 <strong>15257</strong>개 기사 보관</span>
+    <span class="site-footer__text">총 <strong>15385</strong>개 기사 보관</span>
   </div>
 </footer>
 
